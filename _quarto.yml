@@ -2,8 +2,19 @@ name: "m152-stat-theory"
 
 project:
   type: website
-
+  output-dir: _site
+  
+creative_commons: CC BY
+twitter:
+  site: "@jo_hardin47"
+  
 website:
+  title: "Statistical Theory"
+  image: "images/st47s.png"
+  favicon: "images/favicon.ico"
+  site-url: https://m152-stat-theory.netlify.app/
+  repo-url: https://github.com/hardin47/m152-stat-theory
+  page-navigation: true
   navbar:
     title: "Statistical Theory"
     description: |
@@ -19,10 +30,17 @@ website:
       - text: "GitHub"
         href: github.qmd
     logo: images/st47s.png
+    logo-href: "https://hardin47.netlify.app/"
+  page-footer:
+    center:
+      - text: |
+          © Jo Hardin, 2022 -- <a href = "mailto: jo.hardin@pomona.edu">jo.hardin@pomona.edu</a> -- <a href="https://hardin47.netlify.app/">https://hardin47.netlify.app/</a> <br> <br>
+          Math 152 -- Statistical Theory -- Pomona College, Claremont, CA <br>
 
 format:
   html:
-    css: styles.css
+    theme: css/styles_quarto.css
+    css: css/styles.css
 
 
 
