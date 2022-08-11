@@ -1,18 +1,27 @@
+name: "m152-stat-theory"
+
 project:
   type: website
 
 website:
-  title: "Math 152: Statistical Theory"
   navbar:
+    title: "Statistical Theory"
+    description: |
+      Math 152, Statistical Theory, Pomona College
+    background: light
+    foreground: dark
+    search: true
     right:
-      - about.qmd
-      - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+      - text: "Syllabus"
+        href: syllabus.qmd
+      - text: "Class Notes"
+        href: notes.qmd
+      - text: "GitHub"
+        href: github.qmd
+    logo: images/st47s.png
+
 format:
   html:
-    theme: cosmo
     css: styles.css
 
 
