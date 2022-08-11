@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Here’s your roadmap for the semester! Each week, follow the general process outlined below:\n\nEnjoy the notes / readings \nAttend class, review slides  for anything you missed on the agenda, review the warm-up  if you have any questions after completing it during class.\nComplete the assignment (see Sakai messages for HW link)\nDiscuss the reflection questions  and ethics considerations  (see class notes) with your classmates, mentor, and professor\nALSM: Applied Linear Statistical Models, 5th ed., Kutner, Nachtsheim, Neter, Li. You should be able to find online.\nISLR: An Introduction to Statistical Learning, 2nd ed., James, Witten, Hastie, Tibshirani. https://www.statlearning.com/\nISLR Labs using tidymodels.\n\n\n\n\n\n\n\n\n \n  \n    date \n    topic \n    agenda \n    readings \n    in class \n    article \n  \n \n\n  \n    Week 1  1.18.22 \n    starting +  R + RStudio +  Git + GitHub +  SLR \n    $\\boldsymbol{\\cdot}$course info  $\\boldsymbol{\\cdot}$R + Git  $\\boldsymbol{\\cdot}$what is a linear model?  $\\boldsymbol{\\cdot}$least squares  $\\boldsymbol{\\cdot}$norm errors  $\\boldsymbol{\\cdot}$tech cond \n     Introduction   Git + GitHub   ALSM 1   ISLR 3.1  \n     Git + Tidy   WU 1   WU 2    least sq \n     happygitwithRWhy Git? + monsters \n  \n  \n    Week 2  1.25.22 \n    Inference \n    $\\boldsymbol{\\cdot}$Inf on $\\beta_1$  $\\boldsymbol{\\cdot}$CI for $\\beta_1$  $\\boldsymbol{\\cdot}$CI for mean  $\\boldsymbol{\\cdot}$PI for indiv $\\boldsymbol{\\cdot}$ correlation \n     SLR    ALSM 2 \n     WU 3   dist $\\beta_1$ \n     \n  \n  \n    Week 3  2.1.22 \n    Diagnositcs \n    $\\boldsymbol{\\cdot}$ $R^2$  $\\boldsymbol{\\cdot}$ F test $\\boldsymbol{\\cdot}$ residual plots \n     Diagnostics I ALSM 3 \n     WU 4  WU 5 \n     \n  \n  \n    Week 4  2.8.22 \n    Simultaneous  Inference +  Matrices \n    $\\boldsymbol{\\cdot}$ $\\beta_0$ & $\\beta_1$ $\\boldsymbol{\\cdot}$ linear algebra \n     Simult Inf     Matrices     ALSM 4 & 5 \n     WU 6   WU 7 \n     Peer review \n  \n  \n    2.8.22 \n    Proj 1: Data \n     Proj 1: Data \n     \n     \n     \n  \n  \n    Week 5  2.15.22 \n    MLR \n    $\\boldsymbol{\\cdot}$ indicator terms $\\boldsymbol{\\cdot}$ interaction terms $\\boldsymbol{\\cdot}$ quadratic terms$\\boldsymbol{\\cdot}$ F test  $\\boldsymbol{\\cdot}$ $R^2$ & $R^2_{adj}$  $\\boldsymbol{\\cdot}$ combos of coefs \n     MLR    ALSM 6   ISLR 3.2  \n     WU 8   WU 9 \n     Criticism \n  \n  \n    2.20.22 \n    Proj 2: SLR \n     Proj 2: SLR \n     \n     \n     \n  \n  \n    Week 6  2.22.22 \n    catch-up \n    $\\boldsymbol{\\cdot}$ see Sakai for study materials \n     \n     \n     \n  \n  \n    2.24.22 \n    Exam 1 \n     \n     \n     \n     \n  \n  \n    Week 7  3.1.22 \n    Feature  Engineering  & CV \n    $\\boldsymbol{\\cdot}$ **tidymodels**  $\\boldsymbol{\\cdot}$ feature  engineering  $\\boldsymbol{\\cdot}$ cross validation \n     Process   ISLR 5.1  \n     Feature Engineering   Cross Validation   An Example   WU 10   WU 11 \n     Variable meaning \n  \n  \n    3.3.22 \n    Peer 2: SLR \n     Peer Review: SLR on GitHub \n     \n     \n     \n  \n  \n    Week 8  3.8.22 \n    Model  Building \n    $\\boldsymbol{\\cdot}$ sums of squares  $\\boldsymbol{\\cdot}$ nested F-tests  $\\boldsymbol{\\cdot}$ coef of determination \n     Build   ALSM 7 \n     WU 12   WU 13 \n     \n  \n  \n    3.15.22 \n    Spring Break \n     \n     \n     \n     \n  \n  \n    Week 9  3.22.22 \n    Model Building \n    $\\boldsymbol{\\cdot}$ mulicollinearity  $\\boldsymbol{\\cdot}$ stepwise  procedures \n     Build     ALSM 9 ISLR 6.1  \n     Model Strategy   WU 14  WU 15 \n     Compassion + Models \n  \n  \n    Week 10  3.29.22 \n    Diagnostics \n    $\\boldsymbol{\\cdot}$ residuals  $\\boldsymbol{\\cdot}$ leverage  $\\boldsymbol{\\cdot}$ influence \n     Diagnostics II   ALSM 10 \n     Outliers    WU 16   WU 17 \n     \n  \n  \n    Week 11  4.5.22 \n    Ridge Regression \n    $\\boldsymbol{\\cdot}$ ridge  regression \n     Ridge   ALSM 11.2  ISLR 6.2  \n     Ridge Regression   WU 18   WU 19 \n     \n  \n  \n    4.5.22 \n    Proj 3: MLR \n     Proj 3: MLR \n     \n     \n     \n  \n  \n    Week 12  4.12.22 \n    catch-up \n    $\\boldsymbol{\\cdot}$ see Sakai for  study materials \n     \n     \n     \n  \n  \n    4.14.22 \n    Exam 2 \n     \n     \n     \n     \n  \n  \n    Week 13  4.19.22 \n    Lasso \n    $\\boldsymbol{\\cdot}$ Lasso  $\\boldsymbol{\\cdot}$ elastic net  $\\boldsymbol{\\cdot}$ step functions \n     Lasso   ISLR 6.2  \n     WU 20   WU 21 \n     \n  \n  \n    Week 14  4.26.22 \n    Smoothers \n    $\\boldsymbol{\\cdot}$ ridge regression  $\\boldsymbol{\\cdot}$ loess \n     Smooth    ISLR 7  \n     WU 22 \n     Smoothing as average \n  \n  \n    5.3.22 \n    Exam 3 \n     \n     \n     \n     \n  \n  \n    5.10.22 \n    Proj 4: BeyondLinear + Summary \n     Proj 4: Fin \n     \n     \n     \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nAug 11, 2022\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nAug 8, 2022\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  }
+]
