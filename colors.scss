@@ -2,8 +2,7 @@
 
 // import google fonts
 
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url('https://fonts.googleapis.com/css2?family=Quicksand');
 
 html {
   /*-- Main font sizes --*/
@@ -22,8 +21,8 @@ html {
 }
 
 // fonts
-$font-family-sans-serif: "Quicksand", sans-serif !default;
-$headings-font-family: "Quicksand", sans-serif !default;
+$font-family-sans-serif: "Quicksand" !default;
+$headings-font-family: "Quicksand" !default;
 
 //
 // Color system
@@ -61,8 +60,6 @@ $danger:        $lightred !default;
 $light:         $gray-100 !default;
 $dark:          $black !default;
 
-
-
 /*-- scss:rules --*/
 
 // Navbar
@@ -75,4 +72,12 @@ nav ul li a:hover {
 }
 a:hover {
   color: $black !important;
+}
+
+
+footer.footer .nav-footer,
+nav{
+  background-color: $green !important;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }

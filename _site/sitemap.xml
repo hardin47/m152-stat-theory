@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://m152-stat-theory.netlify.app/index.html</loc>
-    <lastmod>2022-08-12T02:12:46.585Z</lastmod>
+    <lastmod>2022-08-12T21:28:19.867Z</lastmod>
   </url>
   <url>
     <loc>https://m152-stat-theory.netlify.app/syllabus.html</loc>
-    <lastmod>2022-08-12T01:48:26.871Z</lastmod>
+    <lastmod>2022-08-12T21:28:19.214Z</lastmod>
   </url>
   <url>
     <loc>https://m152-stat-theory.netlify.app/notes.html</loc>
@@ -15,5 +15,9 @@
   <url>
     <loc>https://m152-stat-theory.netlify.app/github.html</loc>
     <lastmod>2022-08-11T20:35:45.822Z</lastmod>
+  </url>
+  <url>
+    <loc>https://m152-stat-theory.netlify.app/clicker.html</loc>
+    <lastmod>2022-08-12T19:56:22.197Z</lastmod>
   </url>
 </urlset>

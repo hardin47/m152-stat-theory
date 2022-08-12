@@ -23,8 +23,8 @@ website:
         href: syllabus.qmd
       - text: "Class Notes"
         href: notes.qmd
-      - text: "GitHub"
-        href: github.qmd
+      - text: "Clicker Q"
+        href: clicker.qmd
     logo: images/st47s.png
     logo-href: "https://hardin47.netlify.app/"
   page-footer:
@@ -33,7 +33,8 @@ website:
           <br> © Jo Hardin, 2022 -- <a href = "mailto: jo.hardin@pomona.edu">jo.hardin@pomona.edu</a> -- <a href="https://hardin47.netlify.app/">https://hardin47.netlify.app/</a> <br> <br>
           Math 152 -- Statistical Theory -- Pomona College, Claremont, CA <br>
     left: |
-      <a href="https://www.twitter.com/jo_hardin47/"><i class="fa-brands fa-twitter"></i></a>
+      {{< fa eye >}}
+      <a href="https://mobile.twitter.com/jo_hardin47"><i class="fa-brands fa-twitter"></i></a>
       <a href="https://github.com/hardin47"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.linkedin.com/in/jo-hardin-b91a4b55"><i class="fa-brands fa-linkedin-in"></i></a>
       <a href ="https://hardin47.netlify.app/resume.pdf"><i class="fa-solid fa-bookmark"></i></a>
