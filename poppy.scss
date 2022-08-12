@@ -1,7 +1,26 @@
-/*-- scss:defaults --*/
 
-// use litera as the base
-$theme: "litera" !default;
+/*-- scss:defaults --*/
+$siteBgColorCustom: #FAF9F0;
+$sidebarBgColorCustom: #F5F3E0;
+$textColorCustom: #220D07;
+$sidebarTextColorCustom: #220D07;
+
+$headlineColorCustom: #d35836f7;
+$headingColorCustom: #BB4625;
+
+$bodyLinkColorCustom: #BC4524;
+$navLinkColorCustom: #BC4524;
+$sidebarLinkColorCustom: #BC4524;
+
+$footerTextColorCustom: #676565;
+
+$buttonTextColorCustom: #FAF9F0;
+$buttonHoverTextColorCustom: #FAF9F0;
+$buttonBgColorCustom: #E07A5F;
+$buttonHoverBgColorCustom: #BC4524;
+$borderColorCustom: #F0EDD1;
+
+/*-- scss:rules --*/
 
 /* base variables */
 
@@ -38,32 +57,13 @@ html {
   --navbar-font:      'Quicksand';  /* websites + blogs only */
 }
 
-/*-- ARTICLE METADATA --*/
-d-byline {
-  --heading-size:    0.6rem;
-  --heading-color:   rgba(0, 0, 0, 0.5);
-  --body-size:       0.8rem;
-  --body-color:      rgba(0, 0, 0, 0.8);
-}
 
-/*-- ARTICLE TABLE OF CONTENTS --*/
-.d-contents {
-  --heading-size:    18px;
-  --contents-size:   13px;
-}
 
-/*-- ARTICLE APPENDIX --*/
-d-appendix {
-  --heading-size:    15px;
-  --heading-color:   rgba(0, 0, 0, 0.65);
-  --text-size:       0.8em;
-  --text-color:      rgba(0, 0, 0, 0.5);
-}
 
 /*-- WEBSITE HEADER + FOOTER --*/
 /* These properties only apply to Distill sites and blogs  */
 
-.distill-site-header {
+.site-header {
   --title-size:       18px;
   --text-color:       rgba(255, 255, 255, 0.8);
   --text-size:        15px;
@@ -71,14 +71,14 @@ d-appendix {
   --bkgd-color:       #4d4819;
 }
 
-.distill-site-footer {
+.site-footer {
   --text-color:       rgba(255, 255, 255, 0.8);
   --text-size:        15px;
   --hover-color:      black;
   --bkgd-color:       #4d4819;
 }
 
-.distill-site-nav {
+.site-nav {
   font-family: 'Quicksand';
   color: #d35836; 
   background-color: #F0EDD1;
@@ -86,9 +86,41 @@ d-appendix {
   font-weight: 900;
 }
 
-.distill-site-nav a:hover {
+.site-nav a:hover {
     color: black;
   }
+  
+.navbar-title,
+.nav-link,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+}
+
+.navbar-title {
+  font-weight: 550;
+  font-size: 1.2em;
+  color: #d35836; 
+  background-color: #F0EDD1;
+}
+
+.nav-link {
+  font-weight: 300;
+  font-size: 1.1em;
+  color: #d35836; 
+  background-color: #F0EDD1;
+}
+
+.element.style {
+  width: 10cm;
+  height: 10cm;
+  color: #d35836; 
+  background-color: #F0EDD1;
+}  
   
 /*-- Dropdown Menu --*/
 

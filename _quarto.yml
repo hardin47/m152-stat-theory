@@ -4,10 +4,6 @@ project:
   type: website
   output-dir: _site
   
-creative_commons: CC BY
-twitter:
-  site: "@jo_hardin47"
-  
 website:
   title: "Statistical Theory"
   image: "images/st47s.png"
@@ -19,8 +15,8 @@ website:
     title: "Statistical Theory"
     description: |
       Math 152, Statistical Theory, Pomona College
-    background: light
-    foreground: dark
+    background: success
+    foreground: secondary
     search: true
     right:
       - text: "Syllabus"
@@ -34,13 +30,22 @@ website:
   page-footer:
     center:
       - text: |
-          © Jo Hardin, 2022 -- <a href = "mailto: jo.hardin@pomona.edu">jo.hardin@pomona.edu</a> -- <a href="https://hardin47.netlify.app/">https://hardin47.netlify.app/</a> <br> <br>
+          <br> © Jo Hardin, 2022 -- <a href = "mailto: jo.hardin@pomona.edu">jo.hardin@pomona.edu</a> -- <a href="https://hardin47.netlify.app/">https://hardin47.netlify.app/</a> <br> <br>
           Math 152 -- Statistical Theory -- Pomona College, Claremont, CA <br>
-
+    left: |
+      <a href="https://www.twitter.com/jo_hardin47/"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://github.com/hardin47"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jo-hardin-b91a4b55"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href ="https://hardin47.netlify.app/resume.pdf"><i class="fa-solid fa-bookmark"></i></a>
+      <a href="mailto:jo.hardin@pomona.edu"><i class="fa-solid fa-at"></i></a>
+      <a href="https://scholar.google.com/citations?user=c5Y77poAAAAJ&hl=en"><i class="fa-brands fa-google-scholar"></i></a>
+      <a href="https://www.researchgate.net/scientific-contributions/Johanna-Hardin-9764530"><i class="fa-brands fa-researchgate"></i></a>    
+license: "CC BY"
 format:
   html:
-    theme: css/styles_quarto.css
-    css: css/styles.css
+    theme: 
+      - cosmo
+      - colors.scss
 
 
 
