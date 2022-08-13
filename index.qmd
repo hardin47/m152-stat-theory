@@ -16,131 +16,152 @@ library(knitr)
 
 Here's your roadmap for the semester! Each week, follow the general process outlined below:
 
--   Enjoy the notes / readings <i class="fas fa-book-open"></i>
+-   Enjoy the notes / text <i class="fas fa-book-open"></i>
 
--   Attend class, review slides <i class="fas fa-desktop"></i> for anything you missed on the agenda, review the warm-up <i class="fas fa-pencil-alt"></i> if you have any questions after completing it during class.
+-   Attend class, review the <i class="fas fa-pencil-alt"></i>warm-up and solutions if you have any questions after completing it during class.
 
--   Complete the assignment (see Sakai messages for HW link)
+-   Complete the HW assignment (<i class="fa-solid fa-file-pdf"></i> pdf & <i class="fa-brands fa-r-project"></i> Rmd linked below), <i class="fa-solid fa-paper-plane"></i> submit the assignment via Gradescope accessed on the course Canvas site.
 
--   Discuss the reflection questions <i class="fas fa-lightbulb" target="_blank"></i> and ethics considerations <i class="fas fa-balance-scale"></i> (see class notes) with your classmates, mentor, and professor
+-   Discuss the reflection questions <i class="fas fa-lightbulb" target="_blank"></i> and ethics considerations <i class="fas fa-balance-scale"></i> (see class notes) with your classmates, mentor, and professor (see the <i class="fas fa-book-open"></i> class notes).
 
--   ALSM: *Applied Linear Statistical Models*, 5th ed., Kutner, Nachtsheim, Neter, Li. You should be able to find online.
+-   The textbook is **Probability and Statistics** (P&S), by DeGroot and Schervish (either 3rd or 4th edition is fine).  You should be able to find online.
 
--   ISLR: *An Introduction to Statistical Learning*, 2nd ed., James, Witten, Hastie, Tibshirani. https://www.statlearning.com/
 
--   <a href = "https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html" target = "_blank">ISLR Labs</a> using `tidymodels`.
-
-```{r}
-#| echo: false
+```{r echo = FALSE}
 schedule <- tribble(
-  ~`date`, ~topic, ~agenda, ~readings, ~`in class`, ~article,
-  "Week 1 <br> 1.18.22", 'starting + <br> R + RStudio + <br> Git + GitHub + <br> SLR',"• course info <br> • R + Git <br> • what is a linear model? <br> • least squares <br> • norm errors <br> • tech cond", 
-  '<a href="https://st47s.com/Math158/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i> Introduction</a> <br> <a href="https://m58-intro-stats.netlify.app/github.html" target = "_blank"><i class="fas fa-book-open"></i> Git + GitHub</a> <br> <i class="fas fa-book-open"></i> ALSM 1 <br> <a href="https://hastie.su.domains/ISLR2/ISLRv2_website.pdf" target = "_blank"><i class="fas fa-book-open"></i> ISLR 3.1 </a>',
-  '<a href="https://m158-lin-mod.netlify.app/slides/2022-01-18-reprodGitwrang.html" target = "_blank"><i class="fas fa-desktop"></i> Git + Tidy</a> <br> <a href="https://m158-lin-mod.netlify.app/slides/wu1_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 1</a> <br> <a href="https://m158-lin-mod.netlify.app/slides/wu2_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 2</a>  <br> <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class = "fas fa-gamepad"></i> least sq</a>',
-  '<a href="https://happygitwithr.com/" target = "_blank"><i class="fa fa-comments"></i> happygitwithR</a><br><a href = "https://www.openscapes.org/blog/2022/05/27/github-illustrated-series/" target = "_blank"><i class="fa fa-comments"></i>Why Git? + monsters</a>',
-  
-    "Week 2 <br> 1.25.22", 'Inference',"• Inf on $\\beta_1$ <br> • CI for $\\beta_1$ <br> • CI for mean <br> • PI for indiv<br> •  correlation", 
-  '<a href="https://st47s.com/Math158/Notes/slr.html" target = "_blank"><i class="fas fa-book-open"></i> SLR</a>  <br> <i class="fas fa-book-open"></i> ALSM 2',
-  '<a href="https://m158-lin-mod.netlify.app/slides/wu3_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 3</a> <br> <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class = "fas fa-gamepad"></i> dist $\\beta_1$</a>',
-  
-  '',
-    "Week 3 <br> 2.1.22", 'Diagnositcs',"•  $R^2$ <br> •  F test<br> •  residual plots", 
-  '<a href="https://st47s.com/Math158/Notes/diag1.html" target = "_blank"><i class="fas fa-book-open"></i> Diagnostics I</a><br><i class="fas fa-book-open"></i> ALSM 3',
-  '<a href="https://m158-lin-mod.netlify.app/slides/wu4_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 4</a><br> <a href="https://m158-lin-mod.netlify.app/slides/wu5_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 5</a>',
-  '',
-  
-    "Week 4 <br> 2.8.22", 'Simultaneous <br> Inference + <br> Matrices',"•  $\\beta_0$ & $\\beta_1$<br> •  linear algebra", 
-  '<a href="https://st47s.com/Math158/Notes/simult.html" target = "_blank"><i class="fas fa-book-open"></i> Simult Inf</a>   <br> <a href="https://st47s.com/Math158/Notes/la.html" target = "_blank"><i class="fas fa-book-open"></i> Matrices</a>   <br> <i class="fas fa-book-open"></i> ALSM 4 & 5',
-  '<a href="https://m158-lin-mod.netlify.app/slides/wu6_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 6</a> <br> <a href="https://m158-lin-mod.netlify.app/slides/wu7_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 7</a>',
-  '<a href="https://github.com/jtleek/reviews" target = "_blank"><i class="fa fa-comments"></i> Peer review</a>',
-    '<font color = "#114B5F"><b>2.8.22</b></font>', '<font color = "#114B5F"><b>Proj 1: Data</b></font>',
-  '<a href="https://m158-lin-mod.netlify.app/slides/proj1_data_158.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> Proj 1: Data</a>',
-  '',"", 
-  '',
-  
-  
-    "Week 5 <br> 2.15.22", 'MLR',"•  indicator terms<br> •  interaction terms<br> •  quadratic terms<br>•  F test <br> •  $R^2$ & $R^2_{adj}$ <br> •  combos of coefs", 
-  '<a href="https://st47s.com/Math158/Notes/mlr.html" target = "_blank"><i class="fas fa-book-open"></i> MLR</a>  <br> <i class="fas fa-book-open"></i> ALSM 6 <br> <a href="https://hastie.su.domains/ISLR2/ISLRv2_website.pdf" target = "_blank"><i class="fas fa-book-open"></i> ISLR 3.2 </a>',
-  '<a href="https://m158-lin-mod.netlify.app/slides/wu8_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 8</a> <br> <a href="https://m158-lin-mod.netlify.app/slides/wu9_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 9</a>',
-  '<a href="https://www.fastcompany.com/3039412/the-art-science-to-giving-and-receiving-criticism-at-work" target = "_blank"><i class="fa fa-comments"></i> Criticism</a>',
-  
-   '<font color = "#114B5F"><b>2.20.22</b></font>', '<font color = "#114B5F"><b>Proj 2: SLR</b></font>',
-  '<a href="https://m158-lin-mod.netlify.app/slides/proj2_slr_158.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> Proj 2: SLR</a>',
-  '',"", 
-  '',
-  
-      "Week 6 <br> 2.22.22", 'catch-up',"•  see Sakai for<br> study materials ", 
+  ~`date`, ~agenda, ~readings, ~homework, ~`handouts`, ~`warm-ups`,
+  "Week 1 <br> 8.30.22", 
+  '• logistics + <br>• priors + <br>• posteriors',
+  'P&S: 7.1-7.2 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i> Introduction</a>', 
+  '<a href="https://st47s.com/Math158/Notes/intro.html" target = "_blank"><i class="fa-solid fa-file-pdf"></i> HW1 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/github.html" target = "_blank"><i class="fa-brands fa-r-project"></i> HW1 Rmd</a> <br> <a href="https://m58-intro-stats.netlify.app/github.html" target = "_blank"><i class="fa-solid fa-paper-plane"></i> HW1 turn-in</a>',
+  '<a href="https://m152-stat-theory.netlify.app/slides/2022-01-18-reprodGitwrang.html" target = "_blank"><i class="fa-solid fa-memo-pad"></i>some handout</a',
+  '<a href="https://m152-stat-theory.netlify.app/slides/wu1_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 1</a> <br> <a href="https://m152-stat-theory.netlify.app/slides/wu2_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 2</a>',
+"Week 2 <br> 9.6.22", 
+  '• posteriors + <br> • Bayes estimators',
+  'P&S: 7.3-7.4 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
   '',
   '',
   '',
-   '<font color = "#114B5F"><b>2.24.22</b></font>', '<font color = "#114B5F"><b>Exam 1</b></font>',"", 
+
+"Week 3 <br> 9.13.22",   
+  '• MLE + <br> • consistency+ <br> • bias + <br> • MOM',
+  'P&S: 7.5-7.6 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
+  '',
+  '',  
+  '',
+  
+"Week 4 <br> 9.20.22", 
+  '• sampling distributions <br>of estimators',
+  'P&S: 6.1-6.3, 8.1-8.4 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
+  '',
+  '',
+  '',
+  
+  
+"Week 5 <br> 9.27.22",
+  '• bootstrap sampling <br>distributions',
+  'P&S: 12.6 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
+  '',
+  '',
+  '',
+  
+"Week 6 <br> 2.22.22", 
+  '• frequentist, Bayesian <br>intervals',
+  'P&S: 8.5-8.6 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
   '',
   '',
   '',    
-  "Week 7 <br> 3.1.22", 'Feature <br> Engineering <br> & CV',"•  **tidymodels** <br> •  feature <br> engineering <br> •  cross validation", 
-  '<a href="http://st47s.com/Math158/Notes/process.html" target = "_blank"><i class="fas fa-book-open"></i> Process</a> <br> <a href="https://hastie.su.domains/ISLR2/ISLRv2_website.pdf" target = "_blank"><i class="fas fa-book-open"></i> ISLR 5.1 </a>',
-  '<a href="https://m158-lin-mod.netlify.app/slides/2022-03-01-feature.html" target = "_blank"><i class="fas fa-desktop"></i> Feature Engineering</a> <br> <a href="https://m158-lin-mod.netlify.app/slides/2022-03-03-CV.html" target = "_blank"><i class="fas fa-desktop"></i> Cross Validation</a> <br> <a href="https://m158-lin-mod.netlify.app/slides/2022-03-24-bias_in_variables.html" target = "_blank"><i class="fas fa-desktop"></i> An Example</a> <br> <a href="https://m158-lin-mod.netlify.app/slides/wu10_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 10</a> <br> <a href="https://m158-lin-mod.netlify.app/slides/wu11_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 11</a>',
-  '<a href = "http://aaronsadventures.blogspot.com/2019/01/discussion-of-unfairness-in-machine.html" target = "_blank"><i class="fa fa-comments"></i> Variable meaning</a>',
-  
-  '<font color = "#114B5F"><b>3.3.22</b></font>', '<font color = "#114B5F"><b>Peer 2: SLR</b></font>',
-  '<a href="https://m158-lin-mod.netlify.app/slides/proj2_slr_158.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> Peer Review: SLR</a> <br>on GitHub',
-  '',"", 
+
+'<font color = "#114B5F"><b>Week 7 <br> 10.11.22</b></font>', 
+'<font color = "#114B5F"><b>review & catch-up</b></font>',
+'<font color = "#114B5F"><b>exam 1 in class<br> 10.13.22</b></font>',
   '',
-  
-    "Week 8 <br> 3.8.22", 'Model <br> Building',"•  sums of squares <br> •  nested F-tests <br> •  coef of determination", 
-  '<a href="https://st47s.com/Math158/Notes/build.html" target = "_blank"><i class="fas fa-book-open"></i> Build</a> <br> <i class="fas fa-book-open"></i> ALSM 7<br> ',
-  '<a href="https://m158-lin-mod.netlify.app/slides/wu12_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 12</a> <br> <a href="https://m158-lin-mod.netlify.app/slides/wu13_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 13</a>',
   '',
-   '<font color = "#114B5F"><b>3.15.22</b></font>', '<font color = "#114B5F"><b>Spring Break</b></font>',"", 
+  '',
+
+'<font color = "#114B5F"><b>Tuesday <br>10.18.22</b></font>', '<font color = "#114B5F"><b>Fall Break</b></font>',"", 
   '',
   '',
   '',      
-  "Week 9 <br> 3.22.22", 'Model <br>Building',"•  mulicollinearity <br> •  stepwise <br> procedures ", 
-  '<a href="https://st47s.com/Math158/Notes/build.html" target = "_blank"><i class="fas fa-book-open"></i> Build</a> <br>  <br> <i class="fas fa-book-open"></i> ALSM 9<br><a href="https://hastie.su.domains/ISLR2/ISLRv2_website.pdf" target = "_blank"><i class="fas fa-book-open"></i> ISLR 6.1 </a>',
-  '<a href="https://m158-lin-mod.netlify.app/slides/modelStrategy.pdf" target = "_blank"><i class="fas fa-book-open"></i> Model Strategy</a> <br> <a href="https://m158-lin-mod.netlify.app/slides/wu14_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 14</a><br> <a href="https://m158-lin-mod.netlify.app/slides/wu15_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 15</a>',
-  '<a href = "https://weallcount.com/2022/03/25/building-compassion-into-your-modelling-variables/" target = "_blank"><i class="fa fa-comments"></i> Compassion + Models</a>',  
+
+"Week 8 <br> 10.20.22", 
+  '• bootstrap confidence <br>intervals',
+  '<a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
+  '',
+  '',
+  '',
   
-    "Week 10 <br> 3.29.22", 'Diagnostics',"•  residuals <br> •  leverage <br> •  influence", 
-  '<a href="https://st47s.com/Math158/Notes/diag2.html" target = "_blank"><i class="fas fa-book-open"></i> Diagnostics II</a> <br> <i class="fas fa-book-open"></i> ALSM 10',
-  '<a href="https://m158-lin-mod.netlify.app/slides/influen_pts.pdf" target = "_blank"><i class="fas fa-book-open"></i> Outliers</a>  <br> <a href="https://m158-lin-mod.netlify.app/slides/wu16_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 16</a> <br> <a href="https://m158-lin-mod.netlify.app/slides/wu17_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 17</a>',
+"Week 9 <br> 10.25.22", 
+  '• Fisher information + <br>• efficiency + <br>• UMVUE',
+  'P&S: 8.7-8.8 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
+  '',
+  '',
+  '',
+
+"Week 10 <br> 11.1.22", 
+  '• hypotehsis testing + <br>• simple hypotheses',
+  'P&S: 9.1 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
+  '',
+  '',
+  '',
+  
+"Week 11 <br> 11.8.22", 
+  '• Neyman-Pearson',
+  'P&S: 9.2 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
+  '',
+  '',
+  '',  
+
+'<font color = "#114B5F"><b>Week 12 <br> 11.15.22</b></font>', 
+'<font color = "#114B5F"><b>review & catch-up</b></font>',
+'<font color = "#114B5F"><b>exam 2 in class<br> 10.17.22</b></font>',
+  '',
+  '',
+  '',
+
+"Week 13 <br> 11.22.22", 
+  '• UMP',
+  'P&S: 9.3 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = 
+"_blank"><i class="fas fa-book-open"></i></a>',
+  '',
+  '',
+  '',  
+
+'<font color = "#114B5F"><b>Thursday <br>11.24.22</b></font>', '<font color = "#114B5F"><b>Thanksgiving</b></font>',"", 
+  '',
+  '',
+  '',      
+
+"Week 14 <br> 11.29.22", 
+  '• two-sided + <br>• t-tests + <br>•  LRT + <br> goodness of fit',
+  'P&S: 9.4-9.6, 10.1 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = 
+"_blank"><i class="fas fa-book-open"></i></a>',
+  '',
+  '',
+  '',
+
+"Week 15 <br> 12.6.22", 
+  '• Bayes tests + <br>• foundational ideas',
+  'P&S: 9.8-9.9 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = 
+"_blank"><i class="fas fa-book-open"></i></a>',
+  '',
+  '',
   '',  
   
-    "Week 11 <br> 4.5.22", 'Ridge Regression',"•  ridge <br> regression", 
-  '<a href="https://st47s.com/Math158/Notes/shrink.html" target = "_blank"><i class="fas fa-book-open"></i> Ridge</a> <br> <i class="fas fa-book-open"></i> ALSM 11.2<br> <a href="https://hastie.su.domains/ISLR2/ISLRv2_website.pdf" target = "_blank"><i class="fas fa-book-open"></i> ISLR 6.2 </a>',
-  '<a href="https://m158-lin-mod.netlify.app/slides/2022-04-07-RR.html" target = "_blank"><i class="fas fa-desktop"></i> Ridge Regression</a> <br> <a href="https://m158-lin-mod.netlify.app/slides/wu18_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 18</a> <br> <a href="https://m158-lin-mod.netlify.app/slides/wu19_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 19</a>',
-  '',  
-    '<font color = "#114B5F"><b>4.5.22</b></font>', '<font color = "#114B5F"><b>Proj 3: MLR</b></font>',
-  '<a href="https://m158-lin-mod.netlify.app/slides/proj3_mlr_158.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> Proj 3: MLR</a>',
-  '',"", 
-  '',
-     "Week 12 <br> 4.12.22", 'catch-up',"•  see Sakai for <br> study materials", 
+"Week 14 <br> 4.26.22", 
   '',
   '',
   '',
-   '<font color = "#114B5F"><b>4.14.22</b></font>', '<font color = "#114B5F"><b>Exam 2</b></font>',"", 
   '',
   '',
-  '',       
-  "Week 13 <br> 4.19.22", 'Lasso',"•  Lasso <br> •  elastic net <br> •  step functions", 
-  '<a href="https://st47s.com/Math158/Notes/shrink.html" target = "_blank"><i class="fas fa-book-open"></i> Lasso</a> <br> <a href="https://hastie.su.domains/ISLR2/ISLRv2_website.pdf" target = "_blank"><i class="fas fa-book-open"></i> ISLR 6.2 </a>',
-  '<a href="https://m158-lin-mod.netlify.app/slides/wu20_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 20</a> <br> <a href="https://m158-lin-mod.netlify.app/slides/wu21_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 21</a>',
-  '',  
   
-     "Week 14 <br> 4.26.22", 'Smoothers',"•  ridge regression <br> •  loess ", 
-  '<a href="https://st47s.com/Math158/Notes/smooth.html" target = "_blank"><i class="fas fa-book-open"></i> Smooth</a> <br>  <a href="https://hastie.su.domains/ISLR2/ISLRv2_website.pdf" target = "_blank"><i class="fas fa-book-open"></i> ISLR 7 </a>',
-  '<a href="https://m158-lin-mod.netlify.app/slides/wu22_ma158_s22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 22</a>',
-  '<a href="http://freerangestats.info/blog/2022/03/26/supreme-court-nominations" target = "_blank"><i class="fa fa-comments"></i> Smoothing as average</a>',
-  
-     '<font color = "#114B5F"><b>5.3.22</b></font>', '<font color = "#114B5F"><b>Exam 3</b></font>',"", 
+'<font color = "#114B5F"><b>Thursday <br> 12.15.22 <br> 2-5pm</b></font>', '<font color = "#114B5F"><b>Final Exam </b></font>',"", 
   '',
   '',
-  '',    
-    '<font color = "#114B5F"><b>5.10.22</b></font>', '<font color = "#114B5F"><b>Proj 4: Beyond<br>Linear + <br>Summary</b></font>',
-  '<a href="https://m158-lin-mod.netlify.app/slides/proj4_final_158.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> Proj 4: Fin</a>',
-  '',"", 
-  ''
+  ''   
   )
 ```
+
 
 ```{r}
 #| echo: false
@@ -154,6 +175,6 @@ schedule %>%
   column_spec(1:6,extra_css = "vertical-align:top;")
 ```
 
-•
-BULLET
-Unicode: U+2022, UTF-8: E2 80 A2
+
+
+
