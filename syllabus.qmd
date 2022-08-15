@@ -126,9 +126,6 @@ Please be proactive and reach out for help as soon as possible to resolve the is
 #### Prerequisites:
 
 The prerequisites for this class are Probability (Math 151 or equivalent) and completion of the sequence of calculus and linear algebra. We rely heavily on these prerequisites, and students with no background in probability or multivariable calculus will find themselves trying to catch up throughout the semester. You should be familiar with topics such as conditional probabilities and expectations, the Central Limit Theorem, moment generating functions, and probability density functions.
-Course Goals:
-
-This is an introduction to mathematical statistics for students with a calculus and probability background. Though the course will be focused on the theoretical aspects of the material, there will be some real world examples in class and in the homework assignments. The goal of the course is to obtain a strong mathematical understanding of the concepts while also understanding how the concepts are used in the real world.
 
 #### Homework:
 

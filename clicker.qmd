@@ -1,26 +1,44 @@
 ---
-title: "github"
-format: html
-editor: visual
+title: "clicker"
+format:
+  html:
+    footnotes-hover: true
+---
+<!-- the two formats are html and revealjs -->
+
+# Clicker Q
+
+to go with **Probability & Statistics** by DeGroot and Schervish.  Math 152 - Statistical Theory.
+
 ---
 
-## Github
+1. The Central Limit Theorem (CLT) says:[^1]
+   a. The sample average (statistic) converges to the true   average (parameter)
+   b. The sample average (statistic) converges to some pont
+   c. The distribution of the sample average (statistic)    converges to a normal distribution
+   d. The distribution of the sample average (statistic)    converges to some distribution
+   e. I have no idea what the CLT says
+   
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+[^1]:  c. The distribution of the sample average (statistic) converges to a normal distribution
 
-## Running Code
+---
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+2. Which cab company was involved?[^2]
+    (a) Very likely the Blue Cab company
+    (b) Sort of likely the Blue Cab company
+    (c) Equally likely Blue and Green Cab companies
+    (d) Sort of likely the Green Cab company
+    (e) Very likely the Green Cab company
 
-```{r}
-1 + 1
-```
+[^2]: (d) Sort of likely the Green Cab company
+---
 
-You can add options to executable code like this
+3.  Consider a continuous probability density function (pdf) given by $f( x | \theta ).$ 
+Which of the following is FALSE:[^3]
+    (a)	$f( x | \theta )  = P(X = x | \theta)$
+    (b)	$f( x | \theta )$ provides information for cal culting      probabilities of X.
+    (c)	$P(X = x) = 0$ if X is continuous.
+    (d)	$f( x | \theta )  = L(\theta | x)$ is the likelihood function
 
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
+[^3]: (a)	$f( x | \theta )  = P(X = x | \theta)$
