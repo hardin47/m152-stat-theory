@@ -65,7 +65,7 @@ I (like many people) am still in the process of learning about diverse perspecti
   
 #### Handouts:
 
-* <a href="images/CB_distsheet.pdf" taget = "_blank">Distribution Sheet</a></li>
+* <a href="images/CB_distsheet.pdf" target = "_blank">Distribution Sheet</a></li>
 * Probability distribution demos: <a href="http://www.stat.cmu.edu/isle/widgets.html" target = "_blank">ISLE widgets</a></li>
 * Fantastic cheat sheet for <a href="http://www.math.wm.edu/~leemis/chart/UDR/UDR.html" target = "_blank">Univariate Distributions</a> created by Lindsey Leemis
 * <a href = "" target = "_blank">Baseball and Bayes</a>
@@ -111,7 +111,7 @@ Additionally, you are required to install RStudio and turn in all R assignments 
 
 #### Canvas
 
-This course uses Canvas as the main learning management system.
+This course uses Canvas as the main learning management system. The Canvas login is <a href = "http://canvas.pomona.edu/" target = "_blank">http://canvas.pomona.edu/</a>.
 If you haven't used Canvas before, I recommend bookmarking <a href = "https://community.canvaslms.com/t5/Student-Guide/tkb-p/student" target = "_blank">Canvas Student Guides</a> and <a href = "https://community.canvaslms.com/t5/Video-Guide/tkb-p/videos#student-videos" target = "_blank">Canvas Student Videos</a> for easy reference to tips and tutorials.
 If you run into an issue with Canvas, help is available.
 
