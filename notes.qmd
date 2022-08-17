@@ -15,6 +15,8 @@ Class notes can be found at <a href="http://st47s.com/Math152/Notes/" target="_b
 
 <p>   </p>
 
-```{r layout="l-page", out.extra='style="border: none;"', echo = FALSE}
-knitr::include_url("https://st47s.com/Math152/Notes/")
-```
+
+:::{.column-page}
+<iframe src="https://st47s.com/Math152/Notes/" title="Class Notes for Math 152" width="1000" height="500" data-external="1"></iframe>
+:::
+

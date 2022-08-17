@@ -7,11 +7,14 @@ format: html
 
 #### Office Hours
 
-Wednesday 8:30-10:30 am PDT  
-Thursday 1:30-3:30 pm PDT  
+Wednesday 8:30-10:30 am  
+Thursday 1:30-3:30 pm   
 Or by Appointment
 
 ##### Mentor: Chris Meng
+
+Wednesday 8-10 pm
+Estella 2113
 
 
 ```{r fig.cap = "Artwork by @allison_horst.", fig.alt = "Rey from Star Wars using the force to wrangle all things R.", preview = TRUE, echo = FALSE}
