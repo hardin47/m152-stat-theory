@@ -1,26 +1,20 @@
 ---
-title: "notes"
+title: "Class Notes"
+description: |
+  Daily class notes for Math 152, Statistical Theory, Pomona College
+author:
+  - name: Jo Hardin 
+    url: https://m152-stat-theory.netlify.app/
+    affiliation: Pomona College
+    affiliation_url: https://hardin47.netlify.app/
 format: html
-editor: visual
 ---
 
-## Notes
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+Class notes can be found at <a href="http://st47s.com/Math152/Notes/" target="_blank">http://st47s.com/Math152/Notes/</a>.
 
-## Running Code
+<p>   </p>
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
+```{r layout="l-page", out.extra='style="border: none;"', echo = FALSE}
+knitr::include_url("https://st47s.com/Math152/Notes/")
 ```
-
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
