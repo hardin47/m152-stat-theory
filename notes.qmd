@@ -6,7 +6,6 @@ author:
   - name: Jo Hardin 
     url: https://m152-stat-theory.netlify.app/
     affiliation: Pomona College
-    affiliation_url: https://hardin47.netlify.app/
 format: html
 ---
 
