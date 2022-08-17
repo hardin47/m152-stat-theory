@@ -26,7 +26,7 @@ website:
       - text: "Clicker Q"
         href: clicker.qmd
     logo: images/st47s.png
-    logo-href: https://hardin47.netlify.app/
+    logo-href: https://m152-stat-theory.netlify.app/
   page-footer:
     left: |
       [{{< fa book >}}](https://hardin47.netlify.app/research/)
