@@ -3,6 +3,8 @@ name: "m152-stat-theory"
 project:
   type: website
   output-dir: _site
+  resources: 
+    - "handout/*"
   
 website:
   title: "Statistical Theory"
