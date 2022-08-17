@@ -1,45 +1,10 @@
 [
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "clicker.html",
+    "href": "clicker.html",
+    "title": "clicker",
     "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "Here’s your roadmap for the semester! Each week, follow the general process outlined below:\n\nEnjoy the notes / text \nAttend class, review the warm-up and solutions if you have any questions after completing it during class.\nComplete the HW assignment ( pdf &  Rmd linked below),  submit the assignment via Gradescope accessed on the course Canvas site.\nDiscuss the reflection questions  and ethics considerations  (see the  class notes) with your classmates, mentor, and professor.\nThe textbook is Probability and Statistics (P&S), by DeGroot and Schervish (either 3rd or 4th edition is fine). You should be able to find it online.\n\n\n\n\n\n\n\n\n \n  \n    date \n    agenda \n    readings \n    homework \n    handouts \n    warm-ups \n  \n \n\n  \n    Week 1  8.30.22 \n    • logistics + • priors + • posteriors \n    P&S: 7.1-7.2   Introduction \n     HW1 pdf   HW1 Rmd   HW1 turn-in \n    some handout\n   \n  WU 1   WU 2 \n  \n  \n    Week 2  9.6.22 \n    • posteriors +  • Bayes estimators \n    P&S: 7.3-7.4   \n     \n     \n     \n  \n  \n    Week 3  9.13.22 \n    • MLE +  • consistency+  • bias +  • MOM \n    P&S: 7.5-7.6   \n     \n     \n     \n  \n  \n    Week 4  9.20.22 \n    • sampling distributions of estimators \n    P&S: 6.1-6.3, 8.1-8.4   \n     \n     \n     \n  \n  \n    Week 5  9.27.22 \n    • bootstrap sampling distributions \n    P&S: 12.6   \n     \n     \n     \n  \n  \n    Week 6  2.22.22 \n    • frequentist, Bayesian intervals \n    P&S: 8.5-8.6   \n     \n     \n     \n  \n  \n    Week 7  10.11.22 \n    review & catch-up \n    exam 1 in class 10.13.22 \n     \n     \n     \n  \n  \n    Tuesday 10.18.22 \n    Fall Break \n     \n     \n     \n     \n  \n  \n    Week 8  10.20.22 \n    • bootstrap confidence intervals   • earthquake! \n     \n     \n     \n     \n  \n  \n    Week 9  10.25.22 \n    • Fisher information + • efficiency + • UMVUE \n    P&S: 8.7-8.8   \n     \n     \n     \n  \n  \n    Week 10  11.1.22 \n    • hypotehsis testing + • simple hypotheses \n    P&S: 9.1   \n     \n     \n     \n  \n  \n    Week 11  11.8.22 \n    • Neyman-Pearson \n    P&S: 9.2   \n     \n     \n     \n  \n  \n    Week 12  11.15.22 \n    review & catch-up \n    exam 2 in class 10.17.22 \n     \n     \n     \n  \n  \n    Week 13  11.22.22 \n    • UMP \n    \\makecell[c]{P&S: 9.3  } \n     \n     \n     \n  \n  \n    Thursday 11.24.22 \n    Thanksgiving \n     \n     \n     \n     \n  \n  \n    Week 14  11.29.22 \n    • two-sided + • t-tests + •  LRT +  goodness of fit \n    \\makecell[l]{P&S: 9.4-9.6, 10.1  } \n     \n     \n     \n  \n  \n    Week 15  12.6.22 \n    • Bayes tests + • foundational ideas \n    \\makecell[c]{P&S: 9.8-9.9  } \n     \n     \n     \n  \n  \n    Week 14  4.26.22 \n     \n     \n     \n     \n     \n  \n  \n    Thursday  12.15.22  2-5pm \n    Final Exam  \n     \n     \n     \n     \n  \n\n\n\n\n\n\n\n\nReusehttps://creativecommons.org/licenses/by/4.0/"
-  },
-  {
-    "objectID": "github.html",
-    "href": "github.html",
-    "title": "github",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "github.html#running-code",
-    "href": "github.html#running-code",
-    "title": "github",
-    "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+    "text": "Footnotes\n\n\n\nThe distribution of the sample average (statistic) converges to a normal distribution\n\n↩︎\n\nSort of likely the Green Cab company\n\n↩︎\n\n\\(f( x | \\theta ) = P(X = x | \\theta)\\)\n\n↩︎\n\nReusehttps://creativecommons.org/licenses/by/4.0/"
   },
   {
     "objectID": "notes.html",
@@ -49,67 +14,18 @@
     "text": "Reusehttps://creativecommons.org/licenses/by/4.0/"
   },
   {
-    "objectID": "notes.html#running-code",
-    "href": "notes.html#running-code",
-    "title": "notes",
-    "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
-  },
-  {
-    "objectID": "syllabus.html",
-    "href": "syllabus.html",
-    "title": "syllabus",
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
     "section": "",
-    "text": "Footnotes\n\n\nadapted from Monica Linden, Brown University↩︎\n\nReusehttps://creativecommons.org/licenses/by/4.0/"
+    "text": "Reusehttps://creativecommons.org/licenses/by/4.0/"
   },
   {
-    "objectID": "syllabus.html#running-code",
-    "href": "syllabus.html#running-code",
-    "title": "syllabus",
-    "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
-  },
-  {
-    "objectID": "clicker.html",
-    "href": "clicker.html",
-    "title": "clicker",
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
     "section": "",
-    "text": "Footnotes\n\n\n\nThe distribution of the sample average (statistic) converges to a normal distribution\n\n↩︎\n\nSort of likely the Green Cab company\n\n↩︎\n\n\\(f( x | \\theta ) = P(X = x | \\theta)\\)\n\n↩︎\n\nReusehttps://creativecommons.org/licenses/by/4.0/"
-  },
-  {
-    "objectID": "clicker.html#running-code",
-    "href": "clicker.html#running-code",
-    "title": "github",
-    "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
-  },
-  {
-    "objectID": "syllabus.html#the-course",
-    "href": "syllabus.html#the-course",
-    "title": "syllabus",
-    "section": "The course",
-    "text": "The course\nStatistical Theory is an introduction to statistics for students with a background in probability theory, calculus, and linear algebra. There is no statistics prerequisite for this class. The course will be focused on the theoretical aspects of the material, though there will be some real world applications in class and in the homework assignments. The idea is to have a strong mathematical understanding of the concepts while also understanding how the concepts are applied in the real world.\nAt the completion of this course, students will:\n\nbe able to derive the methods from introductory statistics using tools from mathematics (i.e., calculus and probability).\nbe able to justify the use of a particular method (technical conditions).\nbe able to weigh advantages and disadvantages of different estimation techniques (e.g., bias, variability, resistance to outliers).\nknow to and how to communicate results effectively.\n\nAnonymous Feedback As someone who is constantly learning and growing in many ways, I welcome your feedback about the course, the classroom dynamics, or anything else you’d like me to know. There is a link to an anonymous feedback form on the landing page of our Sakai webpage. Please provide me with feedback at any time!"
-  },
-  {
-    "objectID": "syllabus.html#student-learning-outcomes",
-    "href": "syllabus.html#student-learning-outcomes",
-    "title": "syllabus",
-    "section": "Student Learning Outcomes:",
-    "text": "Student Learning Outcomes:\nBy the end of the semester, students will be able to do the following:\n\nunderstand the structure of a linear model, including: simple linear regression, multiple linear regression, ridge regression, Lasso, and splines.\nknow when a linear model is appropriate and what conclusions can be drawn given a particular dataset, including: when are p-values appropriate to use? when is prediction more appropriate? when can or cannot causation be implied?\nuse graphical tools to investigate models associated with the data at hand, including: exploring data graphically, using graphics to understand leverage and influence values, visualizing smooth models.\ncommunicate results effectively."
-  },
-  {
-    "objectID": "syllabus.html#diversity-and-inclusion-statement",
-    "href": "syllabus.html#diversity-and-inclusion-statement",
-    "title": "syllabus",
-    "section": "Diversity and Inclusion Statement",
-    "text": "Diversity and Inclusion Statement\n(adapted from Monica Linden, Brown University):\nIn an ideal world, science would be objective. However, much of science is subjective and is historically built on a small subset of privileged voices. In this class, we will make an effort to recognize how science (and statistics!) has played a role in both understanding diversity as well as in promoting systems of power and privilege. I acknowledge that it is possible that there may be both overt and covert biases in the material due to the lens with which it was written, even though the material is primarily of a scientific nature. Integrating a diverse set of experiences is important for a more comprehensive understanding of science. I would like to discuss issues of diversity in statistics as part of the course from time to time.\nPlease contact me if you have any suggestions to improve the quality of the course materials.\nFurthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities (including race, gender, class, sexuality, religion, ability, etc.) To help accomplish this:\n\nIf you have a name and/or set of pronouns that differ from those that appear in your official records, please let me know!\nIf you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to come and talk with me. You can also relay information to me via your mentors. I want to be a resource for you. If you prefer to speak with someone outside of the course, the math liaisons, Dean of Students, or QSC staff are all excellent resources. I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it. As a participant in course discussions, you should also strive to honor the diversity of your classmates."
-  },
-  {
-    "objectID": "syllabus.html#logistical-details",
-    "href": "syllabus.html#logistical-details",
-    "title": "syllabus",
-    "section": "Logistical Details",
-    "text": "Logistical Details\n\nText:\nProbability and Statistics, by DeGroot and Schervish (either 3rd or 4th edition is fine)\n\n\nHandouts:\n\nDistribution Sheet\n\nProbability distribution demos: ISLE widgets\n\nFantastic cheat sheet for Univariate Distributions created by Lindsey Leemis\nBaseball and Bayes\nHow Many Tanks?\nBayesian Distribution of Normal\n\nExam 1 – Thursday, October 13th\nExam 2 – Thursday, November 17th\nFinal Exam – Thursday, December 15th, 2-5pm\nR links: Youtube videos on getting started with R and RStudio: Introduction to RStudio Enough R: http://cran.r-project.org/web/packages/mosaic/vignettes/V1MinimalR.pdf Google for R: http://www.rseek.org/ Data Wrangling Cheatsheet: http://www.rstudio.com/resources/cheatsheets/ R tutorial Great tutorials through the Coding Club An Introduction to R, Venables & Smith R Language Definition, R Core Team Another tutorial, with exercises & solutions\nDescription:\nMath 152 is an introduction to statistics for students with a background in probability theory, calculus, and linear algebra. There is no statistics prerequisite for this class. The course will be focused on the theoretical aspects of the material, though there will be some real world applications in class and in the homework assignments. The idea is to have a strong mathematical understanding of the concepts while also understanding how the concepts are applied in the real world. Prerequisites:\nThe prerequisites for this class are Probability (Math 151 or equivalent) and completion of the sequence of calculus and linear algebra. We rely heavily on these prerequisites, and students with no background in probability or multivariable calculus will find themselves trying to catch up throughout the semester. You should be familiar with topics such as conditional probabilities and expectations, the Central Limit Theorem, moment generating functions, and probability density functions. Course Goals:\nThis is an introduction to mathematical statistics for students with a calculus and probability background. Though the course will be focused on the theoretical aspects of the material, there will be some real world examples in class and in the homework assignments. The goal of the course is to obtain a strong mathematical understanding of the concepts while also understanding how the concepts are used in the real world.\nAt the completion of this course, students will:\nbe able to derive the methods from introductory statistics using tools from mathematics (i.e., calculus and probability) be able to justify the use of a particular method (technical conditions). be able to weigh advantages and disadvantages of different estimation techniques (e.g., bias, variability, resistance to outliers) know to and how to communicate results effectively. Homework:\nHomework will be assigned from the text and due every Friday at 5pm. No late homework is accepted, but one homework grade will be dropped. Homework will be turned in via Gradescope on Sakai. After every single class period, you will turn in the in-class warm-up assignment via Gradescope on Sakai.\nIdeally, you will use a scanner app on a mobile device to create .pdf documents of your assignments (both HW and warm-ups). If you do not have access to a scanner app, please let me know ASAP, and we will figure out a way for you to turn in assignments.\nFor help getting started with Gradescope: Get started page with links: https://www.gradescope.com/get_started First steps: https://www.youtube.com/watch?v=F2e9AK7pNFY Second steps: https://www.youtube.com/watch?v=VMM16gdREfg Annotation and navigation: https://www.youtube.com/watch?v=j–Lu90c_9I How to submit as a student: https://www.youtube.com/watch?v=KMPoby5g_nE Computing:\nR and RStudio will be used for all homework assignments. You can use R on the Pomona server: https://rstudio.pomona.edu/ (All Pomona students will be able to log in immediately. Non-Pomona students need to get Pomona login information.) Alternatively, feel free to download R onto your own computer. R is freely available at http://www.r-project.org/ and is already installed on college computers. Additionally, you are required to install R Studio and turn in all R assignments using R Markdown. http://rstudio.org/. (You can use the LaTeX compiler at: https://yihui.name/tinytex/) Participation:\nThis class will be interactive which means that I hope you come to class. I recognize that not everyone lives in a time zone conducive to being at class. If you can be in class, I hope you will join us. If you can’t be in class, you should still stay up with the class materials by watching videos and by turning in daily warm-up assignments.\nWhen you are in breakout rooms working on problems, I hope that you will turn on your camera and interact with your peers! If you can’t turn on your camera, I hope that you will have a photo of yourself (instead of a black screen) so that our class feels more like a community. This class will be using Discord to stay in touch. We will have office hours on Discord and it will also serve as a place to ask each other questions and stay up to date with the material. See Sakai for the Discord login information. Academic Honesty:\nWe will have take-home asynchronous exams. As such, you are on your honor to present only your work as part of that assessment. Below, I’ve provided Pomona’s academic honesty policy. But before the policy, I’ve given some thoughts on cheating which I have taken from Nick Ball’s CHEM 147 Collective (thank you, Prof Ball!). Prof Ball gives us all something to think about when we are learning in a classroom as well as on our journey to become scientists and professionals: There are many known reasons why we may feel the need to “cheat” on problem sets or exams:\nAn academic environment that values grades above learning. Financial aid is critical for remaining in school that places undue pressure on maintaining a high GPA. Navigating school, work, and/or family obligations that have diverted focus from class. Challenges balancing coursework and mental health. Balancing academic, family, peer, or personal issues. Being accused of cheating – whether it has occurred or not – can be devastating for students. The college requires me to respond to potential academic dishonesty with a process that is very long and damaging. As your instructor, I care about you and want to offer alternatives to prevent us from having to go through this process. If you find yourself in a situation where “cheating” seems like the only option:\nPlease come talk to me. We will figure this out together.\nPomona College is an academic community, all of whose members are expected to abide by ethical standards both in their conduct and in their exercise of responsibilities toward other members of the community. The college expects students to understand and adhere to basic standards of honesty and academic integrity. These standards include, but are not limited to, the following: In projects and assignments prepared independently, students never represent the ideas or the language of others as their own. Students do not destroy or alter either the work of other students or the educational resources and materials of the College. Students neither give nor receive assistance in examinations. Students do not take unfair advantage of fellow students by representing work completed for one course as original work for another or by deliberately disregarding course rules and regulations. In laboratory or research projects involving the collection of data, students accurately report data observed and do not alter these data for any reason. Advice:\nPlease email and / or set up a time to talk if you have any questions about or difficulty with the material, the computing, or the course. Talk to me as soon as possible if you find yourself struggling. The material will build on itself, so it will be much easier to catch up if the concepts get clarified earlier rather than later. This semester is going to be fun. Let’s do it.\n\n\n\n\n\n\nGrading\n\n\n\n\n25% Homework\n50% Midterms\n20% Final Exam\n5% Class Participation"
+    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\n\n\n\nReusehttps://creativecommons.org/licenses/by/4.0/"
   },
   {
     "objectID": "hw/MA152_HW1f22.html",
@@ -117,5 +33,26 @@
     "title": "Math 152 - Statistical Theory - Homework 1",
     "section": "",
     "text": "Reusehttps://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Here’s your roadmap for the semester! Each week, follow the general process outlined below:\n\nEnjoy the notes / text \nAttend class, review the warm-up and solutions if you have any questions after completing it during class.\nComplete the HW assignment ( pdf &  Rmd linked below),  submit the assignment via Gradescope accessed on the course Canvas site.\nDiscuss the reflection questions  and ethics considerations  (see the  class notes) with your classmates, mentor, and professor.\nThe textbook is Probability and Statistics (P&S), by DeGroot and Schervish (either 3rd or 4th edition is fine). You should be able to find it online.\n\n\n\n\n\n\n\n\n \n  \n    date \n    agenda \n    readings \n    homework \n    handouts \n    warm-ups \n  \n \n\n  \n    Week 1  8.30.22 \n    • logistics + • priors + • posteriors \n    P&S: 7.1-7.2   Introduction \n     HW1 pdf   HW1 Rmd   HW1 turn-in \n    some handout\n   \n  WU 1   WU 2 \n  \n  \n    Week 2  9.6.22 \n    • posteriors +  • Bayes estimators \n    P&S: 7.3-7.4   \n     \n     \n     \n  \n  \n    Week 3  9.13.22 \n    • MLE +  • consistency+  • bias +  • MOM \n    P&S: 7.5-7.6   \n     \n     \n     \n  \n  \n    Week 4  9.20.22 \n    • sampling distributions of estimators \n    P&S: 6.1-6.3, 8.1-8.4   \n     \n     \n     \n  \n  \n    Week 5  9.27.22 \n    • bootstrap sampling distributions \n    P&S: 12.6   \n     \n     \n     \n  \n  \n    Week 6  2.22.22 \n    • frequentist, Bayesian intervals \n    P&S: 8.5-8.6   \n     \n     \n     \n  \n  \n    Week 7  10.11.22 \n    review & catch-up \n    exam 1 in class 10.13.22 \n     \n     \n     \n  \n  \n    Tuesday 10.18.22 \n    Fall Break \n     \n     \n     \n     \n  \n  \n    Week 8  10.20.22 \n    • bootstrap confidence intervals   • earthquake! \n     \n     \n     \n     \n  \n  \n    Week 9  10.25.22 \n    • Fisher information + • efficiency + • UMVUE \n    P&S: 8.7-8.8   \n     \n     \n     \n  \n  \n    Week 10  11.1.22 \n    • hypotehsis testing + • simple hypotheses \n    P&S: 9.1   \n     \n     \n     \n  \n  \n    Week 11  11.8.22 \n    • Neyman-Pearson \n    P&S: 9.2   \n     \n     \n     \n  \n  \n    Week 12  11.15.22 \n    review & catch-up \n    exam 2 in class 10.17.22 \n     \n     \n     \n  \n  \n    Week 13  11.22.22 \n    • UMP \n    \\makecell[c]{P&S: 9.3  } \n     \n     \n     \n  \n  \n    Thursday 11.24.22 \n    Thanksgiving \n     \n     \n     \n     \n  \n  \n    Week 14  11.29.22 \n    • two-sided + • t-tests + •  LRT +  goodness of fit \n    \\makecell[l]{P&S: 9.4-9.6, 10.1  } \n     \n     \n     \n  \n  \n    Week 15  12.6.22 \n    • Bayes tests + • foundational ideas \n    \\makecell[c]{P&S: 9.8-9.9  } \n     \n     \n     \n  \n  \n    Week 14  4.26.22 \n     \n     \n     \n     \n     \n  \n  \n    Thursday  12.15.22  2-5pm \n    Final Exam  \n     \n     \n     \n     \n  \n\n\n\n\n\n\n\n\nReusehttps://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Reusehttps://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "syllabus",
+    "section": "",
+    "text": "Footnotes\n\n\nadapted from Monica Linden, Brown University↩︎\n\nReusehttps://creativecommons.org/licenses/by/4.0/"
   }
 ]
