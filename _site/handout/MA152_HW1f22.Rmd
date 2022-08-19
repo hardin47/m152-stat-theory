@@ -50,12 +50,21 @@ General notes on homework assignments (also see syllabus for policies and sugges
 
 ### Assignment
 
+#### Goals:
+
+In this assignment, the fun will include:
+
+* getting started using R and the RStudio IDE.
+* reviewing probability density functions (pdfs).
+* working with pdfs in R.
+* turning assignments in using Gradescope (via Canvas).
+
 #### 1:  Community Q
 Describe one thing you learned from someone (student, mentor, professor) in our class this week (it could be: content, logistical help, background material, R information, etc.)  1-3 sentences.
 
 #### 2: R - code provided, use help()
 
-Note: when going through the R code, make sure you understand what **ever** line of code does!  If you don't understand, as the professor, the mentor, or a friend.
+Note: when going through the R code, make sure you understand what **ever** line of code does!  If you don't understand, as the professor, the mentor, or a peer.
 
 Children's IQ scores are (created to be) normally distributed with a mean of 100 and a standard deviation of 15. One might, for example, be interested in the proportion of children having an IQ between 80 and 120.  One might also randomly generate 47 students from such a population and create a histogram.
 
