@@ -47,7 +47,7 @@ to go with **Probability & Statistics** by DeGroot and Schervish.  Math 152 - St
 3.  Consider a continuous probability density function (pdf) given by $f( x | \theta ).$ 
 Which of the following is FALSE:[^3]
     (a)	$f( x | \theta )  = P(X = x | \theta)$
-    (b)	$f( x | \theta )$ provides information for cal culting      probabilities of X.
+    (b)	$f( x | \theta )$ provides information for calculating probabilities of X.
     (c)	$P(X = x) = 0$ if X is continuous.
     (d)	$f( x | \theta )  = L(\theta | x)$ is the likelihood function
 
