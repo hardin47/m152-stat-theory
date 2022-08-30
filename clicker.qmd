@@ -1,7 +1,7 @@
 ---
 title: "clicker"
 format:
-  html:
+  revealjs:
     footnotes-hover: true
     reference-location: document
 ---
@@ -24,7 +24,7 @@ to go with **Probability & Statistics** by DeGroot and Schervish.  Math 152 - St
 
 1. The Central Limit Theorem (CLT) says:[^1]
    a. The sample average (statistic) converges to the true   average (parameter)
-   b. The sample average (statistic) converges to some pont
+   b. The sample average (statistic) converges to some point
    c. The distribution of the sample average (statistic)    converges to a normal distribution
    d. The distribution of the sample average (statistic)    converges to some distribution
    e. I have no idea what the CLT says
