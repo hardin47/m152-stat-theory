@@ -68,8 +68,8 @@ I (like many people) am still in the process of learning about diverse perspecti
   
 #### Handouts:
 
-* <a href="images/CB_distsheet.pdf" target = "_blank">Distribution Sheet</a></li>
-* Probability distribution demos: <a href="http://www.stat.cmu.edu/isle/widgets.html" target = "_blank">ISLE widgets</a></li>
+* <a href="handout/CB_distsheet.pdf" target = "_blank">Distribution Sheet</a>
+* Probability distribution demos: <a href="http://www.stat.cmu.edu/isle/widgets.html" target = "_blank">ISLE widgets</a>
 * Fantastic cheat sheet for <a href="http://www.math.wm.edu/~leemis/chart/UDR/UDR.html" target = "_blank">Univariate Distributions</a> created by Lindsey Leemis
 * <a href = "" target = "_blank">Baseball and Bayes</a>
 * <a href = "" target = "_blank">How Many Tanks?</a>
