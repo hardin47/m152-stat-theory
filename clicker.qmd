@@ -1,7 +1,7 @@
 ---
 title: "clicker"
 format:
-  revealjs:
+  html:
     footnotes-hover: true
     reference-location: document
 ---
@@ -25,8 +25,8 @@ to go with **Probability & Statistics** by DeGroot and Schervish.  Math 152 - St
 1. The Central Limit Theorem (CLT) says:[^1]
    a. The sample average (statistic) converges to the true   average (parameter)
    b. The sample average (statistic) converges to some point
-   c. The distribution of the sample average (statistic)    converges to a normal distribution
-   d. The distribution of the sample average (statistic)    converges to some distribution
+   c. The distribution of the sample average (statistic) converges to a normal distribution
+   d. The distribution of the sample average (statistic) converges to some distribution
    e. I have no idea what the CLT says
    
 
@@ -34,7 +34,7 @@ to go with **Probability & Statistics** by DeGroot and Schervish.  Math 152 - St
 
 ---
 
-2. Which cab company was involved?[^2]
+2. Which cab company was involved (see example 2.2 in the notes)?[^2]
     (a) Very likely the Blue Cab company
     (b) Sort of likely the Blue Cab company
     (c) Equally likely Blue and Green Cab companies
@@ -47,8 +47,94 @@ to go with **Probability & Statistics** by DeGroot and Schervish.  Math 152 - St
 3.  Consider a continuous probability density function (pdf) given by $f( x | \theta ).$ 
 Which of the following is FALSE:[^3]
     (a)	$f( x | \theta )  = P(X = x | \theta)$
-    (b)	$f( x | \theta )$ provides information for calculating probabilities of X.
+    (b)	$f( x | \theta )$ provides info for calculating probabilities of X.
     (c)	$P(X = x) = 0$ if X is continuous.
     (d)	$f( x | \theta )  = L(\theta | x)$ is the likelihood function
 
 [^3]: (a)	$f( x | \theta )  = P(X = x | \theta)$
+
+---
+
+4. To find a marginal distribution **of X** from a joint distribution **of X & Y** you should (assume everything is continuous),[^4]
+    (a) differentiate the joint distribution with respect to X.
+    (b) differentiate the joint distribution with respect to Y.
+    (c) integrate the joint distribution with respect to X.
+    (d) integrate the joint distribution with respect to Y.
+    (e) I have no idea what a marginal distribution is.
+    
+[^4]: (d) integrate the joint distribution with respect to Y.
+
+---
+
+5. A continuous pdf (of a random variable $X$ with parameter $\theta$) should[^5]
+   (a) Integrate to a constant ($dx$)
+   (b) Integrate to a constant ($d\theta$)
+   (c) Integrate to 1 ($dx$)
+   (d) Integrate to 1 ($d\theta$)
+   (e) not need to integrate to anything special.
+
+[^5]: (c) Integrate to 1 ($dx$)
+
+---
+
+6. R / R Studio
+   (a) all good
+   (b) started, progress is slow and steady
+   (c) started, very stuck
+   (d) haven’t started yet
+   (e) what do you mean by "R"?
+
+---
+
+7. In terms of the R for the homework…
+   (a) I was able to do the whole thing.
+   (b) I understood the code part, but I couldn’t get the Markdown file to compile.
+   (c) I didn’t understand the code at all.
+   (d) I couldn’t get R or R Studio installed.
+   (e) I haven't tried to work on the homework yet.
+
+---
+
+8.  A beta distribution[^8]
+    (a) has support on [0,1]
+    (b) has parameters $\alpha$ and $\beta$ which represent, respectively, the mean and variance
+    (c) is discrete
+    (d) has equal mean and variance
+    (e) has equal mean and standard deviation
+  
+[^8]: (a) has support on [0,1]
+
+---
+
+9.  What types of distributions are the following?[^9]
+    (a) prior = marginal    & posterior = joint
+    (b) prior = joint       & posterior = conditional
+    (c) prior = conditional & posterior = joint
+    (d) prior = marginal    & posterior = conditional
+    (e) prior = joint       & posterior = marginal 
+
+[^9]: (d) prior = marginal & posterior = conditional
+
+---
+
+10. Which of these are incorrect conclusions?[^10]
+    (a) $\theta | \underline{X} \sim$ Beta (4,12)
+    (b) $\xi(\theta | \underline{X}) \sim$  Beta (4,12)
+    (c) $\xi(\theta | \underline{X}) \propto$ Beta (4,12)
+    (d) $\xi(\theta | \underline{X}) \propto \theta^{4-1} (1-\theta)^{12-1}$
+    (e) $\xi(\theta | \underline{X}) = \frac{1}{B(4,12)} \theta^{4-1}(1-\theta)^{12-1}$ 
+   
+[^10]: Both (b) $\xi(\theta | \underline{X}) \sim$  Beta (4,12) and (c) $\xi(\theta | \underline{X}) \propto$ Beta (4,12) are incorrect.  (b) because the value to the left of the $\sim$ must be a random variable.  (c) because the value to the right of the $\propto$ must be a function.
+
+---
+
+11. What is the integrating constant for the pdf, $h(w)$?[^11]
+    (a) $\frac{\Gamma(w+k)}{\Gamma(w)\Gamma(k)}$
+    (b) 1/[$w^k \Gamma(k)$]
+    (c) 1 / $\sqrt{2\pi k^2}$
+    (d) 1/[$\Gamma(k/2)$]
+    (e) 1/[$2^{k/2} \Gamma(k/2)$]
+
+$$h(w) \propto w^{k/2-1}e^{-w/2} \ \ \ \ \ \ \ \ \ w>0$$
+
+[^11]: (e) 1/[$2^{k/2} \Gamma(k/2)$]
