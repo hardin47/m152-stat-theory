@@ -27,8 +27,6 @@ website:
         href: notes.qmd
       - text: "Clicker Q"
         href: clicker_study.qmd
-      - text: "Clicker Slides"
-        href: clicker_slides.qmd
     logo: images/st47s.png
     logo-href: https://m152-stat-theory.netlify.app/
   page-footer:
