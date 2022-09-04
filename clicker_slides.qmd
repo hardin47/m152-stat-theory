@@ -1,0 +1,8 @@
+---
+format:
+  revealjs:
+    footnotes-hover: true
+    reference-location: document
+---
+
+{{< include clicker.qmd >}}

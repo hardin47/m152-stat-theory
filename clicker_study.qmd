@@ -1,0 +1,9 @@
+---
+format:
+  html:
+    footnotes-hover: true
+    reference-location: document
+---
+
+{{< include clicker.qmd >}}
+

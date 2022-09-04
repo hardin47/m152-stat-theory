@@ -1,9 +1,4 @@
 ---
-title: "clicker"
-format:
-  html:
-    footnotes-hover: true
-    reference-location: document
 ---
 <!-- the two formats are html and revealjs -->
 
