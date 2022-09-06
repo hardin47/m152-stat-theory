@@ -5,5 +5,13 @@ format:
     reference-location: document
 ---
 
+```{=html}
+<style>
+.reveal ol ol {
+   list-style-type: lower-alpha;
+}
+</style>
+```
+
 {{< include clicker.qmd >}}
 

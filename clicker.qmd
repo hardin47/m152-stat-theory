@@ -133,3 +133,54 @@ Which of the following is FALSE:[^3]
 $$h(w) \propto w^{k/2-1}e^{-w/2} \ \ \ \ \ \ \ \ \ w>0$$
 
 [^11]: (e) 1/[$2^{k/2} \Gamma(k/2)$]
+
+---
+
+12. Suppose the data come from an exponential distribution with a parameter whose prior is given by a gamma distribution.  The posterior is known to be conjugate, so its distribution must be in what family?[^12]  
+    (a) exponential
+    (b) gamma
+    (c) normal
+    (d) beta
+    (e) Poisson
+
+[^12] (b) gamma
+
+---
+
+13. A prior is improper if[^13]
+    (a) it conveys no real information.
+    (b) it isn’t conjugate.
+    (c) it doesn’t integrate to one.
+    (d) it swears a lot.
+    (e) it isn’t on your distribution sheet.
+
+[^13] (c) it doesn’t integrate to one.
+
+---
+
+14. Given a prior: $\theta \sim N(\mu_0, \nu_0^2)$  
+And a data likelihood: $X | \theta \sim N(\theta, \sigma^2)$  
+You collect n data values, what is your best guess of $\theta?$[^14]  
+     (a) $\overline{X}$
+     (b) $\mu_0$ 
+     (c) $\mu_1 = \frac{\sigma^2 \mu_0 + n \nu_0 \overline{X}}{\sigma^2 + n \nu_0}$  
+     (d) median of $N(\mu_1, \nu_1^2 = \frac{\sigma^2 \nu_0^2}{\sigma^2 + n \nu_0^2})$  
+     (e) 47
+
+[^14] $\mu_1 = \frac{\sigma^2 \mu_0 + n \nu_0 \overline{X}}{\sigma^2 + n \nu_0}$ 
+---
+
+<!--Put in a question with x-bar and the prior mean, what is the posterior mean going to be?  Weighted average… then do it again with a huge n.
+
+---
+-->
+
+15.  The Bayes estimator is sensitive to[^15]
+     (a) the posterior mean
+     (b) the prior mean
+     (c) the sample size
+     (d) the data values
+     (e) some of the above
+
+[^15] (e) some of the above (the Bayes estimator **is** the posterior mean, it is sensitive to the rest of it.)
+
