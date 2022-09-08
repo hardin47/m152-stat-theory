@@ -184,3 +184,21 @@ You collect n data values, what is your best guess of $\theta?$[^14]
 
 [^15]: (e) some of the above (the Bayes estimator **is** the posterior mean, it is sensitive to the rest of it.)
 
+---
+
+16. The range (output) of the Bayesian MSE includes:[^16]
+     (a) theta
+     (b) the data
+
+[^16]: (b) the data
+
+---
+
+17. The range (output) of the frequentist MSE includes:[^17]
+     (a) theta
+     (b) the data
+
+[^17]: (a) theta
+
+---
+
