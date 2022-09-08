@@ -42,7 +42,7 @@ schedule <- tribble(
   'P&S: 7.3-7.4 <br> <a href="http://st47s.com/Math152/Notes/bayesian-estimation.html#conjugate-prior-distributions" target = "_blank"><i class="fas fa-book-open"></i> Bayes (2.4, 2.4, 2.6, 2.7)</a>',
   '<a href="https://m152-stat-theory.netlify.app/handout/MA152_HW2f22.pdf" target = "_blank"><i class="fa-solid fa-file-pdf"></i> HW2 pdf</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/MA152_HW2f22.Rmd" target = "_blank"><i class="fa-brands fa-r-project"></i> HW2 Rmd</a> <br> <a href="https://canvas.pomona.edu/" target = "_blank"><i class="fa-solid fa-paper-plane"></i> HW2 turn-in</a>',
   '<a href="handout/baseball_bayes_2022.pdf" target = "_blank">Baseball and Bayes</a>',
-  '<a href="https://m152-stat-theory.netlify.app/handout/wu3_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 3</a> <br> <a href="https://m152-stat-theory.netlify.app/hw/wu4_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 4</a>',
+  '<a href="https://m152-stat-theory.netlify.app/handout/wu3_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 3</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/wu4_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 4</a>',
 
 "Week 3 <br> 9.13.22",   
   '• MLE + <br> • consistency + <br> • bias + <br> • MOM',
