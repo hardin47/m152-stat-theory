@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.60">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="write your name here">
+
+<title>Statistical Theory - Math 152 - Statistical Theory - Homework 3</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: 1;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="https://m152-stat-theory.netlify.app/">
+    <img src="../images/st47s.png" alt="">
+    <span class="navbar-title">Statistical Theory</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html">Syllabus</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../notes.html">Class Notes</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../clicker_study.html">Clicker Q</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Math 152 - Statistical Theory - Homework 3</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>write your name here </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<section id="important-note" class="level2">
+<h2 class="anchored" data-anchor-id="important-note">Important Note:</h2>
+<p>You should work to turn in assignments that are clear, communicative, and concise. Part of what you need to do is not print pages and pages of output. Additionally, you should remove these exact sentences and the information about HW scoring below.</p>
+<p>Click on the <em>Knit to PDF</em> icon at the top of R Studio to run the R code and create a PDF document simultaneously. [PDF will only work if either (1) you are using R on the network, or (2) you have LaTeX installed on your computer. Lightweight LaTeX installation here: https://yihui.name/tinytex/]</p>
+<blockquote class="blockquote">
+<p>Either use the college’s RStudio server (https://rstudio.pomona.edu/) or install R and R Studio on to your personal computer. See: https://research.pomona.edu/johardin/math152f20/ for resources.</p>
+</blockquote>
+<div class="cell">
+
+</div>
+<section id="assignment" class="level3">
+<h3 class="anchored" data-anchor-id="assignment">Assignment</h3>
+<section id="goals" class="level4">
+<h4 class="anchored" data-anchor-id="goals">Goals:</h4>
+<p>In this assignment, the fun will include:</p>
+<ul>
+<li>practice using and creating prior distributions.</li>
+<li>practice using and creating posterior distributions.</li>
+<li>using R to visualize how different parameter values change the prior and posterior distributions.</li>
+</ul>
+<p><strong>Book problems</strong></p>
+<ul>
+<li>Feel free to do the book problems with a pencil or in LaTeX (RMarkdown supports writing mathematics using LaTeX).<br>
+</li>
+<li>If you use a pencil, you can take a picture of the problem(s), and include the image(s) using (remove the tick marks to make it work):</li>
+</ul>
+<pre><code>![](myimage.jpeg)</code></pre>
+<ul>
+<li><p>Note that myimage.jpeg needs to live in the same folder as the relevant .Rmd file (maybe you called the folder “math 152 hw” and put it on your desktop?)</p></li>
+<li><p>Saving as jpg, jpeg, png, or pdf should work, but make sure to specify the exact name of the file.</p></li>
+<li><p>If you have the 3rd edition of the book, the problems will be the same unless they don’t exist – that is, the 4th edition <em>added</em> problems but didn’t change the order of them. Ask me if you want to see the 4th edition problems.</p></li>
+</ul>
+</section>
+<section id="community-q" class="level4">
+<h4 class="anchored" data-anchor-id="community-q">1: Community Q</h4>
+<p>Describe one thing you learned (not <strong>during</strong> class) from a member of the class (student, mentor, professor) – it could be: content, logistical help, background material, R information, etc. 1-3 sentences.</p>
+</section>
+<section id="section" class="level4">
+<h4 class="anchored" data-anchor-id="section">2: 7.3.21</h4>
+<p>Suppose that <span class="math inline">\(X_1, \ldots , X_n\)</span> form a random sample from the exponential distribution with parameter <span class="math inline">\(\theta\)</span>. Let the prior distribution of <span class="math inline">\(\theta\)</span> be improper with “p.d.f.” 1/<span class="math inline">\(\theta\)</span> for <span class="math inline">\(\theta &gt; 0\)</span>. Find the posterior distribution of <span class="math inline">\(\theta\)</span> and show that the posterior mean of <span class="math inline">\(\theta\)</span> is <span class="math inline">\(1/\overline{X}\)</span>. (pay attention to whether you have <span class="math inline">\(\theta\)</span> or <span class="math inline">\(1/\theta\)</span> from the distribution sheet.)</p>
+</section>
+<section id="section-1" class="level4">
+<h4 class="anchored" data-anchor-id="section-1">3: 7.4.3</h4>
+<p>Consider again the conditions of Exercise 7.4.2. Suppose that the prior distribution of <span class="math inline">\(\theta\)</span> is as given in Exercise 7.4.2, and suppose again that 20 items are selected at random from the shipment.</p>
+<ol type="a">
+<li>For what number of defective items in the sample will the Bayesian mean squared error of the Bayes estimate be a maximum? (The Bayesian MSE is the variance of the posterior.)</li>
+<li>For what number will the Bayesian mean squared error of the Bayes estimate be a minimum? (The Bayesian MSE is the variance of the posterior.)</li>
+</ol>
+</section>
+<section id="section-2" class="level4">
+<h4 class="anchored" data-anchor-id="section-2">4: 7.4.6</h4>
+<p>Suppose that a random sample of size <span class="math inline">\(n\)</span> is taken from a Poisson distribution for which the value of the mean <span class="math inline">\(\theta\)</span> is unknown, and the prior distribution of <span class="math inline">\(\theta\)</span> is a gamma distribution for which the mean is <span class="math inline">\(\mu_0\)</span>. Show that the mean of the posterior distribution of <span class="math inline">\(\theta\)</span> will be a weighted average having the form <span class="math inline">\(\gamma \overline{X} + (1 - \gamma) \mu_0\)</span>, and show that <span class="math inline">\(\gamma \rightarrow 1\)</span> as <span class="math inline">\(n \rightarrow \infty\)</span>.</p>
+</section>
+<section id="section-3" class="level4">
+<h4 class="anchored" data-anchor-id="section-3">5: 7.4.10</h4>
+<p>Suppose that the time in minutes required to serve a customer at a certain facility has an exponential distribution for which the value of the parameter <span class="math inline">\(\theta\)</span> is unknown, the prior distribution of <span class="math inline">\(\theta\)</span> is a gamma distribution for which the mean is 0.2 and the standard deviation is 1, and the average time required to serve a random sample of 20 customers is observed to be 3.8 minutes. What is the Bayes estimate of <span class="math inline">\(\theta\)</span>? (See Exercise 12 of Sec. 7.3. and pay attention to whether you have <span class="math inline">\(\beta\)</span> or <span class="math inline">\(1/\beta\)</span> from the distribution sheet.)</p>
+</section>
+<section id="section-4" class="level4">
+<h4 class="anchored" data-anchor-id="section-4">6: 7.4.12</h4>
+<p>Let <span class="math inline">\(\theta\)</span> denote the proportion of registered voters in a large city who are in favor of a certain proposition. Suppose that the value of <span class="math inline">\(\theta\)</span> is unknown, and two statisticians A and B assign to <span class="math inline">\(\theta\)</span> the following different prior p.d.f.s <span class="math inline">\(\xi_A(\theta)\)</span> and <span class="math inline">\(\xi_B(\theta)\)</span>, respectively: <span class="math display">\[\begin{eqnarray*}
+\xi_A(\theta) &amp;=&amp; 2\theta \mbox{ for } 0 &lt; \theta &lt;1,\\
+\xi_B(\theta) &amp;=&amp; 4\theta^3 \mbox{ for } 0 &lt; \theta &lt;1.
+\end{eqnarray*}\]</span></p>
+<p>In a random sample of 1000 registered voters from the city, it is found that 710 are in favor of the proposition.</p>
+<ol type="a">
+<li>Find the posterior distribution that each statistician assigns to <span class="math inline">\(\theta\)</span>.<br>
+</li>
+<li>Find the Bayes estimate for each statistician.<br>
+</li>
+<li>Show that after the opinions of the 1000 registered voters in the random sample had been obtained, the Bayes estimates for the two statisticians could not possibly differ by more than 0.002, regardless of the number in the sample who were in favor of the proposition.</li>
+</ol>
+</section>
+<section id="r-baseball-bayes" class="level4">
+<h4 class="anchored" data-anchor-id="r-baseball-bayes">7: R Baseball &amp; Bayes</h4>
+<p>Consider the baseball problem we discussed in class. (See <a href="https://m152-stat-theory.netlify.app/handout/baseball_bayes_2022.pdf">website</a> for a copy of the handout.)<br>
+Let <span class="math inline">\(\alpha_0\)</span> and <span class="math inline">\(\beta_0\)</span> be your prior parameters.</p>
+<ol type="a">
+<li>What are your choices of <span class="math inline">\(\alpha_0\)</span> and <span class="math inline">\(\beta_0\)</span>? [Use <span class="math inline">\(\alpha_0\)</span> and <span class="math inline">\(\beta_0\)</span> values that were <strong>not</strong> discussed in class and that your friend didn’t use.] What features of the plot of the prior density function made you think that your prior hyper-parameters were good choices? I wrote a function below that you can use to try out different options for the prior.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glue)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>ex <span class="ot">&lt;-</span> <span class="cf">function</span>(a,b) {<span class="fu">round</span>(a <span class="sc">/</span> (a<span class="sc">+</span>b), <span class="dv">2</span>)}  <span class="co"># what does this function do?</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>sdx <span class="ot">&lt;-</span> <span class="cf">function</span>(a,b) {<span class="fu">round</span>(<span class="fu">sqrt</span>(a<span class="sc">*</span>b<span class="sc">/</span>((a<span class="sc">+</span>b)<span class="sc">^</span><span class="dv">2</span> <span class="sc">*</span> (a<span class="sc">+</span>b<span class="sc">+</span><span class="dv">1</span>))),<span class="dv">3</span>)} <span class="co"># what does this function do?</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># the function below creates a text string to act as a title</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># you don't need to be familiar with the R syntax of glue</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>beta_legend <span class="ot">&lt;-</span> <span class="cf">function</span>(a,b) {</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">'a = {a}, '</span>,</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>             <span class="st">'b = {b}, '</span>,</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>             <span class="st">'EX = {ex(a,b)}, '</span>,</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>             <span class="st">'SDX = {sdx(a,b)}'</span>)}</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co"># see it in action:</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> <span class="fu">data.frame</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)), <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> x)) <span class="sc">+</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun =</span> dbeta, <span class="at">args =</span> <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">17</span>), <span class="at">n =</span> <span class="dv">100</span>) <span class="sc">+</span> </span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="fu">beta_legend</span>(<span class="dv">3</span>,<span class="dv">17</span>)) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">"y"</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">"theta"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="MA152_HW3f22_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># change a and b to something we did not do in class</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="a">
+<li><p>Using properties of expectation [that is, consider both estimates as functions of <em>X</em>, not of <span class="math inline">\(\theta\)</span> as a frequentist would], find the bias and variance of <span class="math inline">\(\hat{\theta}_f\)</span> and <span class="math inline">\(\hat{\theta}_b\)</span>. You are a frequentist here, and your answers should both be functions of <span class="math inline">\(\theta\)</span>.</p></li>
+<li><p>Based on your comparison of the MSE, do you recommend using <span class="math inline">\(\hat{\theta}_f\)</span> or <span class="math inline">\(\hat{\theta}_b\)</span>? Explain.</p></li>
+</ol>
+<p>Hint1: first determine whether one estimator has a smaller frequentist MSE. Over what region? Remember from class that Ty Cobb has the best batting average <strong>ever</strong>, and his average was 0.366.</p>
+<p>Hint2: say you think the frequentist mean squared error associated with <span class="math inline">\(\hat{\theta}_f\)</span> is <span class="math inline">\(\theta^2 + 6\theta + 4\pi /n + \alpha + \beta\)</span>, and you think that the frequentist mean squared error associated with <span class="math inline">\(\hat{\theta}_b\)</span> is <span class="math inline">\(\exp(\theta + 2) +4\)</span>. The MSE functions I wrote are totally wrong, but if I thought they were correct, I could plot them using the code below.</p>
+<p>Hint3: Note that in my totally made up graph just below, it seems like the frequentist estimator always has a smaller frequentist MSE.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># frequentist MSE for Bayesian estimator</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>mse_b <span class="ot">&lt;-</span> <span class="cf">function</span>(t,a,b,n) {</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  t<span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span> <span class="dv">6</span><span class="sc">*</span>t <span class="sc">+</span> <span class="dv">4</span><span class="sc">*</span>pi<span class="sc">/</span>n <span class="sc">+</span> a <span class="sc">+</span> b <span class="co"># the wrong function, correct it</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># frequentist MSE for frequentist estimator</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>mse_f <span class="ot">&lt;-</span> <span class="cf">function</span>(t, n){</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">exp</span>(t <span class="sc">+</span> <span class="dv">2</span>) <span class="sc">+</span> <span class="dv">4</span><span class="co"># the wrong function, correct it</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># theta is the true batting average by which we can (theoretically!)</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># assess the estimator we found (i.e., the estimator defined by the prior)</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>t <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">theta =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="at">by =</span> <span class="fl">0.01</span>))</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(t) <span class="sc">+</span> </span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> theta, <span class="at">y =</span> <span class="fu">mse_f</span>(theta, <span class="dv">10</span>), <span class="at">color =</span> <span class="st">"frequentist est"</span>)) <span class="sc">+</span> </span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> theta, <span class="at">y =</span> <span class="fu">mse_b</span>(theta, <span class="dv">1</span>, <span class="dv">17</span>, <span class="dv">10</span>), <span class="at">color =</span> <span class="st">"beta(1,17) prior"</span>)) <span class="sc">+</span> </span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># add more lines here just like the one above, but using different priors.</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"MSE"</span>) <span class="sc">+</span> </span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"frequentist MSE for both frequentist and Bayesian estimators"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="MA152_HW3f22_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="4" type="a">
+<li><p>If John Spurrier gets three hits in ten at bats, what is your estimate of <span class="math inline">\(\theta\)</span>? (Given your answer to c.)</p></li>
+<li><p>Show that in the beta-binomial family, <span class="math inline">\(\hat{\theta}_b\)</span> is a weighted average of <span class="math inline">\(\hat{\theta}_f\)</span> and the prior mean.</p></li>
+</ol>
+
+
+</section>
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><a href="https://hardin47.netlify.app/research/"><i class="fa-solid fa-book" aria-hidden="true"></i></a> <a href="https://hardin47.netlify.app/resume.pdf" target="_blank"><i class="fa-solid fa-bookmark"></i></a> <a href="mailto:jo.hardin@pomona.edu" target="_blank"><i class="fa-solid fa-at"></i></a> <a href="https://scholar.google.com/citations?user=c5Y77poAAAAJ&amp;hl=en" target="_blank"><i class="fa-brands fa-google-scholar"></i></a> <a href="https://www.researchgate.net/scientific-contributions/Johanna-Hardin-9764530" target="_blank"><i class="fa-brands fa-researchgate"></i></a><br>
+<a href="https://mobile.twitter.com/jo_hardin47" target="_blank"><i class="fa-brands fa-twitter"></i></a> <a href="https://github.com/hardin47" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/jo-hardin-b91a4b55" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>   
+      <div class="nav-footer-center">
+        <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ <br> © Jo Hardin, 2022 -- <a href="mailto: jo.hardin@pomona.edu">jo.hardin@pomona.edu</a> -- <a href="https://hardin47.netlify.app/">https://hardin47.netlify.app/</a> <br> <br>
+Math 152 -- Statistical Theory -- Pomona College, Claremont, CA <br>
+  </li>  
+</ul>
+      </div>
+  </div>
+</footer>
+
+
+
+</body></html>
