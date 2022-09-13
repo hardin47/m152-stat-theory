@@ -163,11 +163,11 @@ And a data likelihood: $X | \theta \sim N(\theta, \sigma^2)$
 You collect n data values, what is your best guess of $\theta?$[^14]  
      (a) $\overline{X}$
      (b) $\mu_0$ 
-     (c) $\mu_1 = \frac{\sigma^2 \mu_0 + n \nu_0 \overline{X}}{\sigma^2 + n \nu_0}$  
+     (c) $\mu_1 = \frac{\sigma^2 \mu_0 + n \nu_0^2 \overline{X}}{\sigma^2 + n \nu_0^2}$  
      (d) median of $N(\mu_1, \nu_1^2 = \frac{\sigma^2 \nu_0^2}{\sigma^2 + n \nu_0^2})$  
      (e) 47
 
-[^14]: $\mu_1 = \frac{\sigma^2 \mu_0 + n \nu_0 \overline{X}}{\sigma^2 + n \nu_0}$ 
+[^14]: $\mu_1 = \frac{\sigma^2 \mu_0 + n \nu_0 \overline{X}}{\sigma^2 + n \nu_0^2}$ 
 ---
 
 <!--Put in a question with x-bar and the prior mean, what is the posterior mean going to be?  Weighted average… then do it again with a huge n.
