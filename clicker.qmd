@@ -202,3 +202,55 @@ You collect n data values, what is your best guess of $\theta?$[^14]
 
 ---
 
+18. To find the maximum likelihood estimator, we take the derivative of the likelihood[^18] 
+    (a) with respect to $X$
+    (b) with respect to $\underline{X}$
+    (c) with respect to $\theta$
+    (d) with respect to $f$
+    (e) with respect to $\ln(f)$
+
+[^18]: with respect to $\theta$
+
+---
+
+19. Consider an MLE, $\hat{\theta},$ and the related log likelihood function $L = \ln(f).$  $\delta(X)$ is another estimate of $\theta$.  Which statement is necessarily false:[^19]
+    (a) L($\delta(X)$) < L($\theta$)
+    (b) L($\hat{\theta}$) < L($\theta$)
+    (c) L($\theta$) < L($\delta(X)$) 
+    (d) L($\delta(X)$) < L($\hat{\theta}$)
+    (e) L($\theta$) < L($\hat{\theta}$)
+
+[^19]: L($\hat{\theta}$) < L($\theta$)
+
+---
+
+20. The MLE is popular because it[^20]
+    (a) maximizes $R^2$
+    (b) minimizes the sum of squared errors
+    (c) has desirable sampling distribution properties
+    (d) maximizes both the likelihood and the log likelihood
+    (e) always exists
+
+[^20]: (c) has desirable sampling distribution properties and (d) maximizes both the likelihood and the log likelihood (although (c) is really the reason it is popular)
+
+---
+
+21. MOM is popular because it:[^21]
+
+  (a) has desirable sampling properties
+  (b) is often straightforward to compute
+  (c) always produces values inside the parameter space (e.g., in [0,1] for prob)
+  (d) always exists
+  
+[^21]: (b) is often straightforward to compute
+
+---
+
+
+
+
+
+
+
+
+
