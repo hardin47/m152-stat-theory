@@ -63,7 +63,7 @@ Find the posterior distribution of $\theta$ and show that the posterior mean of 
 
 #### 3:  7.4.3
 
-Consider again the conditions of Exercise 7.4.2. Suppose that the prior distribution of $\theta$ is as given in Exercise 7.4.2, and suppose again that 20 items are selected at random from the shipment.  
+Consider again the conditions of Exercise 7.4.2 (the gamma prior is given as $E[\theta] = \alpha / \beta$.) Suppose that the prior distribution of $\theta$ is as given in Exercise 7.4.2, and suppose again that 20 items are selected at random from the shipment.  
 
    a. For what number of defective items in the sample will the Bayesian mean squared error of the Bayes estimate be a maximum?  (The Bayesian MSE is the variance of the posterior.)
   b. For what number will the Bayesian mean squared error of the Bayes estimate be a minimum?  (The Bayesian MSE is the variance of the posterior.)
