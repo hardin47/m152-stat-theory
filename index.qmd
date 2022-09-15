@@ -53,10 +53,10 @@ schedule <- tribble(
   
 "Week 4 <br> 9.20.22", 
   '• sampling distributions <br>of estimators',
-  'P&S: 6.1-6.3, 8.1-8.4 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
-  '',
-  '',
-  '',
+  'P&S: 6.1-6.3, 8.1-8.4 <br> <a href="https://st47s.com/Math152/Notes/sampdist.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
+  '<a href="https://m152-stat-theory.netlify.app/handout/MA152_HW4f22.pdf" target = "_blank"><i class="fa-solid fa-file-pdf"></i> HW4 pdf</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/MA152_HW4f22.Rmd" target = "_blank"><i class="fa-brands fa-r-project"></i> HW4 Rmd</a> <br> <a href="https://canvas.pomona.edu/" target = "_blank"><i class="fa-solid fa-paper-plane"></i> HW4 turn-in</a>',
+  '<a href="handout/tank_152.pdf" target = "_blank">Tanks</a>',
+  '<a href="https://m152-stat-theory.netlify.app/handout/wu6_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 6</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/wu7_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 7</a>',
   
   
 "Week 5 <br> 9.27.22",

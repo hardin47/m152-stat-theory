@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.60">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="write your name here">
+
+<title>Statistical Theory - Math 152 - Statistical Theory - Homework 4</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: 1;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="https://m152-stat-theory.netlify.app/">
+    <img src="../images/st47s.png" alt="">
+    <span class="navbar-title">Statistical Theory</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html">Syllabus</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../notes.html">Class Notes</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../clicker_study.html">Clicker Q</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Math 152 - Statistical Theory - Homework 4</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>write your name here </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<section id="important-note" class="level2">
+<h2 class="anchored" data-anchor-id="important-note">Important Note:</h2>
+<p>You should work to turn in assignments that are clear, communicative, and concise. Part of what you need to do is not print pages and pages of output. Additionally, you should remove these exact sentences and the information about HW scoring below.</p>
+<p>Click on the <em>Knit to PDF</em> icon at the top of R Studio to run the R code and create a PDF document simultaneously. [PDF will only work if either (1) you are using R on the network, or (2) you have LaTeX installed on your computer. Lightweight LaTeX installation here: https://yihui.name/tinytex/]</p>
+<blockquote class="blockquote">
+<p>Either use the college’s RStudio server (https://rstudio.pomona.edu/) or install R and R Studio on to your personal computer. See: https://research.pomona.edu/johardin/math152f20/ for resources.</p>
+</blockquote>
+<div class="cell">
+
+</div>
+<section id="assignment" class="level3">
+<h3 class="anchored" data-anchor-id="assignment">Assignment</h3>
+<section id="goals" class="level4">
+<h4 class="anchored" data-anchor-id="goals">Goals:</h4>
+<p>In this assignment, the fun will include:</p>
+<ul>
+<li>using calculus (e.g., derivatives) to find maximum likelihood estimators</li>
+<li>using constraints (e.g., bounds) to limit maximum likelihood estimators</li>
+<li>reflecting on when maximum likelihood estimators don’t exist</li>
+</ul>
+<p><strong>Book problems</strong></p>
+<ul>
+<li>Feel free to do the book problems with a pencil or in LaTeX (RMarkdown supports writing mathematics using LaTeX).<br>
+</li>
+<li>If you use a pencil, you can take a picture of the problem(s), and include the image(s) using (remove the tick marks to make it work):</li>
+</ul>
+<pre><code>![](myimage.jpeg)</code></pre>
+<ul>
+<li><p>Note that myimage.jpeg needs to live in the same folder as the relevant .Rmd file (maybe you called the folder “math 152 hw” and put it on your desktop?)</p></li>
+<li><p>Saving as jpg, jpeg, png, or pdf should work, but make sure to specify the exact name of the file.</p></li>
+<li><p>If you have the 3rd edition of the book, the problems will be the same unless they don’t exist – that is, the 4th edition <em>added</em> problems but didn’t change the order of them. Ask me if you want to see the 4th edition problems.</p></li>
+</ul>
+</section>
+</section>
+<section id="assignment-1" class="level3">
+<h3 class="anchored" data-anchor-id="assignment-1">Assignment</h3>
+<section id="community-q" class="level4">
+<h4 class="anchored" data-anchor-id="community-q">1: Community Q</h4>
+<p>Describe one thing you learned (not from lecture, maybe from working in pairs during class) from a member of the class (student, mentor, professor) – it could be: content, logistical help, background material, R information, etc. 1-3 sentences.</p>
+</section>
+<section id="section" class="level4">
+<h4 class="anchored" data-anchor-id="section">2: 7.5.2</h4>
+<p>It is not known what proportion p of the purchases of a certain brand of breakfast cereal are made by women and what proportion are made by men. In a random sample of 70 purchases of this cereal, it was found that 58 were made by women and 12 were made by men. Find the MLE of p.</p>
+</section>
+<section id="section-1" class="level4">
+<h4 class="anchored" data-anchor-id="section-1">3: 7.5.3</h4>
+<p>Consider again the conditions in Exercise 2, but suppose also that it is known that <span class="math inline">\(\frac{1}{2} \leq p \leq \frac{2}{3}\)</span>. If the observations in the random sample of 70 purchases are as given in Exercise 7.5.2, what is the MLE of p?</p>
+</section>
+<section id="section-2" class="level4">
+<h4 class="anchored" data-anchor-id="section-2">4: 7.5.5</h4>
+<p>Suppose that <span class="math inline">\(X_1, \ldots , X_n\)</span> form a random sample from a Poisson distribution for which the mean <span class="math inline">\(\theta\)</span> is unknown, <span class="math inline">\((\theta &gt; 0)\)</span>.<br>
+a. Determine the MLE of <span class="math inline">\(\theta\)</span>, assuming that at least one of the observed values is different from <span class="math inline">\(\theta\)</span>. b. Show that the MLE of <span class="math inline">\(\theta\)</span> does not exist if every observed value is 0.</p>
+</section>
+<section id="section-3" class="level4">
+<h4 class="anchored" data-anchor-id="section-3">5: 7.5.6</h4>
+<p>Suppose that <span class="math inline">\(X_1, \ldots , X_n\)</span> form a random sample from a normal distribution for which the mean <span class="math inline">\(\mu\)</span> is known, but the variance <span class="math inline">\(\sigma^2\)</span> is unknown. Find the MLE of <span class="math inline">\(\sigma^2\)</span>. (Hint: the problem will be much easier if you set <span class="math inline">\(\sigma^2 = \theta\)</span> and then take the derivative with respect to <span class="math inline">\(\theta\)</span> instead of with respect to <span class="math inline">\(\sigma^2.)\)</span></p>
+</section>
+<section id="section-4" class="level4">
+<h4 class="anchored" data-anchor-id="section-4">6: 7.5.11</h4>
+<p>Suppose that <span class="math inline">\(X_1, \ldots , X_n\)</span> form a random sample from the uniform distribution on the interval [<span class="math inline">\(\theta_1\)</span>, <span class="math inline">\(\theta_2\)</span>], where both <span class="math inline">\(\theta_1\)</span> and <span class="math inline">\(\theta_2\)</span> are unknown <span class="math inline">\((-\infty&lt; \theta_1 &lt; \theta_2 &lt; \infty)\)</span>. Find the MLEs of <span class="math inline">\(\theta_1\)</span> and <span class="math inline">\(\theta_2\)</span>.</p>
+</section>
+<section id="r---mle-of-the-cauchy-distribution" class="level4">
+<h4 class="anchored" data-anchor-id="r---mle-of-the-cauchy-distribution">7: R - MLE of the Cauchy distribution</h4>
+<p>We get to use R as a way to understand a very wonky MLE!!! Isn’t it cool that we can use the computer to understand situations that don’t have easy closed form solutions?</p>
+<p>Example 7.6.5 in the text looks at the MLE for the center of of a Cauchy distribution. The Cauchy distribution is interesting because the tails decay at a rate of <span class="math inline">\(1/x^2\)</span>, so that when you try to take the expected value of X, you end up integrating something that looks like <span class="math inline">\(1/x\)</span> over the real line. Hence, the expected value <strong>does not exist</strong>. Thus, method of moments estimators for <span class="math inline">\(\theta\)</span> are of no use. The MLE of <span class="math inline">\(\theta\)</span> is still useful, though not easy to find.</p>
+<p><span class="math display">\[f(x_i | \theta, \sigma) = \frac{1}{\pi \sigma} \cdot \frac{1}{1 + (\frac{x-\theta}{\sigma})^2}\]</span></p>
+<p>As stated in the text, the likelihood is proportional to</p>
+<p><span class="math display">\[f(\underline{x} | \theta) \propto \prod_{i=1}^n [1 + (x_i - \theta)^2]^{-1}\]</span></p>
+<ol type="a">
+<li>Compute the first and second derivative of the <strong>log</strong> likelihood. (I’ve specifically left off the information you might find useful: derivative with respect to <em>what</em>? If you don’t know, think about it, look back at the notes, talk to your peers in mentor sessions!)</li>
+<li>Consider trying to find the root of a function <span class="math inline">\(h(x)\)</span>. Suppose your current guess is some value <span class="math inline">\(x_0\)</span>. We might approximate the function by the tangent line (first order Taylor approximation) at <span class="math inline">\(x_0\)</span> and take our next guess as the root of that line. Use the Taylor expansion to find the next guess of <span class="math inline">\(x_1\)</span> as</li>
+</ol>
+<p><span class="math display">\[x_1 = x_0 - \frac{h(x_0)}{h'(x_0)}\]</span></p>
+<p>Continually updating the guess via this method is known as Newton’s Method or the Newton-Raphson Method.</p>
+<p>Using your work from a., find <span class="math inline">\(x_1\)</span> as a function of <span class="math inline">\(x_0\)</span>.</p>
+<ol start="3" type="a">
+<li>Generate 50 observations from a Cauchy distribution centered at <span class="math inline">\(\theta = 10\)</span>. Based on these 50 observations, use parts a. and b. to estimate <span class="math inline">\(\theta\)</span> with a maximum likelihood approach. Remember, we’re trying to maximize the likelihood, so the function that we are trying to find the root of is derivative of the log-likelihood.</li>
+</ol>
+<p>What is your estimate of <span class="math inline">\(\theta\)</span>? Include plot(s) of your guesses and your final value for the MLE of <span class="math inline">\(\theta\)</span>.</p>
+<p>Note: Once you have completed a. and thought about c., feel free to message me for help on the R syntax. If you tell me exactly what you need and the R error you are getting (i.e., why it doesn’t work), I will tell you how to fix the R code.</p>
+<p>The R code might look something like this:</p>
+<p>where the actual formulas for l1 and l2 will come from part a. Everything in double parentheses needs to be replaced by proper R syntax. The rest of it will run in R. In case you are curious, <code>sum()</code> is the R function for summing a vector of values.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Use Newton's method to find the MLE for a Cauchy distribution</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>cauchy_mle <span class="ot">&lt;-</span> <span class="cf">function</span>(guess, data){</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    l1 <span class="ot">&lt;-</span> ((compute 1st derivative of log<span class="sc">-</span>likelihood evaluated at <span class="st">"guess"</span>)) <span class="co"># 1st deriv</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    l2 <span class="ot">&lt;-</span> ((compute 2nd derivative of log<span class="sc">-</span>likelihood evaluated at <span class="st">"guess"</span>)) <span class="co"># 2nd deriv</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    guess <span class="ot">&lt;-</span> guess <span class="sc">-</span> l1<span class="sc">/</span>l2</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    guess</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># set up the initial conditions (including the dataset to use)</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">54321</span>)  <span class="co"># to get the same answer each time the .Rmd is knit</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>n_obs <span class="ot">&lt;-</span> <span class="dv">50</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>observations <span class="ot">&lt;-</span> <span class="fu">rcauchy</span>(n_obs, <span class="at">location =</span> <span class="dv">10</span>)  <span class="co"># 50 random Cauchy, centered at 10</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>theta_guess <span class="ot">&lt;-</span> ((pick a starting value, you might try different ones)) <span class="co"># just a number</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="running-cauchy_mle-recursively" class="level5">
+<h5 class="anchored" data-anchor-id="running-cauchy_mle-recursively">Running <code>cauchy_mle</code> recursively</h5>
+<p>Run the function repeatedly:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>theta_guess <span class="ot">&lt;-</span> ((pick a starting value, you might try different ones)) <span class="co"># just a number</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>guess_vec <span class="ot">&lt;-</span> <span class="fu">numeric</span>()</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>reps <span class="ot">&lt;-</span> <span class="dv">10</span>  <span class="co"># play around with how many times you loop through. </span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># you probably don't need very many times through to see what happens.</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># what happens might seem unsettling!</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>reps){</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  theta_guess <span class="ot">&lt;-</span> <span class="fu">cauchy_mle</span>(___, ___)  <span class="co"># what changes for each rep?</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  guess_vec[i] <span class="ot">&lt;-</span> theta_guess</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>guess_vec</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(guess_vec) <span class="sc">%&gt;%</span>  <span class="co"># ggplot needs a data frame instead of a vector</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> guess_vec, <span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span>reps)) <span class="sc">+</span> </span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>()  <span class="co"># line plot connecting the guesses for each rep</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+
+</section>
+</section>
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><a href="https://hardin47.netlify.app/research/"><i class="fa-solid fa-book" aria-hidden="true"></i></a> <a href="https://hardin47.netlify.app/resume.pdf" target="_blank"><i class="fa-solid fa-bookmark"></i></a> <a href="mailto:jo.hardin@pomona.edu" target="_blank"><i class="fa-solid fa-at"></i></a> <a href="https://scholar.google.com/citations?user=c5Y77poAAAAJ&amp;hl=en" target="_blank"><i class="fa-brands fa-google-scholar"></i></a> <a href="https://www.researchgate.net/scientific-contributions/Johanna-Hardin-9764530" target="_blank"><i class="fa-brands fa-researchgate"></i></a><br>
+<a href="https://mobile.twitter.com/jo_hardin47" target="_blank"><i class="fa-brands fa-twitter"></i></a> <a href="https://github.com/hardin47" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/jo-hardin-b91a4b55" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>   
+      <div class="nav-footer-center">
+        <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ <br> © Jo Hardin, 2022 -- <a href="mailto: jo.hardin@pomona.edu">jo.hardin@pomona.edu</a> -- <a href="https://hardin47.netlify.app/">https://hardin47.netlify.app/</a> <br> <br>
+Math 152 -- Statistical Theory -- Pomona College, Claremont, CA <br>
+  </li>  
+</ul>
+      </div>
+  </div>
+</footer>
+
+
+
+</body></html>

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://m152-stat-theory.netlify.app/clicker.html</loc>
-    <lastmod>2022-09-09T14:53:31.628Z</lastmod>
+    <lastmod>2022-09-15T23:11:18.387Z</lastmod>
   </url>
   <url>
     <loc>https://m152-stat-theory.netlify.app/notes.html</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://m152-stat-theory.netlify.app/index.html</loc>
-    <lastmod>2022-09-13T12:03:09.630Z</lastmod>
+    <lastmod>2022-09-15T23:11:24.678Z</lastmod>
   </url>
   <url>
     <loc>https://m152-stat-theory.netlify.app/handout/MA152_HW2f22.html</loc>
@@ -46,6 +46,10 @@
   </url>
   <url>
     <loc>https://m152-stat-theory.netlify.app/handout/MA152_HW3f22.html</loc>
-    <lastmod>2022-09-09T14:53:35.717Z</lastmod>
+    <lastmod>2022-09-15T23:11:23.899Z</lastmod>
+  </url>
+  <url>
+    <loc>https://m152-stat-theory.netlify.app/handout/MA152_HW4f22.html</loc>
+    <lastmod>2022-09-15T23:11:20.189Z</lastmod>
   </url>
 </urlset>

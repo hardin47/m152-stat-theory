@@ -55,7 +55,7 @@ Describe one thing you learned (not **during** class) from a member of the class
 
 #### 2:  7.3.21
 
-Suppose that $X_1, \ldots , X_n$ form a random sample from the exponential distribution with parameter $\theta$. 
+Suppose that $X_1, \ldots , X_n$ form a random sample from the exponential distribution with parameter $\theta$ such that $E[X] = 1/\theta$. 
 Let the prior distribution of $\theta$ be improper with "p.d.f." 1/$\theta$ for $\theta > 0$. 
 Find the posterior distribution of $\theta$ and show that the posterior mean of $\theta$ is $1/\overline{X}$. (pay attention to whether you have $\theta$ or $1/\theta$ from the distribution sheet.)
 
@@ -63,7 +63,7 @@ Find the posterior distribution of $\theta$ and show that the posterior mean of 
 
 #### 3:  7.4.3
 
-Consider again the conditions of Exercise 7.4.2. Suppose that the prior distribution of $\theta$ is as given in Exercise 7.4.2, and suppose again that 20 items are selected at random from the shipment.  
+Consider again the conditions of Exercise 7.4.2 (the gamma prior is given as $E[\theta] = \alpha / \beta$.) Suppose that the prior distribution of $\theta$ is as given in Exercise 7.4.2, and suppose again that 20 items are selected at random from the shipment.  
 
    a. For what number of defective items in the sample will the Bayesian mean squared error of the Bayes estimate be a maximum?  (The Bayesian MSE is the variance of the posterior.)
   b. For what number will the Bayesian mean squared error of the Bayes estimate be a minimum?  (The Bayesian MSE is the variance of the posterior.)
@@ -77,7 +77,7 @@ having the form $\gamma \overline{X} + (1 - \gamma) \mu_0$, and show that $\gamm
 
 #### 5:  7.4.10
 
-Suppose that the time in minutes required to serve a customer at a certain facility has an exponential distribution for which the value of the parameter $\theta$ is unknown, the prior distribution of $\theta$ is a gamma distribution for which the mean is 0.2 and the standard deviation is 1, and the average time required to serve a random sample of 20 customers is observed to be 3.8 minutes. 
+Suppose that the time in minutes required to serve a customer at a certain facility has an exponential distribution for which the value of the parameter $\theta$ is unknown (such that $E[X] = 1 / \theta$), the prior distribution of $\theta$ is a gamma distribution for which the mean is 0.2 and the standard deviation is 1, and the average time required to serve a random sample of 20 customers is observed to be 3.8 minutes. 
 What is the Bayes estimate of $\theta$? (See Exercise 12 of Sec. 7.3. and pay attention to whether you have $\beta$ or $1/\beta$ from the distribution sheet.)
 
 #### 6:  7.4.12
