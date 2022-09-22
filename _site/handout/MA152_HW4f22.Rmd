@@ -65,7 +65,7 @@ in Exercise 7.5.2, what is the MLE of p?
 #### 4: 7.5.5
 
 Suppose that $X_1, \ldots , X_n$ form a random sample from a Poisson distribution for which the mean $\theta$ is unknown, $(\theta > 0)$.  
-a. Determine the MLE of $\theta$, assuming that at least one of the observed values is different from $\theta$.
+a. Determine the MLE of $\theta$, assuming that at least one of the observed values is different from 0.  
 b. Show that the MLE of $\theta$ does not exist if every observed value is 0.
 
 #### 5: 7.5.6

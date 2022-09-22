@@ -345,15 +345,100 @@ You collect n data values, what is your best guess of <span class="math inline">
 </ol>
 <hr>
 <ol start="21" type="1">
-<li>MOM is popular because it:<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a></li>
-</ol>
+<li>MOM is popular because it:<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a>
 <ol type="a">
 <li>has desirable sampling properties</li>
 <li>is often straightforward to compute</li>
 <li>always produces values inside the parameter space (e.g., in [0,1] for prob)</li>
 <li>always exists</li>
+</ol></li>
 </ol>
 <hr>
+<ol start="22" type="1">
+<li>The Central Limit Theorem (CLT) says:<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a>
+<ol type="a">
+<li>The sample average (statistic) converges to the true average (parameter)</li>
+<li>The sample average (statistic) converges to some point</li>
+<li>The distribution of the sample average (statistic) converges to a normal distribution</li>
+<li>The distribution of the sample average (statistic) converges to some distribution</li>
+<li>I have no idea what the CLT says</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="23" type="1">
+<li>A sampling distribution is<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a>
+<ol type="a">
+<li>the true distribution of the data</li>
+<li>the estimated distribution of the data</li>
+<li>the distribution of the population</li>
+<li>the distribution of the statistic in repeated samples</li>
+<li>the distribution of the statistic from your one sample of data</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="24" type="1">
+<li>The distribution of a random variable can be uniquely determined by<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a>
+<ol type="a">
+<li>the cdf: F(x)</li>
+<li>the pdf (pmf): f(x)</li>
+<li>the moment generating function (mgf), if it exists: <span class="math inline">\(\Psi(t) = E[e^{tX}]\)</span></li>
+<li>the mean and variance of the distribution</li>
+<li>more than one of the above (which ones??)</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="25" type="1">
+<li>A moment generating function<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a>
+<ol type="a">
+<li>gives the probability of the RV at any value of X</li>
+<li>gives all theoretical moments of the distribution</li>
+<li>gives all sample moments of the data</li>
+<li>gives the cumulative probability of the RV at any value of X</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="26" type="1">
+<li>The sampling distribution is important because<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a>
+<ol type="a">
+<li>it describes the behavior (distribution) of the statistic</li>
+<li>it describes the behavior (distribution) of the data</li>
+<li>it gives us the ability to measure the likelihood of the statistic or more extreme under particular settings (i.e.&nbsp;null)</li>
+<li>it gives us the ability to make inferences about the population parameter</li>
+<li>more than one of the above (which ones??)</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="27" type="1">
+<li>The following result: <span class="math inline">\(\frac{\sum_{i=1}^n (X_i - \overline{X})^2}{\sigma^2} \sim \chi^2_{n-1}\)</span> allows us to isolate and conduct inference on what parameter?<a href="#fn25" class="footnote-ref" id="fnref25" role="doc-noteref"><sup>25</sup></a>
+<ol type="a">
+<li><span class="math inline">\(\overline{X}\)</span></li>
+<li><span class="math inline">\(s\)</span></li>
+<li><span class="math inline">\(\mu\)</span></li>
+<li><span class="math inline">\(\sigma^2\)</span></li>
+<li><span class="math inline">\(\chi\)</span></li>
+</ol></li>
+</ol>
+<hr>
+<ol start="28" type="1">
+<li>The following result: <span class="math inline">\(\frac{\overline{X} - \mu}{s/\sqrt{n}} \sim t_{n-1}\)</span> allows us to isolate and conduct inference on what parameter?<a href="#fn26" class="footnote-ref" id="fnref26" role="doc-noteref"><sup>26</sup></a>
+<ol type="a">
+<li><span class="math inline">\(\overline{X}\)</span></li>
+<li><span class="math inline">\(s\)</span></li>
+<li><span class="math inline">\(\mu\)</span></li>
+<li><span class="math inline">\(\sigma^2\)</span></li>
+<li><span class="math inline">\(\chi\)</span></li>
+</ol></li>
+</ol>
+<hr>
+<ol start="29" type="1">
+<li>What would you expect the standard deviation of the t statistic to be?<a href="#fn27" class="footnote-ref" id="fnref27" role="doc-noteref"><sup>27</sup></a>
+<ol type="a">
+<li>a little bit less than 1</li>
+<li>1</li>
+<li>a little bit more than 1</li>
+<li>unable to tell because it depends on the sample size and the variability of the data</li>
+</ol></li>
+</ol>
 
 
 </section>
@@ -423,9 +508,38 @@ You collect n data values, what is your best guess of <span class="math inline">
 </ol>
 <a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></li>
 <li id="fn19"><ol start="2" type="a">
-<li>is often straightforward to compute</li>
+<li>is often straightforward to compute (it does not always exist, look at Cauchy. it does not always produce estimates inside the parameter space.)</li>
 </ol>
 <a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn20"><ol start="3" type="a">
+<li>The distribution of the sample average (statistic) converges to a normal distribution</li>
+</ol>
+<a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn21"><ol start="4" type="a">
+<li>the distribution of the statistic in repeated samples</li>
+</ol>
+<a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn22"><ol start="5" type="a">
+<li>the cdf, the pdf/pmf, and the mgf</li>
+</ol>
+<a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn23"><ol start="2" type="a">
+<li>gives all theoretical moments of the distribution</li>
+</ol>
+<a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn24"><p>(e): (a), (c), (d)<a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn25"><ol start="4" type="a">
+<li><span class="math inline">\(\sigma^2\)</span> (the first two are statistics, not parameters, we can’t isolate <span class="math inline">\(\mu\)</span> because it isn’t involved, and <span class="math inline">\(\chi\)</span> also isn’t a parameter)</li>
+</ol>
+<a href="#fnref25" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn26"><ol start="3" type="a">
+<li><span class="math inline">\(\mu\)</span> (the first two are statistics, not parameters, we can’t isolate <span class="math inline">\(\sigma^2\)</span> because it isn’t involved, and <span class="math inline">\(\chi\)</span> also isn’t a parameter)</li>
+</ol>
+<a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn27"><ol start="3" type="a">
+<li>a little bit more than 1 (dividing by <span class="math inline">\(s\)</span> instead of <span class="math inline">\(\sigma\)</span> adds variability to the distribution)</li>
+</ol>
+<a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></li>
 </ol>
 </section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

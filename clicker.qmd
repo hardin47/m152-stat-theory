@@ -236,18 +236,100 @@ You collect n data values, what is your best guess of $\theta?$[^14]
 ---
 
 21. MOM is popular because it:[^21]
-
-  (a) has desirable sampling properties
-  (b) is often straightforward to compute
-  (c) always produces values inside the parameter space (e.g., in [0,1] for prob)
-  (d) always exists
+    (a) has desirable sampling properties
+    (b) is often straightforward to compute
+    (c) always produces values inside the parameter space (e.g., in [0,1] for prob)
+    (d) always exists
   
-[^21]: (b) is often straightforward to compute
+[^21]: (b) is often straightforward to compute (it does not always exist, look at Cauchy.  it does not always produce estimates inside the parameter space.)
 
 ---
 
+22. The Central Limit Theorem (CLT) says:[^22]
+    (a) The sample average (statistic) converges to the true average (parameter)
+    (b) The sample average (statistic) converges to some point
+    (c) The distribution of the sample average (statistic) converges to a normal distribution
+    (d) The distribution of the sample average (statistic) converges to some distribution
+    (e) I have no idea what the CLT says
 
+[^22]: (c) The distribution of the sample average (statistic) converges to a normal distribution
 
+---
+
+23. A sampling distribution is[^23]
+    (a) the true distribution of the data
+    (b) the estimated distribution of the data
+    (c) the distribution of the population
+    (d) the distribution of the statistic in repeated samples
+    (e) the distribution of the statistic from your one sample of data
+   
+[^23]: (d) the distribution of the statistic in repeated samples
+
+---
+
+24. The distribution of a random variable can be uniquely determined by[^24]  
+    (a) the cdf: F(x)
+    (b) the pdf (pmf): f(x)
+    (c) the moment generating function (mgf), if it exists: $\Psi(t) = E[e^{tX}]$
+    (d) the mean and variance of the distribution
+    (e) more than one of the above (which ones??)
+   
+[^24]: (e) the cdf, the pdf/pmf, and the mgf  
+
+---
+
+25. A moment generating function[^25]
+    (a) gives the probability of the RV at any value of X
+    (b) gives all theoretical moments of the distribution
+    (c) gives all sample moments of the data
+    (d) gives the cumulative probability of the RV at any value of X
+   
+[^25]: (b) gives all theoretical moments of the distribution
+
+---
+
+26. The sampling distribution is important because[^26]
+    (a) it describes the behavior (distribution) of the statistic
+    (b) it describes the behavior (distribution) of the data
+    (c) it gives us the ability to measure the likelihood of the statistic or more extreme under     particular settings (i.e. null)
+    (d) it gives us the ability to make inferences about the population parameter
+    (e) more than one of the above (which ones??)
+
+[^26]: (e): (a), (c), (d)
+
+---
+
+27. The following result: $\frac{\sum_{i=1}^n (X_i - \overline{X})^2}{\sigma^2} \sim \chi^2_{n-1}$
+allows us to isolate and conduct inference on what parameter?[^27]
+    (a) $\overline{X}$
+    (b) $s$
+    (c) $\mu$
+    (d) $\sigma^2$
+    (e) $\chi$
+
+[^27]: (d) $\sigma^2$  (the first two are statistics, not parameters, we can't isolate $\mu$ because it isn't involved, and $\chi$ also isn't a parameter)
+
+---
+
+28. The following result: $\frac{\overline{X} - \mu}{s/\sqrt{n}} \sim t_{n-1}$
+allows us to isolate and conduct inference on what parameter?[^28]
+    (a) $\overline{X}$
+    (b) $s$
+    (c) $\mu$
+    (d) $\sigma^2$
+    (e) $\chi$
+
+[^28]: (c) $\mu$ (the first two are statistics, not parameters, we can't isolate $\sigma^2$ because it isn't involved, and $\chi$ also isn't a parameter)
+
+---
+
+29. What would you expect the standard deviation of the t statistic to be?[^29]
+    (a) a little bit less than 1
+    (b) 1
+    (c) a little bit more than 1
+    (d) unable to tell because it depends on the sample size and the variability of the data
+
+[^29]: (c) a little bit more than 1 (dividing by $s$ instead of $\sigma$ adds variability to the distribution)
 
 
 
