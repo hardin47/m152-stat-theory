@@ -721,6 +721,74 @@ You collect n data values, what is your best guess of <span class="math inline">
 <li>unable to tell because it depends on the sample size and the variability of the data</li>
 </ol></li>
 </ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="30" type="1">
+<li>You have a sample of size n = 50. You sample with replacement 1000 times to get 1000 bootstrap samples. What is the sample size of each bootstrap sample?<a href="#/footnotes" class="footnote-ref" id="fnref28" role="doc-noteref" data-footnote-href="#/fn28" onclick=""><sup>28</sup></a>
+<ol type="a">
+<li>50</li>
+<li>1000</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="31" type="1">
+<li>You have a sample of size n = 50. You sample with replacement 1000 times to get 1000 bootstrap samples. How many bootstrap statistics will you have?<a href="#/footnotes" class="footnote-ref" id="fnref29" role="doc-noteref" data-footnote-href="#/fn29" onclick=""><sup>29</sup></a>
+<ol type="a">
+<li>50</li>
+<li>1000</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="32" type="1">
+<li>The bootstrap distribution of <span class="math inline">\(\hat{\theta}\)</span> is centered around the<a href="#/footnotes" class="footnote-ref" id="fnref30" role="doc-noteref" data-footnote-href="#/fn30" onclick=""><sup>30</sup></a>
+<ol type="a">
+<li>population parameter</li>
+<li>sample statistic</li>
+<li>bootstrap statistic</li>
+<li>bootstrap parameter</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="33" type="1">
+<li>The bootstrap theory relies on<a href="#/footnotes" class="footnote-ref" id="fnref31" role="doc-noteref" data-footnote-href="#/fn31" onclick=""><sup>31</sup></a>
+<ol type="a">
+<li>Resampling with replacement from the original sample.</li>
+<li>Resampling from the original sample, leaving one observation out each time (e.g., cross validation)</li>
+<li>Estimating the population using the sample.</li>
+<li>Permuting the data values within the sample.</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="34" type="1">
+<li>Bias of a statistic refers to<a href="#/footnotes" class="footnote-ref" id="fnref32" role="doc-noteref" data-footnote-href="#/fn32" onclick=""><sup>32</sup></a>
+<ol type="a">
+<li>The difference between a statistic and the actual parameter</li>
+<li>Whether or not questions were worded fairly.</li>
+<li>The difference between a sampling distribution mean and the actual parameter.</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="35" type="1">
+<li>The mean of a sample is 22.5. The mean of 1000 bootstrapped samples is 22.491. The bias of the bootstrap mean is<a href="#/footnotes" class="footnote-ref" id="fnref33" role="doc-noteref" data-footnote-href="#/fn33" onclick=""><sup>33</sup></a>
+<ol type="a">
+<li>-0.009</li>
+<li>-0.0045</li>
+<li>-0.09</li>
+<li>0.009</li>
+<li>0.09</li>
+</ol></li>
+</ol>
 
 <div class="footer footer-default">
 
@@ -820,6 +888,30 @@ You collect n data values, what is your best guess of <span class="math inline">
 </li>
 <li id="fn27"><ol start="3" type="a">
 <li>a little bit more than 1 (dividing by <span class="math inline">\(s\)</span> instead of <span class="math inline">\(\sigma\)</span> adds variability to the distribution)</li>
+</ol>
+</li>
+<li id="fn28"><ol type="a">
+<li>50 observations in each bootstrap sample</li>
+</ol>
+</li>
+<li id="fn29"><ol start="2" type="a">
+<li>1000</li>
+</ol>
+</li>
+<li id="fn30"><ol start="2" type="a">
+<li>the sample statistic</li>
+</ol>
+</li>
+<li id="fn31"><ol type="a">
+<li>Resampling with replacement from the original sample. Although I suppose (c) is also true.</li>
+</ol>
+</li>
+<li id="fn32"><ol start="3" type="a">
+<li>The difference between a sampling distribution mean and the actual parameter.</li>
+</ol>
+</li>
+<li id="fn33"><ol type="a">
+<li>-0.009 Bias is what the statistic is (on average) minus the true value. Recall, we are using the data as a proxy for the population, so the “truth” is the data. So in the bootstrap setting, the average is over the bootstrapped values and the true value is the sample mean.</li>
 </ol>
 </li>
 </ol>

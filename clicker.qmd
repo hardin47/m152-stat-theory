@@ -331,6 +331,61 @@ allows us to isolate and conduct inference on what parameter?[^28]
 
 [^29]: (c) a little bit more than 1 (dividing by $s$ instead of $\sigma$ adds variability to the distribution)
 
+---
+
+30. You have a sample of size n = 50.  You sample with replacement 1000 times to get 1000 bootstrap samples. What is the sample size of each bootstrap sample?[^30]
+    (a) 50
+    (b) 1000
+
+[^30]: (a) 50 observations in each bootstrap sample
+
+---
+
+31. You have a sample of size n = 50.  You sample with replacement 1000 times to get 1000 bootstrap samples. How many bootstrap statistics will you have?[^31]
+    (a) 50
+    (b) 1000
+ 
+[^31]: (b) 1000
+
+---
+
+32. The bootstrap distribution of $\hat{\theta}$  is centered around the[^32]
+    (a) population parameter
+    (b) sample statistic
+    (c) bootstrap statistic
+    (d) bootstrap parameter
+
+[^32]: (b) the sample statistic
+
+---
+
+33. The bootstrap theory relies on[^33]
+    (a) Resampling with replacement from the original sample.
+    (b) Resampling from the original sample, leaving one observation out each time (e.g., cross validation)
+    (c) Estimating the population using the sample.
+    (d) Permuting the data values within the sample.
+
+[^33]: (a) Resampling with replacement from the original sample.  Although I suppose (c) is also true.
+
+---
+
+34. Bias of a statistic refers to[^34]
+    (a) The difference between a statistic and the actual parameter
+    (b) Whether or not questions were worded fairly.
+    (c) The difference between a sampling distribution mean and the actual parameter.
+
+[^34]: (c) The difference between a sampling distribution mean and the actual parameter.
+
+---
+
+35. The mean of a sample is 22.5. The mean of 1000 bootstrapped samples is 22.491. The bias of the bootstrap mean is[^35]
+    (a) -0.009
+    (b) -0.0045
+    (c) -0.09
+    (d)  0.009
+    (e)  0.09
+
+[^35]: (a) -0.009 Bias is what the statistic is (on average) minus the true value. Recall, we are using the data as a proxy for the population, so the "truth" is the data. So in the bootstrap setting, the average is over the bootstrapped values and the true value is the sample mean.  
 
 
 

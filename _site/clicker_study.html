@@ -439,6 +439,63 @@ You collect n data values, what is your best guess of <span class="math inline">
 <li>unable to tell because it depends on the sample size and the variability of the data</li>
 </ol></li>
 </ol>
+<hr>
+<ol start="30" type="1">
+<li>You have a sample of size n = 50. You sample with replacement 1000 times to get 1000 bootstrap samples. What is the sample size of each bootstrap sample?<a href="#fn28" class="footnote-ref" id="fnref28" role="doc-noteref"><sup>28</sup></a>
+<ol type="a">
+<li>50</li>
+<li>1000</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="31" type="1">
+<li>You have a sample of size n = 50. You sample with replacement 1000 times to get 1000 bootstrap samples. How many bootstrap statistics will you have?<a href="#fn29" class="footnote-ref" id="fnref29" role="doc-noteref"><sup>29</sup></a>
+<ol type="a">
+<li>50</li>
+<li>1000</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="32" type="1">
+<li>The bootstrap distribution of <span class="math inline">\(\hat{\theta}\)</span> is centered around the<a href="#fn30" class="footnote-ref" id="fnref30" role="doc-noteref"><sup>30</sup></a>
+<ol type="a">
+<li>population parameter</li>
+<li>sample statistic</li>
+<li>bootstrap statistic</li>
+<li>bootstrap parameter</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="33" type="1">
+<li>The bootstrap theory relies on<a href="#fn31" class="footnote-ref" id="fnref31" role="doc-noteref"><sup>31</sup></a>
+<ol type="a">
+<li>Resampling with replacement from the original sample.</li>
+<li>Resampling from the original sample, leaving one observation out each time (e.g., cross validation)</li>
+<li>Estimating the population using the sample.</li>
+<li>Permuting the data values within the sample.</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="34" type="1">
+<li>Bias of a statistic refers to[^34]</li>
+</ol>
+<ol type="a">
+<li>The difference between a statistic and the actual parameter</li>
+<li>Whether or not questions were worded fairly.</li>
+<li>The difference between a sampling distribution mean and the actual parameter.</li>
+</ol>
+<p>[34]: (c) The difference between a sampling distribution mean and the actual parameter.</p>
+<hr>
+<ol start="35" type="1">
+<li>The mean of a sample is 22.5. The mean of 1000 bootstrapped samples is 22.491. The bias of the bootstrap mean is<a href="#fn32" class="footnote-ref" id="fnref32" role="doc-noteref"><sup>32</sup></a>
+<ol type="a">
+<li>-0.009</li>
+<li>-0.0045</li>
+<li>-0.09</li>
+<li>0.009</li>
+<li>0.09</li>
+</ol></li>
+</ol>
 
 
 </section>
@@ -540,6 +597,26 @@ You collect n data values, what is your best guess of <span class="math inline">
 <li>a little bit more than 1 (dividing by <span class="math inline">\(s\)</span> instead of <span class="math inline">\(\sigma\)</span> adds variability to the distribution)</li>
 </ol>
 <a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn28"><ol type="a">
+<li>50 observations in each bootstrap sample</li>
+</ol>
+<a href="#fnref28" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn29"><ol start="2" type="a">
+<li>1000</li>
+</ol>
+<a href="#fnref29" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn30"><ol start="2" type="a">
+<li>the sample statistic</li>
+</ol>
+<a href="#fnref30" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn31"><ol type="a">
+<li>Resampling with replacement from the original sample. Although I suppose (c) is also true.</li>
+</ol>
+<a href="#fnref31" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn32"><ol type="a">
+<li>-0.009 Bias is what the statistic is (on average) minus the true value. Recall, we are using the data as a proxy for the population, so the “truth” is the data. So in the bootstrap setting, the average is over the bootstrapped values and the true value is the sample mean.</li>
+</ol>
+<a href="#fnref32" class="footnote-back" role="doc-backlink">↩︎</a></li>
 </ol>
 </section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
