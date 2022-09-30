@@ -69,9 +69,9 @@ schedule <- tribble(
 "Week 6 <br> 2.22.22", 
   '• frequentist, Bayesian <br>intervals',
   'P&S: 8.5-8.6 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
-  '',
+  '<a href="https://m152-stat-theory.netlify.app/handout/MA152_HW6f22.pdf" target = "_blank"><i class="fa-solid fa-file-pdf"></i> HW6 pdf</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/MA152_HW6f22.Rmd" target = "_blank"><i class="fa-brands fa-r-project"></i> HW6 Rmd</a> <br> <a href="https://canvas.pomona.edu/" target = "_blank"><i class="fa-solid fa-paper-plane"></i> HW6 turn-in</a>',
   '<a href="https://kruschke.shinyapps.io/KruschkeFreqAndBayesApp/" target = "_blank"><i class="fa-solid fa-gamepad"></i> App to compare Freq & Bayes Intervals</a> <br> <a href="handout/norm.bayes.pdf" target = "_blank">2 parameter normal Bayesian</a>',
-  '',    
+  '<a href="https://m152-stat-theory.netlify.app/handout/wu10_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 10</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/wu11_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 11</a>', 
 
 
 '<font color = "#114B5F"><b>Week 7 <br> 10.11.22</b></font>', 
