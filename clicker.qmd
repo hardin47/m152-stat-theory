@@ -439,12 +439,11 @@ The values of c1 and c2 which themselves have the **highest posterior probabilit
 
 ---
 
-40. A 90% CI for the average number of chocolate chips in a Chips Ahoy cookie is:  
-[3.7 chips, 17.2 chips]  
+40. A 90% CI for the average number of chocolate chips in a Chips Ahoy cookie is: [3.7 chips, 17.2 chips]  
 What is the correct interpretation?[^40]
     (a) There is a 0.9 prob that the true average number of chips is between 3.7 & 17.2.
     (b) 90% of cookies have between 3.7 & 17.2 chips.
-    (c) We are 90% confident that in our sample, the average number of chips is between 3.7 and 17.2.
+    (c) We are 90% confident that in our sample, the sample average number of chips is between 3.7 and 17.2.
     (d) In many repeated samples, 90% of sample averages will be between 3.7 and 17.2.
     (e) In many repeated samples, 90% of intervals like this one will contain the true average number of chips.
 
@@ -453,12 +452,11 @@ What is the correct interpretation?[^40]
 ---
 
 
-41. A 90% CI for the average number of chocolate chips in a Chips Ahoy cookie:  
-[3.9 chips, $\infty$)  
+41. A 90% CI for the average number of chocolate chips in a Chips Ahoy cookie: [3.9 chips, $\infty$)  
 What is the correct interpretation?
      (a) There is a 0.9 prob that the true average number of chips is bigger than 3.9
      (b) 90% of cookies have more than 3.9 chips
-     (c) We are 90% confident that in our sample, the average number of chips is bigger than 3.9.
+     (c) We are 90% confident that in our sample, the sample average number of chips is bigger than 3.9.
      (d) In many repeated samples, 90% of sample averages will be bigger than 3.9
      (e) In many repeated samples, 90% of intervals like this one will contain the true average number of chips. 
 
