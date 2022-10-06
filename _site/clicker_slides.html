@@ -834,24 +834,27 @@ The resulting 95% interval with the <strong>shortest</strong> width has:<a href=
 <aside></aside></section>
 <section class="slide level2">
 
-<ol start="39" type="1">
-<li>Consider an asymmetric posterior distribution which gives an interval using:<br>
-<span class="math inline">\(P((c_1 \leq \sigma^2 \leq c_2) | \underline{X})= 0.95\)</span><br>
-The values of c1 and c2 which themselves have the <strong>highest posterior probabilities</strong> are:<a href="#/footnotes" class="footnote-ref" id="fnref37" role="doc-noteref" data-footnote-href="#/fn37" onclick=""><sup>37</sup></a>
-<ol type="a">
-<li><span class="math inline">\(c_1\)</span> and <span class="math inline">\(c_2\)</span> as the .025 &amp; .975 quantiles</li>
-<li><span class="math inline">\(c_1\)</span> set to zero</li>
-<li><span class="math inline">\(c_2\)</span> set to infinity</li>
-<li><span class="math inline">\(c_1\)</span> and <span class="math inline">\(c_2\)</span> as different quantiles than (a) but that contain .95 probability.</li>
-<li>Find <span class="math inline">\(c_1\)</span> and let <span class="math inline">\(c_2 = -c_1\)</span></li>
-</ol></li>
-</ol>
-<aside></aside></section>
-<section class="slide level2">
+<!--
 
-<ol start="40" type="1">
+not a good problem because we don't know the skew of the distribution of sigma2
+
+39. Consider an asymmetric posterior distribution which gives an interval using:  
+$P((c_1 \leq \sigma^2 \leq c_2) | \underline{X})= 0.95$  
+The resulting 95% interval with the **shortest** width has:[^39]
+    (a) $c_1$ and $c_2$ as the .025 & .975 quantiles
+    (b) $c_1$ set to zero
+    (c) $c_2$ set to infinity
+    (d) $c_1$ and $c_2$ as different quantiles than (a) but that contain .95 probability.
+    (e) Find $c_1$ and let $c_2 = -c_1$
+
+[^39]: (a) $c_1$ and $c_2$ as the .025 & .975 quantiles
+
+
+---
+-->
+<ol start="39" type="1">
 <li>A 90% CI for the average number of chocolate chips in a Chips Ahoy cookie is: [3.7 chips, 17.2 chips]<br>
-What is the correct interpretation?<a href="#/footnotes" class="footnote-ref" id="fnref38" role="doc-noteref" data-footnote-href="#/fn38" onclick=""><sup>38</sup></a>
+What is the correct interpretation?<a href="#/footnotes" class="footnote-ref" id="fnref37" role="doc-noteref" data-footnote-href="#/fn37" onclick=""><sup>37</sup></a>
 <ol type="a">
 <li>There is a 0.9 prob that the true average number of chips is between 3.7 &amp; 17.2.</li>
 <li>90% of cookies have between 3.7 &amp; 17.2 chips.</li>
@@ -863,9 +866,9 @@ What is the correct interpretation?<a href="#/footnotes" class="footnote-ref" id
 <aside></aside></section>
 <section class="slide level2">
 
-<ol start="41" type="1">
+<ol start="40" type="1">
 <li>A 90% CI for the average number of chocolate chips in a Chips Ahoy cookie: [3.9 chips, <span class="math inline">\(\infty\)</span>)<br>
-What is the correct interpretation?
+What is the correct interpretation?<a href="#/footnotes" class="footnote-ref" id="fnref38" role="doc-noteref" data-footnote-href="#/fn38" onclick=""><sup>38</sup></a>
 <ol type="a">
 <li>There is a 0.9 prob that the true average number of chips is bigger than 3.9</li>
 <li>90% of cookies have more than 3.9 chips</li>
@@ -874,12 +877,12 @@ What is the correct interpretation?
 <li>In many repeated samples, 90% of intervals like this one will contain the true average number of chips.</li>
 </ol></li>
 </ol>
-</section>
+<aside></aside></section>
 <section class="slide level2">
 
-<ol start="42" type="1">
+<ol start="41" type="1">
 <li>Consider a Bayesian posterior interval for <span class="math inline">\(\mu\)</span> of the form: <span class="math inline">\(\overline{X} \pm t^*_{n-1} s / \sqrt{n}\)</span><br>
-What was the prior on <span class="math inline">\(\mu\)</span>?
+What was the prior on <span class="math inline">\(\mu\)</span>?<a href="#/footnotes" class="footnote-ref" id="fnref39" role="doc-noteref" data-footnote-href="#/fn39" onclick=""><sup>39</sup></a>
 <ol type="a">
 <li>N(0,0)</li>
 <li>N(<span class="math inline">\(\overline{X}\)</span>,0)</li>
@@ -892,7 +895,7 @@ What was the prior on <span class="math inline">\(\mu\)</span>?
 <div class="footer footer-default">
 
 </div>
-</section></section>
+<aside></aside></section></section>
 <section id="footnotes" class="footnotes footnotes-end-of-document smaller scrollable" role="doc-endnotes"><h2>Footnotes</h2>
 
 <ol>
@@ -1025,12 +1028,16 @@ What was the prior on <span class="math inline">\(\mu\)</span>?
 <li><span class="math inline">\(c_2\)</span> set to infinity</li>
 </ol>
 </li>
-<li id="fn37"><ol type="a">
-<li><span class="math inline">\(c_1\)</span> and <span class="math inline">\(c_2\)</span> as the .025 &amp; .975 quantiles</li>
+<li id="fn37"><ol start="5" type="a">
+<li>In many repeated samples, 90% of intervals like this one will contain the true average number of chips.</li>
 </ol>
 </li>
 <li id="fn38"><ol start="5" type="a">
 <li>In many repeated samples, 90% of intervals like this one will contain the true average number of chips.</li>
+</ol>
+</li>
+<li id="fn39"><ol type="a">
+<li>N(0,0)</li>
 </ol>
 </li>
 </ol>

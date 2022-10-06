@@ -426,9 +426,13 @@ The resulting 95% interval with the **shortest** width has:[^38]
 
 ---
 
+<!--
+
+not a good problem because we don't know the skew of the distribution of sigma2
+
 39. Consider an asymmetric posterior distribution which gives an interval using:  
 $P((c_1 \leq \sigma^2 \leq c_2) | \underline{X})= 0.95$  
-The values of c1 and c2 which themselves have the **highest posterior probabilities** are:[^39]
+The resulting 95% interval with the **shortest** width has:[^39]
     (a) $c_1$ and $c_2$ as the .025 & .975 quantiles
     (b) $c_1$ set to zero
     (c) $c_2$ set to infinity
@@ -438,42 +442,43 @@ The values of c1 and c2 which themselves have the **highest posterior probabilit
 [^39]: (a) $c_1$ and $c_2$ as the .025 & .975 quantiles
 
 ---
+-->
 
-40. A 90% CI for the average number of chocolate chips in a Chips Ahoy cookie is: [3.7 chips, 17.2 chips]  
-What is the correct interpretation?[^40]
+39. A 90% CI for the average number of chocolate chips in a Chips Ahoy cookie is: [3.7 chips, 17.2 chips]  
+What is the correct interpretation?[^39]
     (a) There is a 0.9 prob that the true average number of chips is between 3.7 & 17.2.
     (b) 90% of cookies have between 3.7 & 17.2 chips.
     (c) We are 90% confident that in our sample, the sample average number of chips is between 3.7 and 17.2.
     (d) In many repeated samples, 90% of sample averages will be between 3.7 and 17.2.
     (e) In many repeated samples, 90% of intervals like this one will contain the true average number of chips.
 
-[^40]: (e) In many repeated samples, 90% of intervals like this one will contain the true average number of chips.
+[^39]: (e) In many repeated samples, 90% of intervals like this one will contain the true average number of chips.
 
 ---
 
 
-41. A 90% CI for the average number of chocolate chips in a Chips Ahoy cookie: [3.9 chips, $\infty$)  
-What is the correct interpretation?
+40. A 90% CI for the average number of chocolate chips in a Chips Ahoy cookie: [3.9 chips, $\infty$)  
+What is the correct interpretation?[^40]
      (a) There is a 0.9 prob that the true average number of chips is bigger than 3.9
      (b) 90% of cookies have more than 3.9 chips
      (c) We are 90% confident that in our sample, the sample average number of chips is bigger than 3.9.
      (d) In many repeated samples, 90% of sample averages will be bigger than 3.9
      (e) In many repeated samples, 90% of intervals like this one will contain the true average number of chips. 
 
-[^41]: (e) In many repeated samples, 90% of intervals like this one will contain the true average number of chips.
+[^40]: (e) In many repeated samples, 90% of intervals like this one will contain the true average number of chips.
 
 ---
 
 
-42. Consider a Bayesian posterior interval for $\mu$ of the form: $\overline{X} \pm t^*_{n-1} s / \sqrt{n}$  
-What was the prior on $\mu$?
+41. Consider a Bayesian posterior interval for $\mu$ of the form: $\overline{X} \pm t^*_{n-1} s / \sqrt{n}$  
+What was the prior on $\mu$?[^41]
     (a) N(0,0)
     (b) N($\overline{X}$,0)
     (c) N(0, 1/0)
     (d) N($\overline{X}$,1/0)
     (e) N(1/0, 0)
 
-[^42]: (a) N(0,0)
+[^41]: (a) N(0,0)
 
 
 

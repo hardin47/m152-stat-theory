@@ -78,7 +78,7 @@ schedule <- tribble(
 '<font color = "#114B5F"><b>review & catch-up</b></font>',
 '<font color = "#114B5F"><b>exam 1 in class<br> 10.13.22</b></font>',
  '<a href="https://m152-stat-theory.netlify.app/handout/MA152_HW7f22.pdf" target = "_blank"><i class="fa-solid fa-file-pdf"></i> HW7 pdf</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/MA152_HW7f22.Rmd" target = "_blank"><i class="fa-brands fa-r-project"></i> HW7 Rmd</a> <br> <i class="fa-solid fa-paper-plane"></i>not due, ever',
-  '',
+  '<a href="https://canvas.pomona.edu/" target = "_blank"><i class="fa-solid fa-paper-plane"></i> see Canvas</a> for sample exam Q & sol',
   '',
 
 '<font color = "#114B5F"><b>Tuesday <br>10.18.22</b></font>', '<font color = "#114B5F"><b>Fall Break</b></font>',"", 
