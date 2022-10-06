@@ -167,8 +167,9 @@ schedule <- tribble(
 
 ```{r}
 #| echo: false
-#| column: body-outset
+#| column: page
 # can use column: page for the entire page
+# can use column: body-outset to bleed outside the center column of text
 schedule %>% 
   mutate_all(linebreak) %>% # required for linebreaks to work
   kbl(escape = FALSE, align = c(rep('l',7))) %>%
