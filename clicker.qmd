@@ -478,7 +478,7 @@ What was the prior on $\mu$?[^41]
     (d) N($\overline{X}$,1/0)
     (e) N(1/0, 0)
 
-[^41]: (a) N(0,0)
+[^41]: (a) N(0,1/0).  Or rather, to get the frequentist result, you need the joint improper priors to have $\mu_0 = \lambda_0 = \beta_0 = 0$ and $\alpha_0 = -1/2$.
 
 
 
