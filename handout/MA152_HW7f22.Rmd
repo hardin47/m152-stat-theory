@@ -89,8 +89,8 @@ b. $P(0.736 < \mu < 15.680)$
 
 Using the prior and data in the numerical example on nursing homes in New Mexico in this section, find 
 
-a. the shortest possible interval such that the **posterior** probability that $\mu$ lies in the interval is 0.90, and  
-b.the shortest possible **confidence** interval for $\mu$ for which the confidence coefficient is 0.90.
+a. the shortest possible interval such that the **posterior** probability that $\mu$ lies in the interval is 0.90, and 
+b. the shortest possible **confidence** interval for $\mu$ for which the confidence coefficient is 0.90.
 
 
 
