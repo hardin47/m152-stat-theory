@@ -585,6 +585,80 @@ What was the prior on <span class="math inline">\(\mu\)</span>?<a href="#fn39" c
 <li>N(1/0, 0)</li>
 </ol></li>
 </ol>
+<hr>
+<p>Some review questions:</p>
+<ol start="42" type="1">
+<li>If we need to find the distribution of a function of one variable (g(X) = X), the easiest route is probably:<a href="#fn40" class="footnote-ref" id="fnref40" role="doc-noteref"><sup>40</sup></a>
+<ol type="a">
+<li>find the pdf</li>
+<li>find the cdf</li>
+<li>find the MGF</li>
+<li>find the expected value and variance</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="43" type="1">
+<li>If we need to find the distribution of a sum of random variables, the easiest route is probably:<a href="#fn41" class="footnote-ref" id="fnref41" role="doc-noteref"><sup>41</sup></a>
+<ol type="a">
+<li>find the pdf</li>
+<li>find the cdf</li>
+<li>find the MGF</li>
+<li>expected value and variance</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="44" type="1">
+<li>FREQUENTIST: consider the sampling distribution of <span class="math inline">\(\hat{\theta}.\)</span> The parameters in the sampling distribution are given by:<a href="#fn42" class="footnote-ref" id="fnref42" role="doc-noteref"><sup>42</sup></a>
+<ol type="a">
+<li>the data</li>
+<li>the parameters from the likelihood</li>
+<li>the prior parameters</li>
+<li>the statistic</li>
+<li><span class="math inline">\(\theta\)</span></li>
+</ol></li>
+</ol>
+<hr>
+<ol start="45" type="1">
+<li>BAYESIAN: consider the posterior distribution of <span class="math inline">\(\theta | \underline{X}.\)</span> The parameters in the posterior distribution are a function of:<a href="#fn43" class="footnote-ref" id="fnref43" role="doc-noteref"><sup>43</sup></a>
+<ol type="a">
+<li>the data</li>
+<li>the parameters from the likelihood</li>
+<li>the prior parameters</li>
+<li>the statistic</li>
+<li><span class="math inline">\(\theta\)</span></li>
+</ol></li>
+</ol>
+<hr>
+<ol start="46" type="1">
+<li>A sample of size 8 had a mean of 22.5. It was bootstrapped 1000 times and the mean of the bootstrap distribution was 22.491. The standard deviation of the bootstrap was 2.334. The 95% BS SE confidence interval for the population mean is<a href="#fn44" class="footnote-ref" id="fnref44" role="doc-noteref"><sup>44</sup></a>
+<ol type="a">
+<li>22.491 <span class="math inline">\(\pm\)</span> z(.975) * 2.334</li>
+<li>22.491 <span class="math inline">\(\pm\)</span> z(.95) * 2.334</li>
+<li>22.5 <span class="math inline">\(\pm\)</span> z(.975) * 2.334</li>
+<li>22.5 <span class="math inline">\(\pm\)</span> z(.95) * 2.334</li>
+<li>22.5 <span class="math inline">\(\pm\)</span> z(.975) * 2.334 / <span class="math inline">\(\sqrt{8}\)</span></li>
+</ol></li>
+</ol>
+<hr>
+<ol start="47" type="1">
+<li>Which is most accurate?<a href="#fn45" class="footnote-ref" id="fnref45" role="doc-noteref"><sup>45</sup></a>
+<ol type="a">
+<li>A BS SE confidence interval</li>
+<li>A bootstrap-t confidence interval</li>
+<li>A bootstrap percentile interval</li>
+<li>A bootstrap BCa interval</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="48" type="1">
+<li>What is the primary reason to bootstrap a CI (instead of creating a CI from calculus)?<a href="#fn46" class="footnote-ref" id="fnref46" role="doc-noteref"><sup>46</sup></a>
+<ol type="a">
+<li>larger coverage probabilities</li>
+<li>narrower intervals</li>
+<li>more resistant to outliers</li>
+<li>can be done for statistics with unknown sampling distributions</li>
+</ol></li>
+</ol>
 
 
 </section>
@@ -734,6 +808,34 @@ What was the prior on <span class="math inline">\(\mu\)</span>?<a href="#fn39" c
 <li>N(0,1/0). Or rather, to get the frequentist result, you need the joint improper priors to have <span class="math inline">\(\mu_0 = \lambda_0 = \beta_0 = 0\)</span> and <span class="math inline">\(\alpha_0 = -1/2\)</span>.</li>
 </ol>
 <a href="#fnref39" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn40"><ol start="3" type="a">
+<li>The MGF is usually easiest if g is any kind of linear combination. If not, you might need (b) find the cdf. You’ll need to find the cdf to get the pdf, which you might need to identify the distribution. (note: can’t identify a distribution using only the first two moments, (d))</li>
+</ol>
+<a href="#fnref40" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn41"><ol start="3" type="a">
+<li>find the MGF (note: can’t identify a distribution using only the first two moments, (d))</li>
+</ol>
+<a href="#fnref41" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn42"><ol start="2" type="a">
+<li>the parameters from the likelihood</li>
+</ol>
+<a href="#fnref42" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn43"><ol type="a">
+<li>the data and (c) the prior parameters</li>
+</ol>
+<a href="#fnref43" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn44"><ol start="3" type="a">
+<li>22.5 <span class="math inline">\(\pm\)</span> z(.975) * 2.334</li>
+</ol>
+<a href="#fnref44" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn45"><ol start="4" type="a">
+<li>A bootstrap BCa interval (although out of the ones we’ve covered, (b) A bootstrap-t confidence interval is most accurate)</li>
+</ol>
+<a href="#fnref45" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn46"><ol start="4" type="a">
+<li>can be done for statistics with unknown sampling distributions</li>
+</ol>
+<a href="#fnref46" class="footnote-back" role="doc-backlink">↩︎</a></li>
 </ol>
 </section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

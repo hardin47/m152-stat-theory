@@ -481,5 +481,81 @@ What was the prior on $\mu$?[^41]
 [^41]: (a) N(0,1/0).  Or rather, to get the frequentist result, you need the joint improper priors to have $\mu_0 = \lambda_0 = \beta_0 = 0$ and $\alpha_0 = -1/2$.
 
 
+---
+
+Some review questions:
+
+42. If we need to find the distribution of a function of one variable (g(X) = X), the easiest route is probably:[^42]
+    (a) find the pdf
+    (b) find the cdf
+    (c) find the MGF
+    (d) find the expected value and variance
+
+[^42]: (c) The MGF is usually easiest if g is any kind of linear combination.  If not, you might need (b) find the cdf.  You'll need to find the cdf to get the pdf, which you might need to identify the distribution. (note: can't identify a distribution using only the first two moments, (d))
+
+---
+
+43. If we need to find the distribution of a sum of random variables, the easiest route is probably:[^43]
+    (a) find the pdf
+    (b) find the cdf
+    (c) find the MGF
+    (d) expected value and variance
+
+[^43]: (c) find the MGF  (note: can't identify a distribution using only the first two moments, (d))
+
+---
+
+44. FREQUENTIST:  consider the sampling distribution of $\hat{\theta}.$
+The parameters in the sampling distribution are given by:[^44]
+    (a) the data 
+    (b) the parameters from the likelihood
+    (c) the prior parameters
+    (d) the statistic
+    (e) $\theta$
+
+[^44]: (b) the parameters from the likelihood
+
+---
+
+45.  BAYESIAN:  consider the posterior distribution of $\theta | \underline{X}.$ The parameters in the posterior distribution are a function of:[^45]
+     (a) the data 
+     (b) the parameters from the likelihood
+     (c) the prior parameters
+     (d) the statistic
+     (e) $\theta$
+
+[^45]: (a) the data and (c) the prior parameters
+
+---
+
+46. A sample of size 8 had a mean of 22.5. It was bootstrapped 1000 times and the mean of the bootstrap distribution was 22.491. The standard deviation of the bootstrap was 2.334. The 95% BS SE confidence interval for the population mean is[^46]
+     (a) 22.491 $\pm$ z(.975) * 2.334
+     (b) 22.491 $\pm$ z(.95) * 2.334
+     (c) 22.5 $\pm$ z(.975) * 2.334
+     (d) 22.5 $\pm$ z(.95) * 2.334
+     (e) 22.5 $\pm$ z(.975) * 2.334 / $\sqrt{8}$
+
+[^46]: (c) 22.5 $\pm$ z(.975) * 2.334
+
+---
+
+47. Which is most accurate?[^47]
+    (a) A BS SE confidence interval
+    (b) A bootstrap-t confidence interval
+    (c) A bootstrap percentile interval
+    (d) A bootstrap BCa interval
+
+[^47]: (d) A bootstrap BCa interval  (although out of the ones we've covered, (b) A bootstrap-t confidence interval is most accurate)
+
+---
+
+48. What is the primary reason to bootstrap a CI (instead of creating a CI from calculus)?[^48]
+    (a) larger coverage probabilities
+    (b) narrower intervals
+    (c) more resistant to outliers
+    (d) can be done for statistics with unknown sampling distributions
+
+[^48]: (d) can be done for statistics with unknown sampling distributions
+
 
 
