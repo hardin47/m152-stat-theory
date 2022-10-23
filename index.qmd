@@ -116,7 +116,7 @@ schedule <- tribble(
 
 '<font color = "#114B5F"><b>Week 12 <br> 11.15.22</b></font>', 
 '<font color = "#114B5F"><b>review & catch-up</b></font>',
-'<font color = "#114B5F"><b>exam 2 in class<br> 10.17.22</b></font>',
+'<font color = "#114B5F"><b>exam 2 in class<br> 11.17.22</b></font>',
   '',
   '',
   '',
