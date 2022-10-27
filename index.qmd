@@ -95,7 +95,7 @@ schedule <- tribble(
   
 "Week 9 <br> 10.25.22", 
   '• Fisher information + <br>• efficiency + <br>• UMVUE',
-  'P&S: 8.7-8.8 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
+  'P&S: 8.7-8.8 <br> <a href="https://st47s.com/Math152/Notes/fisher.html" target = "_blank"><i class="fas fa-book-open"></i> notes on Fisher information</a>',
   '<a href="https://m152-stat-theory.netlify.app/handout/MA152_HW8f22.pdf" target = "_blank"><i class="fa-solid fa-file-pdf"></i> HW8 pdf</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/MA152_HW8f22.Rmd" target = "_blank"><i class="fa-brands fa-r-project"></i> HW8 Rmd</a> <br> <a href="https://canvas.pomona.edu/" target = "_blank"><i class="fa-solid fa-paper-plane"></i> HW8 turn-in</a>',
   '',
   '<a href="https://m152-stat-theory.netlify.app/handout/wu13_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 13</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/wu14_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 14</a>',
@@ -103,14 +103,14 @@ schedule <- tribble(
 "Week 10 <br> 11.1.22", 
   '• hypotehsis testing + <br>• simple hypotheses',
   'P&S: 9.1 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
+  'no HW',
   '',
-  '',
-  '',
+  '<a href="https://m152-stat-theory.netlify.app/handout/wu15_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 15</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/wu16_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 16</a>',
   
 "Week 11 <br> 11.8.22", 
   '• Neyman-Pearson',
   'P&S: 9.2 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
-  '',
+  '<a href="https://m152-stat-theory.netlify.app/handout/MA152_HW9f22.pdf" target = "_blank"><i class="fa-solid fa-file-pdf"></i> HW9 pdf</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/MA152_HW9f22.Rmd" target = "_blank"><i class="fa-brands fa-r-project"></i> HW9 Rmd</a> <br> <a href="https://canvas.pomona.edu/" target = "_blank"><i class="fa-solid fa-paper-plane"></i> HW9 turn-in</a>',
   '',
   '',  
 

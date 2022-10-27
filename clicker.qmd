@@ -557,5 +557,65 @@ The parameters in the sampling distribution are given by:[^44]
 
 [^48]: (d) can be done for statistics with unknown sampling distributions
 
+---
 
+49. What does the Fisher Information tell us?[^49]
+    (a) the variability of the MLE from sample to sample.
+    (b) the bias of the MLE from sample to sample.
+    (c) the variability of the data from sample to sample.
+    (d) the bias of the data from sample to sample.
 
+[^49]: (a) the variability of the MLE from sample to sample.
+
+---
+
+50. Why do we care about the variability of the MLE?[^50]
+    (a) determines whether MOM or MLE is better.
+    (b) determines whether Bayes’ estimator or MLE is better.
+    (c) determines how precise the estimator is.
+    (d) allows us to do inference (about the population value). 
+    
+[^50]: (c) determines how precise the estimator is.
+
+---
+
+51. Why do we care about the sampling distribution of the MLE?[^51]
+    (a) determines whether MOM or MLE is better.
+    (b) determines whether Bayes’ estimator or MLE is better.
+    (c) determines how precise the estimator is.
+    (d) allows us to do inference (about the population value). 
+ 
+[^51]: (d) allows us to do inference (about the population value). 
+
+---
+
+52. Consider an estimator, $\hat{\theta}$, such that $E[\hat{\theta}] = m(\theta)$.   
+$\hat{\theta}$ is unbiased for $\theta$ if:[^52]
+    (a) $m(\theta)$ is a function of $\theta$.
+    (b) $m(\theta)$ is NOT a function of $\theta$.
+    (c) $m(\theta)= \theta$.
+    (d) $m(\theta)= 0$.
+    (e) $m(\theta)$ is the expected value of $\hat{\theta}$.
+
+[^52]: (c) $m(\theta)= \theta$.
+
+---
+
+53. If $\hat{\theta}$ is unbiased, $m'(\theta)$ is[^53]
+    (a) zero
+    (b) one
+    (c) $\theta$ 
+    (d) $\theta^2$ 
+    (e) some other function of $\theta$, depending on $m(\theta)$
+
+[^53]: (b) one
+
+---
+
+54. The MLE is[^54]
+    (a) consistent
+    (b) efficient 
+    (c) asymptotically normally distributed 
+    (d) all of the above
+
+[^54]: (d) all of the above
