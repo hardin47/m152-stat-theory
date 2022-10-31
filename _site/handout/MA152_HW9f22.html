@@ -8,7 +8,7 @@
 
 <meta name="author" content="write your name here">
 
-<title>Statistical Theory - Math 152 - Statistical Theory - Homework 4</title>
+<title>Statistical Theory - Math 152 - Statistical Theory - Homework 9</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -170,7 +170,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Math 152 - Statistical Theory - Homework 4</h1>
+<h1 class="title">Math 152 - Statistical Theory - Homework 9</h1>
 </div>
 
 
@@ -201,7 +201,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>You should work to turn in assignments that are clear, communicative, and concise. Part of what you need to do is not print pages and pages of output. Additionally, you should remove these exact sentences and the information about HW scoring below.</p>
 <p>Click on the <em>Knit to PDF</em> icon at the top of R Studio to run the R code and create a PDF document simultaneously. [PDF will only work if either (1) you are using R on the network, or (2) you have LaTeX installed on your computer. Lightweight LaTeX installation here: https://yihui.name/tinytex/]</p>
 <blockquote class="blockquote">
-<p>Either use the college’s RStudio server (https://rstudio.pomona.edu/) or install R and R Studio on to your personal computer. See: https://research.pomona.edu/johardin/math152f20/ for resources.</p>
+<p>Either use the college’s RStudio server (https://rstudio.pomona.edu/) or install R and R Studio on to your personal computer. See: https://m152-stat-theory.netlify.app/syllabus.html for resources.</p>
 </blockquote>
 <div class="cell">
 
@@ -212,9 +212,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h4 class="anchored" data-anchor-id="goals">Goals:</h4>
 <p>In this assignment, the fun will include:</p>
 <ul>
-<li>using calculus (e.g., derivatives) to find maximum likelihood estimators</li>
-<li>using constraints (e.g., bounds) to limit maximum likelihood estimators</li>
-<li>reflecting on when maximum likelihood estimators don’t exist</li>
+<li>calculating Fisher information</li>
+<li>setting up hypotheses</li>
+<li>calculationg power and error rates.</li>
 </ul>
 <p><strong>Book problems</strong></p>
 <ul>
@@ -237,89 +237,111 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Describe one thing you learned (not from lecture, maybe from working in pairs during class) from a member of the class (student, mentor, professor) – it could be: content, logistical help, background material, R information, etc. 1-3 sentences.</p>
 </section>
 <section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section">2: 7.5.2</h4>
-<p>It is not known what proportion p of the purchases of a certain brand of breakfast cereal are made by women and what proportion are made by men. In a random sample of 70 purchases of this cereal, it was found that 58 were made by women and 12 were made by men. Find the MLE of p.</p>
+<h4 class="anchored" data-anchor-id="section">2: 8.8.4</h4>
+<p>Suppose that a random variable has the normal distribution with mean 0 and unknown standard deviation <span class="math inline">\(\sigma &gt; 0\)</span>. Find the Fisher information <span class="math inline">\(I(\sigma)\)</span> in <span class="math inline">\(X\)</span>.</p>
 </section>
 <section id="section-1" class="level4">
-<h4 class="anchored" data-anchor-id="section-1">3: 7.5.3</h4>
-<p>Consider again the conditions in Exercise 2, but suppose also that it is known that <span class="math inline">\(\frac{1}{2} \leq p \leq \frac{2}{3}\)</span>. If the observations in the random sample of 70 purchases are as given in Exercise 7.5.2, what is the MLE of p?</p>
+<h4 class="anchored" data-anchor-id="section-1">3: 8.8.5</h4>
+<p>Suppose that a random variable X has the normal distribution with mean 0 and unknown variance <span class="math inline">\(\sigma^2 &gt; 0\)</span>. Find the Fisher information <span class="math inline">\(I(\sigma^2)\)</span> in <span class="math inline">\(X\)</span>. Note that in this exercise the variance <span class="math inline">\(\sigma^2\)</span> is regarded as the parameter, whereas in Exercise 8.8.4 the standard deviation <span class="math inline">\(\sigma\)</span> is regarded as the parameter.</p>
+<p>Also, show that the unbiased estimator of <span class="math inline">\(\sigma^2\)</span> is not efficient.</p>
+<p>Note to self: there is no simple way to get from problem 8.8.4 to 8.8.5. That is, we know the MLE of a function is that function of the MLE. Not true for information.</p>
 </section>
 <section id="section-2" class="level4">
-<h4 class="anchored" data-anchor-id="section-2">4: 7.5.5</h4>
-<p>Suppose that <span class="math inline">\(X_1, \ldots , X_n\)</span> form a random sample from a Poisson distribution for which the mean <span class="math inline">\(\theta\)</span> is unknown, <span class="math inline">\((\theta &gt; 0)\)</span>.<br>
-a. Determine the MLE of <span class="math inline">\(\theta\)</span>, assuming that at least one of the observed values is different from 0.<br>
-b. Show that the MLE of <span class="math inline">\(\theta\)</span> does not exist if every observed value is 0.</p>
+<h4 class="anchored" data-anchor-id="section-2">4: 8.8.16</h4>
+<p>Suppose that <span class="math inline">\(X_1, \ldots, X_n\)</span> form a random sample from the Bernoulli distribution with unknown parameter <span class="math inline">\(p\)</span>, and the prior pdf of <span class="math inline">\(p\)</span> is a positive and differentiable function over the interval <span class="math inline">\(0 &lt; p &lt; 1\)</span>. Suppose, furthermore, that <span class="math inline">\(n\)</span> is large, the observed values of <span class="math inline">\(X_1, \ldots, X_n\)</span> are <span class="math inline">\(x_1, \ldots, x_n\)</span>, and <span class="math inline">\(0 &lt; \overline{x} &lt; 1\)</span>. Show that the posterior distribution of <span class="math inline">\(p\)</span> will be approximately a normal distribution with mean <span class="math inline">\(\overline{x}\)</span> and variance <span class="math inline">\(\overline{x}(1- \overline{x})/n\)</span>.</p>
+<p>Note to self: this is a Bayesian problem. See the connection between Fisher Information and asymptotic / approximate Bayesian distributions in the text.</p>
 </section>
 <section id="section-3" class="level4">
-<h4 class="anchored" data-anchor-id="section-3">5: 7.5.6</h4>
-<p>Suppose that <span class="math inline">\(X_1, \ldots , X_n\)</span> form a random sample from a normal distribution for which the mean <span class="math inline">\(\mu\)</span> is known, but the variance <span class="math inline">\(\sigma^2\)</span> is unknown. Find the MLE of <span class="math inline">\(\sigma^2\)</span>. (Hint: the problem will be much easier if you set <span class="math inline">\(\sigma^2 = \theta\)</span> and then take the derivative with respect to <span class="math inline">\(\theta\)</span> instead of with respect to <span class="math inline">\(\sigma^2.)\)</span></p>
+<h4 class="anchored" data-anchor-id="section-3">5: 8.9.15</h4>
+<p>Suppose that <span class="math inline">\(X_1, \ldots, X_n\)</span> form a random sample from a distribution for which the pdf is as follows:</p>
+<p><span class="math display">\[f_x(x|\theta) = \begin{cases} \theta x^{\theta-1} &amp; 0 &lt; x &lt; 1 \\ 0 &amp; \mbox{otherwise} \end{cases}\]</span></p>
+<p>where the value of <span class="math inline">\(\theta\)</span> is unknown (<span class="math inline">\(\theta &gt; 0\)</span>). Determine the asymptotic distribution of the MLE of <span class="math inline">\(\theta\)</span>. (Note: The MLE was found in Exercise 9 of Sec. 7.5.)</p>
 </section>
 <section id="section-4" class="level4">
-<h4 class="anchored" data-anchor-id="section-4">6: 7.5.11</h4>
-<p>Suppose that <span class="math inline">\(X_1, \ldots , X_n\)</span> form a random sample from the uniform distribution on the interval [<span class="math inline">\(\theta_1\)</span>, <span class="math inline">\(\theta_2\)</span>], where both <span class="math inline">\(\theta_1\)</span> and <span class="math inline">\(\theta_2\)</span> are unknown <span class="math inline">\((-\infty&lt; \theta_1 &lt; \theta_2 &lt; \infty)\)</span>. Find the MLEs of <span class="math inline">\(\theta_1\)</span> and <span class="math inline">\(\theta_2\)</span>.</p>
-</section>
-<section id="r---mle-of-the-cauchy-distribution" class="level4">
-<h4 class="anchored" data-anchor-id="r---mle-of-the-cauchy-distribution">7: R - MLE of the Cauchy distribution</h4>
-<p>We get to use R as a way to understand a very wonky MLE!!! Isn’t it cool that we can use the computer to understand situations that don’t have easy closed form solutions?</p>
-<p>Example 7.6.5 in the text looks at the MLE for the center of of a Cauchy distribution. The Cauchy distribution is interesting because the tails decay at a rate of <span class="math inline">\(1/x^2\)</span>, so that when you try to take the expected value of X, you end up integrating something that looks like <span class="math inline">\(1/x\)</span> over the real line. Hence, the expected value <strong>does not exist</strong>. Thus, method of moments estimators for <span class="math inline">\(\theta\)</span> are of no use. The MLE of <span class="math inline">\(\theta\)</span> is still useful, though not easy to find.</p>
-<p><span class="math display">\[f(x_i | \theta, \sigma) = \frac{1}{\pi \sigma} \cdot \frac{1}{1 + (\frac{x-\theta}{\sigma})^2}\]</span></p>
-<p>As stated in the text, the likelihood is proportional to</p>
-<p><span class="math display">\[f(\underline{x} | \theta) \propto \prod_{i=1}^n [1 + (x_i - \theta)^2]^{-1}\]</span></p>
+<h4 class="anchored" data-anchor-id="section-4">6: 9.1.1</h4>
+<p>Let <span class="math inline">\(X\)</span> have the exponential distribution with parameter <span class="math inline">\(\beta\)</span>. Suppose that we wish to test the hypotheses <span class="math inline">\(H_0: \beta \geq 1\)</span> versus <span class="math inline">\(H_1: \beta &lt; 1.\)</span></p>
+<p>Consider the test procedure <span class="math inline">\(\delta\)</span> that rejects <span class="math inline">\(H_0\)</span> if <span class="math inline">\(X \geq 1.\)</span></p>
 <ol type="a">
-<li>Compute the first and second derivative of the <strong>log</strong> likelihood. (I’ve specifically left off the information you might find useful: derivative with respect to <em>what</em>? If you don’t know, think about it, look back at the notes, talk to your peers in mentor sessions!)</li>
-<li>Consider trying to find the root of a function <span class="math inline">\(h(x)\)</span>. Suppose your current guess is some value <span class="math inline">\(x_0\)</span>. We might approximate the function by the tangent line (first order Taylor approximation) at <span class="math inline">\(x_0\)</span> and take our next guess as the root of that line. Use the Taylor expansion to find the next guess of <span class="math inline">\(x_1\)</span> as</li>
+<li>Determine the power function of the test.</li>
+<li>Compute the size of the test.</li>
 </ol>
-<p><span class="math display">\[x_1 = x_0 - \frac{h(x_0)}{h'(x_0)}\]</span></p>
-<p>Continually updating the guess via this method is known as Newton’s Method or the Newton-Raphson Method.</p>
-<p>Using your work from a., find <span class="math inline">\(x_1\)</span> as a function of <span class="math inline">\(x_0\)</span>.</p>
-<ol start="3" type="a">
-<li>Generate 50 observations from a Cauchy distribution centered at <span class="math inline">\(\theta = 10\)</span>. Based on these 50 observations, use parts a. and b. to estimate <span class="math inline">\(\theta\)</span> with a maximum likelihood approach. Remember, we’re trying to maximize the likelihood, so the function that we are trying to find the root of is derivative of the log-likelihood.</li>
-</ol>
-<p>What is your estimate of <span class="math inline">\(\theta\)</span>? Include plot(s) of your guesses and your final value for the MLE of <span class="math inline">\(\theta\)</span>.</p>
-<p>Note: Once you have completed a. and thought about c., feel free to message me for help on the R syntax. If you tell me exactly what you need and the R error you are getting (i.e., why it doesn’t work), I will tell you how to fix the R code.</p>
-<p>The R code might look something like this:</p>
-<p>where the actual formulas for l1 and l2 will come from part a. Everything in double parentheses needs to be replaced by proper R syntax. The rest of it will run in R. In case you are curious, <code>sum()</code> is the R function for summing a vector of values.</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Use Newton's method to find the MLE for a Cauchy distribution</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>cauchy_mle <span class="ot">&lt;-</span> <span class="cf">function</span>(guess, data){</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    l1 <span class="ot">&lt;-</span> ((compute 1st derivative of log<span class="sc">-</span>likelihood evaluated at <span class="st">"guess"</span>)) <span class="co"># 1st deriv</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    l2 <span class="ot">&lt;-</span> ((compute 2nd derivative of log<span class="sc">-</span>likelihood evaluated at <span class="st">"guess"</span>)) <span class="co"># 2nd deriv</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    guess <span class="ot">&lt;-</span> guess <span class="sc">-</span> l1<span class="sc">/</span>l2</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    guess</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># set up the initial conditions (including the dataset to use)</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">54321</span>)  <span class="co"># to get the same answer each time the .Rmd is knit</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>n_obs <span class="ot">&lt;-</span> <span class="dv">50</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>observations <span class="ot">&lt;-</span> <span class="fu">rcauchy</span>(n_obs, <span class="at">location =</span> <span class="dv">10</span>)  <span class="co"># 50 random Cauchy, centered at 10</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>theta_guess <span class="ot">&lt;-</span> ((pick a starting value, you might try different ones)) <span class="co"># just a number</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<section id="running-cauchy_mle-recursively" class="level5">
-<h5 class="anchored" data-anchor-id="running-cauchy_mle-recursively">Running <code>cauchy_mle</code> recursively</h5>
-<p>Run the function repeatedly:</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>theta_guess <span class="ot">&lt;-</span> ((pick a starting value, you might try different ones)) <span class="co"># just a number</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>guess_vec <span class="ot">&lt;-</span> <span class="fu">numeric</span>()</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>reps <span class="ot">&lt;-</span> <span class="dv">10</span>  <span class="co"># play around with how many times you loop through. </span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># you probably don't need very many times through to see what happens.</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># what happens might seem unsettling!</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>reps){</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  theta_guess <span class="ot">&lt;-</span> <span class="fu">cauchy_mle</span>(___, ___)  <span class="co"># what changes for each rep?</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  guess_vec[i] <span class="ot">&lt;-</span> theta_guess</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>guess_vec</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(guess_vec) <span class="sc">%&gt;%</span>  <span class="co"># ggplot needs a data frame instead of a vector</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> guess_vec, <span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span>reps)) <span class="sc">+</span> </span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>()  <span class="co"># line plot connecting the guesses for each rep</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-
-
 </section>
+<section id="section-5" class="level4">
+<h4 class="anchored" data-anchor-id="section-5">7: 9.1.6</h4>
+<p>Suppose that a single observation <span class="math inline">\(X\)</span> is to be taken from the uniform distribution on the interval <span class="math inline">\([\theta - \frac{1}{2}, \theta + \frac{1}{2}]\)</span>, and suppose that the following hypotheses are to be tested:</p>
+<p><span class="math inline">\(H_0: \theta \leq 3,\)</span><br>
+<span class="math inline">\(H_1: \theta \geq 4.\)</span></p>
+<p>Construct a test procedure <span class="math inline">\(\delta\)</span> for which the power function has the following values: <span class="math inline">\(\pi(\theta | \delta) = 0\)</span> for <span class="math inline">\(\theta \leq 3\)</span> and <span class="math inline">\(\pi(\theta | \delta) = 1\)</span> for <span class="math inline">\(\theta \geq 4\)</span>.</p>
+</section>
+<section id="section-6" class="level4">
+<h4 class="anchored" data-anchor-id="section-6">8: 9.1.9</h4>
+<p>Assume that <span class="math inline">\(X_1,\ldots, X_n\)</span> are i.i.d. with the normal distribution that has mean <span class="math inline">\(\mu\)</span> and variance 1. Suppose that we wish to test the hypotheses:</p>
+<p><span class="math inline">\(H_0: \mu \geq \mu_0,\)</span><br>
+<span class="math inline">\(H_1: \mu &lt; \mu_0.\)</span></p>
+<p>Find a test statistic <span class="math inline">\(T\)</span> such that, for every <span class="math inline">\(c\)</span>, the test <span class="math inline">\(\delta_c\)</span> that rejects <span class="math inline">\(H_0\)</span> when <span class="math inline">\(T \geq c\)</span> has power function <span class="math inline">\(\pi(\mu|\delta_c)\)</span> that is decreasing in <span class="math inline">\(\mu\)</span>.</p>
+</section>
+<section id="r---ntheta-theta2" class="level4">
+<h4 class="anchored" data-anchor-id="r---ntheta-theta2">9: R - <span class="math inline">\(N(\theta, \theta^2)\)</span></h4>
+<p>We are going to study almost, but not exactly, the same model as from the exam. The model for this problem is normal with mean and standard deviation both <span class="math inline">\(\theta\)</span> (i.e., variance <span class="math inline">\(\theta^2\)</span>, not <span class="math inline">\(\theta\)</span> as in the example from the exam). Therefore, we know <span class="math inline">\(\theta \geq 0\)</span>.</p>
+<p>The results from class about properties of MLEs are asymptotic. What happens in small samples?</p>
+<hr>
+<p>The estimators of <span class="math inline">\(\theta\)</span> we wish to compare are:</p>
+<ul>
+<li>the sample median</li>
+<li>the sample mean</li>
+<li>the sample standard deviation times the sign of the sample mean</li>
+<li>the MLE</li>
+</ul>
+<ol type="a">
+<li><p>The MLE of <span class="math inline">\(\theta\)</span> is <span class="math display">\[\hat{\theta} =  - \overline{x}/2 + \sqrt{\bigg(\sum x_i^2\bigg)/n + \overline{x}^2/4}\]</span>. Show (with pencil / LaTeX) that the Fisher Information in <span class="math inline">\(\theta\)</span> is <span class="math inline">\(3/\theta^2\)</span>.</p></li>
+<li><p>Use a simulation to compare the four estimators above with respect to bias, variance, and MSE. Answer the following questions in your comparison:</p>
+<ol type="i">
+<li>Which estimator is (empirically) least biased?</li>
+<li>Which estimator has lowest empirical variability? Do any of the estimators reach the CRLB (assume unbiasedness)?</li>
+<li>Which estimator has lowest empirical MSE?</li>
+<li>Are you comfortable with the idea of using a normal distribution to describe the sampling distribution for any/all of the estimators? Explain.</li>
+<li>Which estimator would you recommend for the given setting? Explain.</li>
+</ol></li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use sample size n = 15. keep this set-up in the first 3 lines</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>n.obs <span class="ot">&lt;-</span> <span class="dv">15</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>n.samps <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>theta <span class="ot">&lt;-</span> <span class="fu">exp</span>(<span class="dv">1</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>means <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n.samps)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>medians <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n.samps)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>sds <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n.samps)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>MLEs <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n.samps)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n.samps){</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># generate some data from the given model</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># means[i] &lt;- mean(the data you generated)</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># etc.</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You can write alternative code for calculating relevant characteristics of the distribution and displaying it, but I choose to put it together in a tidy framework like this:</p>
+<p>Note: in the code below I’ve created smoothed histograms (called density plots) so as to plot the empirical distributions on top of one another.</p>
+<pre><code>library(tidyverse)
+
+est.info &lt;- data.frame(value = c(means , ___, ...), 
+                       type = c(rep("mean", n.samps), ____, ...) )
+
+est.info %&gt;%
+  group_by(type) %&gt;%
+  summarize(est.bias = mean(value) - theta, est.mean = mean(value), 
+            est.var = var(value), est.sd = sd(value)) %&gt;%
+  mutate(est.mse = est.var + est.bias^2)
+
+
+est.info %&gt;%
+  ggplot(aes(x=value, color = type)) + geom_density() +
+  geom_vline(xintercept = exp(1))
+</code></pre>
+
+
 </section>
 </section>
 </section>

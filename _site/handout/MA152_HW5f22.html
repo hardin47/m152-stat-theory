@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.60">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="write your name here">
+
+<title>Statistical Theory - Math 152 - Statistical Theory - Homework 5</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: 1;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="https://m152-stat-theory.netlify.app/">
+    <img src="../images/st47s.png" alt="">
+    <span class="navbar-title">Statistical Theory</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html">Syllabus</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../notes.html">Class Notes</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../clicker_study.html">Clicker Q</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Math 152 - Statistical Theory - Homework 5</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>write your name here </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<section id="important-note" class="level2">
+<h2 class="anchored" data-anchor-id="important-note">Important Note:</h2>
+<p>You should work to turn in assignments that are clear, communicative, and concise. Part of what you need to do is not print pages and pages of output. Additionally, you should remove these exact sentences and the information about HW scoring below.</p>
+<p>Click on the <em>Knit to PDF</em> icon at the top of R Studio to run the R code and create a PDF document simultaneously. [PDF will only work if either (1) you are using R on the network, or (2) you have LaTeX installed on your computer. Lightweight LaTeX installation here: https://yihui.name/tinytex/]</p>
+<blockquote class="blockquote">
+<p>Either use the college’s RStudio server (https://rstudio.pomona.edu/) or install R and R Studio on to your personal computer. See: https://research.pomona.edu/johardin/math152f20/ for resources.</p>
+</blockquote>
+<div class="cell">
+
+</div>
+<section id="assignment" class="level3">
+<h3 class="anchored" data-anchor-id="assignment">Assignment</h3>
+<section id="goals" class="level4">
+<h4 class="anchored" data-anchor-id="goals">Goals:</h4>
+<p>In this assignment, the fun will include:</p>
+<ul>
+<li>practicing that functions of MLEs are MLEs</li>
+<li>finding statistics with chi-square distributions</li>
+<li>revisiting the tanks</li>
+</ul>
+<p><strong>Book problems</strong></p>
+<ul>
+<li>Feel free to do the book problems with a pencil or in LaTeX (RMarkdown supports writing mathematics using LaTeX).<br>
+</li>
+<li>If you use a pencil, you can take a picture of the problem(s), and include the image(s) using (remove the tick marks to make it work):</li>
+</ul>
+<pre><code>![](myimage.jpeg)</code></pre>
+<ul>
+<li><p>Note that myimage.jpeg needs to live in the same folder as the relevant .Rmd file (maybe you called the folder “math 152 hw” and put it on your desktop?)</p></li>
+<li><p>Saving as jpg, jpeg, png, or pdf should work, but make sure to specify the exact name of the file.</p></li>
+<li><p>If you have the 3rd edition of the book, the problems will be the same unless they don’t exist – that is, the 4th edition <em>added</em> problems but didn’t change the order of them. Ask me if you want to see the 4th edition problems.</p></li>
+</ul>
+</section>
+</section>
+<section id="assignment-1" class="level3">
+<h3 class="anchored" data-anchor-id="assignment-1">Assignment</h3>
+<section id="community-q" class="level4">
+<h4 class="anchored" data-anchor-id="community-q">1: Community Q</h4>
+<p>Describe one thing you learned (not from lecture, maybe from working in pairs during class) from a member of the class (student, mentor, professor) – it could be: content, logistical help, background material, R information, etc. 1-3 sentences.</p>
+</section>
+<section id="section" class="level4">
+<h4 class="anchored" data-anchor-id="section">2: 7.6.5</h4>
+<p>Suppose that <span class="math inline">\(X_1, \ldots , X_n\)</span> form a random sample from the uniform distribution on the interval [a, b], where both endpoints a and b are unknown. Find the MLE of the mean of the distribution. [Hint: use theorem 7.6.1 in DeGroot &amp; Schervish and problem #6 from HW4.]</p>
+</section>
+<section id="section-1" class="level4">
+<h4 class="anchored" data-anchor-id="section-1">3: 7.6.6</h4>
+<p>Suppose that <span class="math inline">\(X_1, \ldots , X_n\)</span> form a random sample from a normal distribution for which both the mean and the variance are unknown. Find the MLE of the 0.95 quantile of the distribution, that is, of the point <span class="math inline">\(\theta\)</span> such that <span class="math inline">\(P(X &lt; \theta) = 0.95.\)</span> [Hint: use theorem 7.6.1 in DeGroot &amp; Schervish, see problem #4 below.]</p>
+</section>
+<section id="section-2" class="level4">
+<h4 class="anchored" data-anchor-id="section-2">4. 7.6.21</h4>
+<p>Show that the method of moments estimators of the mean and variance of a normal distribution are also the MLEs. (You will need to calculate both the MLE and the MOM for both <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma^2\)</span>. For MLE, you need derivative wrt <span class="math inline">\(\mu\)</span> and then, separately, derivative wrt <span class="math inline">\(\theta = \sigma^2\)</span>, two equations and two unknowns.)</p>
+</section>
+<section id="section-3" class="level4">
+<h4 class="anchored" data-anchor-id="section-3">5: 7.6.23</h4>
+<p>Suppose that <span class="math inline">\(X_1, \ldots , X_n\)</span> form a random sample from the beta distribution with parameters <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>. Let <span class="math inline">\(\theta = (\alpha, \beta)\)</span> be the vector parameter.</p>
+<ol type="a">
+<li>Find the method of moments estimator for <span class="math inline">\(\theta\)</span>. (The solution is provided because it’s mostly algebra, and the more important question here is part b.)</li>
+</ol>
+<p><strong>Solution to a.:</strong></p>
+<ol type="a">
+<li>The expectations of <span class="math inline">\(X_i\)</span> and <span class="math inline">\(X_i^2\)</span> (i.e., the first two theoretical moments) are respectively <span class="math inline">\(\alpha/(\alpha+\beta)\)</span> and <span class="math inline">\(\alpha(\alpha+1)/[(\alpha+\beta)(\alpha+\beta+1)]\)</span>. We set these equal to the sample moments <span class="math inline">\(\overline{X}\)</span> and <span class="math inline">\(\overline{X^2} = \frac{\sum_i X_i^2}{n}\)</span> and solve for <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>.</li>
+</ol>
+<p><span class="math display">\[\begin{eqnarray*}
+E[X] &amp;=&amp; \frac{\alpha}{\alpha + \beta}\\
+E[X^2] &amp;=&amp; (E[X])^2 + Var(X) = \Bigg(\frac{\alpha}{\alpha + \beta}\Bigg)^2 + \frac{\alpha \beta}{(\alpha + \beta)^2(\alpha + \beta + 1)}
+\end{eqnarray*}\]</span></p>
+<p>Setting the sample moments equal to the theoretical moments we get, <span class="math display">\[\begin{eqnarray*}
+\overline{X} &amp;=&amp; \frac{\alpha}{\alpha + \beta}\\
+\overline{X^2} &amp;=&amp;\bigg(\overline{X}\bigg)^2 + \bigg(\overline{X}\bigg)^2\frac{\beta}{\alpha(\alpha + \beta + 1)}\\
+&amp;=&amp; \bigg(\overline{X}\bigg)^2 + \frac{\bigg(\overline{X}\bigg)^2 (1 - \overline{X})}{\alpha + \overline{X}}\\
+&amp;&amp;\\
+\hat{\alpha} &amp;=&amp; \frac{\overline{X}(\overline{X} - \overline{X^2})}{\overline{X^2} - (\overline{X})^2}\\
+\hat{\beta} &amp;=&amp; \frac{(\overline{X} - \overline{X^2})(1-\overline{X})}{\overline{X^2} - (\overline{X})^2}
+\end{eqnarray*}\]</span></p>
+<ol start="2" type="a">
+<li>Show that the method of moments estimator is not the MLE. (Note: you do not need to actually solve for the MLE, just convince your reader that they can’t be the same.)</li>
+</ol>
+</section>
+<section id="section-4" class="level4">
+<h4 class="anchored" data-anchor-id="section-4">6: 8.1.1</h4>
+<p>Suppose that a random sample <span class="math inline">\(X_1, \ldots, X_n\)</span> is to be taken from the uniform distribution on the interval <span class="math inline">\([0, \theta]\)</span> and that <span class="math inline">\(\theta\)</span> is unknown. How large a random sample must be taken in order that</p>
+<p><span class="math display">\[P ( | \max\{ X_1,\ldots , X_n \} - \theta | \leq 0.1 \cdot \theta) \geq 0.95,\]</span></p>
+<p>for all possible <span class="math inline">\(\theta\)</span>?</p>
+</section>
+<section id="section-5" class="level4">
+<h4 class="anchored" data-anchor-id="section-5">7: 8.1.6</h4>
+<p>For the conditions of Exercise 5, use the central limit theorem in Sec. 6.3 to find approximately the size of a random sample that must be taken in order that <span class="math display">\[P(|\overline{X} - p| \leq 0.1) \geq 0.95 \mbox{  when  } p = 0.2.\]</span></p>
+</section>
+<section id="section-6" class="level4">
+<h4 class="anchored" data-anchor-id="section-6">8: 8.2.10</h4>
+<p>Suppose that six random variables <span class="math inline">\(X_1,\ldots, X_6\)</span> form a random sample from the standard normal distribution, and let</p>
+<p><span class="math display">\[Y = (X_1 + X_2 + X_3)^2 + (X_4 + X_5 + X_6)^2.\]</span></p>
+<p>Determine a value of <span class="math inline">\(c\)</span> such that the random variable <span class="math inline">\(cY\)</span> will have a <span class="math inline">\(\chi^2\)</span> distribution.</p>
+</section>
+<section id="r---tanks" class="level4">
+<h4 class="anchored" data-anchor-id="r---tanks">9: R - Tanks</h4>
+<p>Consider the tank problem encountered in class. Your task at hand is to provide the best possible estimator for the true number of tanks. Consider the R code below that analyzes two estimators (<span class="math inline">\(2\overline{X}\)</span> and the maximum of the sample). You should <strong>provide an argument (in words but using the evidence collected here) for your choice of estimator</strong> using the following information:</p>
+<ul>
+<li>a comparison of at least 5 estimators (of your choice!, add to the two I gave, or replace them and use 5 of your own)</li>
+<li>consideration of sample bias, sample variance, sample median, sample mean, sample MSE</li>
+<li>run the entire analysis twice. Once with a sample size of n=5, once with a sample size of n=100</li>
+</ul>
+<p>Hint on the R code: create new estimators one by one by adding them on to the two which I wrote.</p>
+<ol type="1">
+<li>add more functions inside of the <code>calculate_N</code> function</li>
+<li>make sure that you output (output of the <code>calculate_N</code> function) all of the new statistics</li>
+<li>when you <code>pivot_longer</code> be sure to get all of the columns. The colon gives a range of columns (which will be from <code>xbar2</code> to <code>samp.max</code> if you add the statistics between them). Ask if this doesn’t make sense.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># a function for calculating the estimates of N based on a sample of size nsamp</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>calculate_N <span class="ot">&lt;-</span> <span class="cf">function</span>(nsamp,npop){</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  mysample <span class="ot">&lt;-</span>  <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span>npop,nsamp,<span class="at">replace=</span>F)  <span class="co"># what does this line do?</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  xbar2 <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">*</span> <span class="fu">mean</span>(mysample) <span class="sc">-</span> <span class="dv">1</span> </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># add more functions here between xbar2 and samp.max</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  samp.max <span class="ot">&lt;-</span> <span class="fu">max</span>(mysample)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(xbar2, samp.max, nsamp, npop)  <span class="co"># output: make sure to include all of your statistics</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>reps <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>nsamp_try <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>npop_try <span class="ot">&lt;-</span> <span class="dv">447</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">map_df</span>(<span class="dv">1</span><span class="sc">:</span>reps, <span class="sc">~</span><span class="fu">map2</span>(nsamp_try, npop_try, calculate_N))  <span class="co"># running the function 2 times.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  xbar2 samp.max nsamp npop
+1 517.8      409     5  447
+2 425.8      297     5  447</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># what do you see?</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>reps <span class="ot">&lt;-</span> <span class="dv">1000</span>  <span class="co"># now let's do it for real and save the results</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="fu">map_df</span>(<span class="dv">1</span><span class="sc">:</span>reps, <span class="sc">~</span><span class="fu">map2</span>(nsamp_try, npop_try, calculate_N))</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># what do the results look like?  let's look at the top 10 rows:</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>results <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   xbar2 samp.max nsamp npop
+1  615.0      410     5  447
+2  647.4      384     5  447
+3  439.4      304     5  447
+4  526.2      393     5  447
+5  428.6      411     5  447
+6  375.0      290     5  447
+7  509.4      421     5  447
+8  542.6      379     5  447
+9  430.6      366     5  447
+10 335.4      323     5  447</code></pre>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># making the results long instead of wide:</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>results_long <span class="ot">&lt;-</span> results <span class="sc">%&gt;%</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> xbar2<span class="sc">:</span>samp.max, <span class="co"># a range of columns (from xbar2 to samp.max)</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">"estimator"</span>,  <span class="co"># the column names will go into a new column called estimator</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">"estimate"</span>)  <span class="co"># the values will go into a new column called estimate</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># how is results different from results_long?  let's look at the top 10 rows:</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>results_long <span class="sc">%&gt;%</span> <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 4
+  nsamp  npop estimator estimate
+  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;        &lt;dbl&gt;
+1     5   447 xbar2         615 
+2     5   447 samp.max      410 
+3     5   447 xbar2         647.
+4     5   447 samp.max      384 
+5     5   447 xbar2         439.
+6     5   447 samp.max      304 </code></pre>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>results_long <span class="sc">%&gt;%</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(nsamp, npop, estimator) <span class="sc">%&gt;%</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">mean =</span> <span class="fu">mean</span>(estimate),       <span class="co"># calculating the evaluation metrics, do you</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">median =</span> <span class="fu">median</span>(estimate),   <span class="co"># understand these lines of code?</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">bias =</span> <span class="fu">mean</span>(estimate <span class="sc">-</span> npop),</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">var =</span> <span class="fu">var</span>(estimate), </span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">mse =</span> (<span class="fu">mean</span>(estimate <span class="sc">-</span> npop))<span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span> <span class="fu">var</span>(estimate))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 8
+# Groups:   nsamp, npop [1]
+  nsamp  npop estimator  mean median   bias    var    mse
+  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;
+1     5   447 samp.max   374.    392 -72.6   3897.  9173.
+2     5   447 xbar2      443.    443  -3.60 12945. 12957.</code></pre>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>results_long <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> estimate)) <span class="sc">+</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="fu">aes</span>(<span class="at">xintercept =</span> npop), <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(nsamp <span class="sc">~</span> estimator) <span class="sc">+</span> </span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"sampling distributions of estimators of N, pop size = 447"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="MA152_HW5f22_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+
+
+</section>
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><a href="https://hardin47.netlify.app/research/"><i class="fa-solid fa-book" aria-hidden="true"></i></a> <a href="https://hardin47.netlify.app/resume.pdf" target="_blank"><i class="fa-solid fa-bookmark"></i></a> <a href="mailto:jo.hardin@pomona.edu" target="_blank"><i class="fa-solid fa-at"></i></a> <a href="https://scholar.google.com/citations?user=c5Y77poAAAAJ&amp;hl=en" target="_blank"><i class="fa-brands fa-google-scholar"></i></a> <a href="https://www.researchgate.net/scientific-contributions/Johanna-Hardin-9764530" target="_blank"><i class="fa-brands fa-researchgate"></i></a><br>
+<a href="https://mobile.twitter.com/jo_hardin47" target="_blank"><i class="fa-brands fa-twitter"></i></a> <a href="https://github.com/hardin47" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/jo-hardin-b91a4b55" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>   
+      <div class="nav-footer-center">
+        <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ <br> © Jo Hardin, 2022 -- <a href="mailto: jo.hardin@pomona.edu">jo.hardin@pomona.edu</a> -- <a href="https://hardin47.netlify.app/">https://hardin47.netlify.app/</a> <br> <br>
+Math 152 -- Statistical Theory -- Pomona College, Claremont, CA <br>
+  </li>  
+</ul>
+      </div>
+  </div>
+</footer>
+
+
+
+</body></html>
