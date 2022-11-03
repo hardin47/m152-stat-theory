@@ -619,3 +619,97 @@ $\hat{\theta}$ is unbiased for $\theta$ if:[^52]
     (d) all of the above
 
 [^54]: (d) all of the above
+
+---
+
+55. Why don’t we set up our test as: always reject $H_0?$[^55]
+    (a) type I error too high
+    (b) type II error too high
+    (c) level of sig too high
+    (d) power too high
+
+[^55]: (a) type I error too high
+
+---
+
+56. Why do we care about the distribution of the test statistic?[^56]
+    (a) Better estimator
+    (b) To find the rejection region / critical region
+    (c) To minimize the power
+    (d) Because we love the Central Limit Theorem
+
+[^56]: (b) To find the rejection region / critical region
+
+---
+
+57. Given a statistic T = r(X), how do we find a (good) test?[^57]
+    (a) Maximize power when $H_1$ is true
+    (b) Minimize type I error
+    (c) Control type I error
+    (d) Minimize type II error
+    (e) Control type II error
+
+[^57]: (c) Control type I error
+
+---
+
+58. We can find the probability of type II error (at a given $\theta \in \Omega_1)$ as[^58]
+    (a) a value of the power curve (at $\theta)$
+    (b) 1 – P(type I error at $\theta)$
+    (c) $\pi(\theta | \delta)$
+    (d) 1- $\pi(\theta | \delta)$
+    (e) we can’t ever find the probability of a type II error
+
+[^58]: (d) 1- $\pi(\theta | \delta)$
+
+---
+
+59. Why don’t we use the power function to **also** control the type II error?[^59]
+(We want the power to be big in $\Omega_1$, so we'd control it by keeping the power from getting too small.)
+    (a) $\inf_{\theta \in \Omega_1} \pi(\theta | \delta)$ does not exist
+    (c) $\inf_{\theta \in \Omega_1} \pi(\theta | \delta)$ =0
+    (d) $\inf_{\theta \in \Omega_1} \pi(\theta | \delta)$ = always really big
+    (b) $\inf_{\theta \in \Omega_1} \pi(\theta | \delta)$ =1
+    (e) $\inf_{\theta \in \Omega_1} \pi(\theta | \delta)$ = always really small
+
+[^59]: (e) $\inf_{\theta \in \Omega_1} \pi(\theta | \delta)$ = always really small
+
+---
+
+60. With two simple hypotheses, hypothesis testing simplifies because we can now control (i.e., compute):[^60]
+    (a) the size of the test.
+    (b) the power of the test.
+    (c) the probability of type I error.
+    (d) the probability of type II error.
+    (e) a rejection region.
+
+[^60]: (b) the power of the test. or (d) the probability of type II error. (they are functions of one another)
+
+---
+
+57. The likelihood ratio is super awesome because
+(a) it provides the test statistic 
+(b) it provides the critical region
+(c) it provides the type I error
+(d) it provides the type II error
+(e) it provides the power
+
+---
+
+58.  A uniformly most powerful (UMP) test
+(a) has the highest possible power in Ω1.
+(b) has the lowest possible power in Ω1.
+(c) has the same power over all θ in Ω1.
+(d) has the highest possible power in Ω1 subject to controlling α(δ).
+(e) is a test we try to avoid. 
+
+---
+
+59. A monotone likelihood ratio statistic is awesome because
+(a) it is the MLE
+(b) it is easy to compute
+(c) its distribution is known
+(d) it is unbiased
+(e) it is monotonic with respect to the likelihood ratio
+
+
