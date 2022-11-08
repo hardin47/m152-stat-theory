@@ -687,29 +687,101 @@ $\hat{\theta}$ is unbiased for $\theta$ if:[^52]
 
 ---
 
-57. The likelihood ratio is super awesome because
-(a) it provides the test statistic 
-(b) it provides the critical region
-(c) it provides the type I error
-(d) it provides the type II error
-(e) it provides the power
+61. The likelihood ratio is super awesome because[^61]
+    (a) it provides the test statistic 
+    (b) it provides the critical region
+    (c) it provides the type I error
+    (d) it provides the type II error
+    (e) it provides the power
+
+[^61]: (a) it provides the test statistic 
 
 ---
 
-58.  A uniformly most powerful (UMP) test
-(a) has the highest possible power in Ω1.
-(b) has the lowest possible power in Ω1.
-(c) has the same power over all θ in Ω1.
-(d) has the highest possible power in Ω1 subject to controlling α(δ).
-(e) is a test we try to avoid. 
+62. A uniformly most powerful (UMP) test[^62]
+    (a) has the highest possible power in $\Omega_1$.
+    (b) has the lowest possible power in $\Omega_1$.
+    (c) has the same power over all $\theta \in \Omega_1$.
+    (d) has the highest possible power in $\Omega_1$ subject to controlling $\alpha(\delta).$
+    (e) is a test we try to avoid. 
+
+[^62]: (d) has the highest possible power in $\Omega_1$ subject to controlling $\alpha(\delta).$
 
 ---
 
-59. A monotone likelihood ratio statistic is awesome because
-(a) it is the MLE
-(b) it is easy to compute
-(c) its distribution is known
-(d) it is unbiased
-(e) it is monotonic with respect to the likelihood ratio
+63. A monotone likelihood ratio statistic is awesome because[^63]
+    (a) it is the MLE
+    (b) it is easy to compute
+    (c) its distribution is known
+    (d) it is unbiased
+    (e) it is monotonic with respect to the likelihood ratio
 
+[^63]: (e) it is monotonic with respect to the likelihood ratio
+
+---
+
+64. Likelihood Ratio Test[^64]
+    (a) gives a statistic for comparing likelihoods
+    (b) is always UMP
+    (c) works only with some types of hypotheses
+    (d) works only with hypotheses about one parameter
+    (e) gives the distribution of the test statistic
+
+[^64]: (e) gives the distribution of the test statistic
+
+---
+
+65. Increasing sample size[^65]
+    (a)	Increases power (over $\Omega_1$)
+    (b)	Decreases power (over $\Omega_1$)
+
+[^65]: (a)	Increases power (over $\Omega_1$)
+
+---
+
+66.	Making significance level more stringent ($\alpha_0$ smaller)[^66]
+    (a)	Increases power (over $\Omega_1$)
+    (b)	Decreases power (over $\Omega_1$)
+
+[^66]: (b)	Decreases power (over $\Omega_1$)
+
+---
+
+67.	A more extreme alternative is true[^67]
+    (a)	Increases power (over $\Omega_1$)
+    (b)	Decreases power (over $\Omega_1$)
+
+[^67]: (a)	Increases your power (over $\Omega_1$)
+
+---
+
+68. Given the situation where $H_1: \mu_1 - \mu_2 \ne 0$ is TRUE.  Consider 100 CIs (for $\mu_1 - \mu_2$), the power of the test can be approximated by:[^68]
+    (a) The proportion that contain the true mean.
+    (b) The proportion that do not contain the true mean.
+    (c) The proportion that contain zero.
+    (d) The proportion that do not contain zero.
+
+[^68]: (d) The proportion that do not contain zero.
+
+---
+
+69. It is hard to find the power associated with the t-test because:[^69]
+    (a) the non-central t-distribution is tricky.
+    (b) two-sided power is difficult to find.
+    (c) we don’t know the variance.
+    (d) the t-distribution isn't integrable.
+
+[^69]: (a) the non-central t-distribution is tricky.
+
+---
+
+70. Consider the likelihood ratio statistic:[^70]
+$$\Lambda(x) = \frac{\sup_{\Omega_1} f(\underline{x} | \theta)}{\sup_{\Omega_0} f(\underline{x} | \theta)}$$
+    (a) $\Lambda(x) \geq 1$
+    (b) $\Lambda(x) \leq 1$
+    (c) $\Lambda(x) \geq 0$
+    (d) $\Lambda(x) \leq 0$
+    (e) bounds on $\Lambda(x)$ depend on hypotheses
+
+[^70]: $\Lambda(x) \geq 1$
 

@@ -1133,47 +1133,127 @@ What was the prior on <span class="math inline">\(\mu\)</span>?<a href="#/footno
 <aside></aside></section>
 <section class="slide level2">
 
-<ol start="57" type="1">
-<li>The likelihood ratio is super awesome because</li>
-</ol>
+<ol start="61" type="1">
+<li>The likelihood ratio is super awesome because<a href="#/footnotes" class="footnote-ref" id="fnref59" role="doc-noteref" data-footnote-href="#/fn59" onclick=""><sup>59</sup></a>
 <ol type="a">
 <li>it provides the test statistic</li>
 <li>it provides the critical region</li>
 <li>it provides the type I error</li>
 <li>it provides the type II error</li>
 <li>it provides the power</li>
+</ol></li>
 </ol>
-</section>
+<aside></aside></section>
 <section class="slide level2">
 
-<ol start="58" type="1">
-<li>A uniformly most powerful (UMP) test</li>
-</ol>
+<ol start="62" type="1">
+<li>A uniformly most powerful (UMP) test<a href="#/footnotes" class="footnote-ref" id="fnref60" role="doc-noteref" data-footnote-href="#/fn60" onclick=""><sup>60</sup></a>
 <ol type="a">
-<li>has the highest possible power in Ω1.</li>
-<li>has the lowest possible power in Ω1.</li>
-<li>has the same power over all θ in Ω1.</li>
-<li>has the highest possible power in Ω1 subject to controlling α(δ).</li>
+<li>has the highest possible power in <span class="math inline">\(\Omega_1\)</span>.</li>
+<li>has the lowest possible power in <span class="math inline">\(\Omega_1\)</span>.</li>
+<li>has the same power over all <span class="math inline">\(\theta \in \Omega_1\)</span>.</li>
+<li>has the highest possible power in <span class="math inline">\(\Omega_1\)</span> subject to controlling <span class="math inline">\(\alpha(\delta).\)</span></li>
 <li>is a test we try to avoid.</li>
+</ol></li>
 </ol>
-</section>
+<aside></aside></section>
 <section class="slide level2">
 
-<ol start="59" type="1">
-<li>A monotone likelihood ratio statistic is awesome because</li>
-</ol>
+<ol start="63" type="1">
+<li>A monotone likelihood ratio statistic is awesome because<a href="#/footnotes" class="footnote-ref" id="fnref61" role="doc-noteref" data-footnote-href="#/fn61" onclick=""><sup>61</sup></a>
 <ol type="a">
 <li>it is the MLE</li>
 <li>it is easy to compute</li>
 <li>its distribution is known</li>
 <li>it is unbiased</li>
 <li>it is monotonic with respect to the likelihood ratio</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="64" type="1">
+<li>Likelihood Ratio Test<a href="#/footnotes" class="footnote-ref" id="fnref62" role="doc-noteref" data-footnote-href="#/fn62" onclick=""><sup>62</sup></a>
+<ol type="a">
+<li>gives a statistic for comparing likelihoods</li>
+<li>is always UMP</li>
+<li>works only with some types of hypotheses</li>
+<li>works only with hypotheses about one parameter</li>
+<li>gives the distribution of the test statistic</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="65" type="1">
+<li>Increasing sample size<a href="#/footnotes" class="footnote-ref" id="fnref63" role="doc-noteref" data-footnote-href="#/fn63" onclick=""><sup>63</sup></a>
+<ol type="a">
+<li>Increases power (over <span class="math inline">\(\Omega_1\)</span>)</li>
+<li>Decreases power (over <span class="math inline">\(\Omega_1\)</span>)</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="66" type="1">
+<li>Making significance level more stringent (<span class="math inline">\(\alpha_0\)</span> smaller)<a href="#/footnotes" class="footnote-ref" id="fnref64" role="doc-noteref" data-footnote-href="#/fn64" onclick=""><sup>64</sup></a>
+<ol type="a">
+<li>Increases power (over <span class="math inline">\(\Omega_1\)</span>)</li>
+<li>Decreases power (over <span class="math inline">\(\Omega_1\)</span>)</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="67" type="1">
+<li>A more extreme alternative is true<a href="#/footnotes" class="footnote-ref" id="fnref65" role="doc-noteref" data-footnote-href="#/fn65" onclick=""><sup>65</sup></a>
+<ol type="a">
+<li>Increases power (over <span class="math inline">\(\Omega_1\)</span>)</li>
+<li>Decreases power (over <span class="math inline">\(\Omega_1\)</span>)</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="68" type="1">
+<li>Given the situation where <span class="math inline">\(H_1: \mu_1 - \mu_2 \ne 0\)</span> is TRUE. Consider 100 CIs (for <span class="math inline">\(\mu_1 - \mu_2\)</span>), the power of the test can be approximated by:<a href="#/footnotes" class="footnote-ref" id="fnref66" role="doc-noteref" data-footnote-href="#/fn66" onclick=""><sup>66</sup></a>
+<ol type="a">
+<li>The proportion that contain the true mean.</li>
+<li>The proportion that do not contain the true mean.</li>
+<li>The proportion that contain zero.</li>
+<li>The proportion that do not contain zero.</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="69" type="1">
+<li>It is hard to find the power associated with the t-test because:<a href="#/footnotes" class="footnote-ref" id="fnref67" role="doc-noteref" data-footnote-href="#/fn67" onclick=""><sup>67</sup></a>
+<ol type="a">
+<li>the non-central t-distribution is tricky.</li>
+<li>two-sided power is difficult to find.</li>
+<li>we don’t know the variance.</li>
+<li>the t-distribution isn’t integrable.</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="70" type="1">
+<li>Consider the likelihood ratio statistic:<a href="#/footnotes" class="footnote-ref" id="fnref68" role="doc-noteref" data-footnote-href="#/fn68" onclick=""><sup>68</sup></a> <span class="math display">\[\Lambda(x) = \frac{\sup_{\Omega_1} f(\underline{x} | \theta)}{\sup_{\Omega_0} f(\underline{x} | \theta)}\]</span>
+<ol type="a">
+<li><span class="math inline">\(\Lambda(x) \geq 1\)</span></li>
+<li><span class="math inline">\(\Lambda(x) \leq 1\)</span></li>
+<li><span class="math inline">\(\Lambda(x) \geq 0\)</span></li>
+<li><span class="math inline">\(\Lambda(x) \leq 0\)</span></li>
+<li>bounds on <span class="math inline">\(\Lambda(x)\)</span> depend on hypotheses</li>
+</ol></li>
 </ol>
 
 <div class="footer footer-default">
 
 </div>
-</section></section>
+<aside></aside></section></section>
 <section id="footnotes" class="footnotes footnotes-end-of-document smaller scrollable" role="doc-endnotes"><h2>Footnotes</h2>
 
 <ol>
@@ -1394,6 +1474,43 @@ What was the prior on <span class="math inline">\(\mu\)</span>?<a href="#/footno
 <li>the power of the test. or (d) the probability of type II error. (they are functions of one another)</li>
 </ol>
 </li>
+<li id="fn59"><ol type="a">
+<li>it provides the test statistic</li>
+</ol>
+</li>
+<li id="fn60"><ol start="4" type="a">
+<li>has the highest possible power in <span class="math inline">\(\Omega_1\)</span> subject to controlling <span class="math inline">\(\alpha(\delta).\)</span></li>
+</ol>
+</li>
+<li id="fn61"><ol start="5" type="a">
+<li>it is monotonic with respect to the likelihood ratio</li>
+</ol>
+</li>
+<li id="fn62"><ol start="5" type="a">
+<li>gives the distribution of the test statistic</li>
+</ol>
+</li>
+<li id="fn63"><ol type="a">
+<li>Increases power (over <span class="math inline">\(\Omega_1\)</span>)</li>
+</ol>
+</li>
+<li id="fn64"><ol start="2" type="a">
+<li>Decreases power (over <span class="math inline">\(\Omega_1\)</span>)</li>
+</ol>
+</li>
+<li id="fn65"><ol type="a">
+<li>Increases your power (over <span class="math inline">\(\Omega_1\)</span>)</li>
+</ol>
+</li>
+<li id="fn66"><ol start="4" type="a">
+<li>The proportion that do not contain zero.</li>
+</ol>
+</li>
+<li id="fn67"><ol type="a">
+<li>the non-central t-distribution is tricky.</li>
+</ol>
+</li>
+<li id="fn68"><p><span class="math inline">\(\Lambda(x) \geq 1\)</span></p></li>
 </ol>
 </section>
     </div>
