@@ -62,7 +62,7 @@ Suppose that a random variable has the normal distribution with mean 0 and unkno
 
 Suppose that a random variable X has the normal distribution with mean 0 and unknown variance $\sigma^2 > 0$. Find the Fisher information $I(\sigma^2)$ in $X$. Note that in this exercise the variance $\sigma^2$ is regarded as the parameter, whereas in Exercise 8.8.4 the standard deviation $\sigma$ is regarded as the parameter.
 
-Also, show that the unbiased estimator of $\sigma^2$ is not efficient.
+Also, show that the unbiased estimator of $\sigma^2$ \bigg($s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(X_i - \overline{X})^2$\bigg) is not efficient.
 
 Note to self: there is no simple way to get from problem 8.8.4 to 8.8.5.  That is, we know the MLE of a function is that function of the MLE.  Not true for information.
 

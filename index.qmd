@@ -78,7 +78,7 @@ schedule <- tribble(
 '<font color = "#114B5F"><b>review & catch-up</b></font>',
 '<font color = "#114B5F"><b>exam 1 in class<br> 10.13.22</b></font>',
  '<a href="https://m152-stat-theory.netlify.app/handout/MA152_HW7f22.pdf" target = "_blank"><i class="fa-solid fa-file-pdf"></i> HW7 pdf</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/MA152_HW7f22.Rmd" target = "_blank"><i class="fa-brands fa-r-project"></i> HW7 Rmd</a> <br> <i class="fa-solid fa-paper-plane"></i>not due, ever',
-  '<a href="https://canvas.pomona.edu/" target = "_blank"><i class="fa-solid fa-paper-plane"></i> see Canvas</a> for sample exam Q & sol',
+  '<a href="https://canvas.pomona.edu/" target = "_blank"><i class="fa-solid fa-paper-plane"></i> see Canvas</a> for sample exam 1 Q & sol',
   '',
 
 '<font color = "#114B5F"><b>Tuesday <br>10.18.22</b></font>', '<font color = "#114B5F"><b>Fall Break</b></font>',"", 
@@ -102,14 +102,14 @@ schedule <- tribble(
 
 "Week 10 <br> 11.1.22", 
   '• hypotehsis testing + <br>• simple hypotheses',
-  'P&S: 9.1 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
+  'P&S: 9.1 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
   'no HW',
   '',
   '<a href="https://m152-stat-theory.netlify.app/handout/wu15_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 15</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/wu16_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 16</a>',
   
 "Week 11 <br> 11.8.22", 
   '• Neyman-Pearson',
-  'P&S: 9.2 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
+  'P&S: 9.2 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
   '<a href="https://m152-stat-theory.netlify.app/handout/MA152_HW9f22.pdf" target = "_blank"><i class="fa-solid fa-file-pdf"></i> HW9 pdf</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/MA152_HW9f22.Rmd" target = "_blank"><i class="fa-brands fa-r-project"></i> HW9 Rmd</a> <br> <a href="https://canvas.pomona.edu/" target = "_blank"><i class="fa-solid fa-paper-plane"></i> HW9 turn-in</a>',
   '',
   '',  
@@ -117,13 +117,13 @@ schedule <- tribble(
 '<font color = "#114B5F"><b>Week 12 <br> 11.15.22</b></font>', 
 '<font color = "#114B5F"><b>review & catch-up</b></font>',
 '<font color = "#114B5F"><b>exam 2 in class<br> 11.17.22</b></font>',
-  '',
-  '',
+ '<a href="https://m152-stat-theory.netlify.app/handout/MA152_HW10f22.pdf" target = "_blank"><i class="fa-solid fa-file-pdf"></i> HW10 pdf</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/MA152_HW10f22.Rmd" target = "_blank"><i class="fa-brands fa-r-project"></i> HW10 Rmd</a> <br> <i class="fa-solid fa-paper-plane"></i>not due, ever',
+  '<a href="https://canvas.pomona.edu/" target = "_blank"><i class="fa-solid fa-paper-plane"></i> see Canvas</a> for sample exam 2 Q & sol',  
   '',
 
-"Week 13 <br> 11.22.22", 
+'Week 13 <br> 11.22.22', 
   '• UMP',
-  'P&S: 9.3 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = 
+  'P&S: 9.3 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = 
 "_blank"><i class="fas fa-book-open"></i></a>',
   '',
   '',
@@ -136,7 +136,7 @@ schedule <- tribble(
 
 "Week 14 <br> 11.29.22", 
   '• two-sided + <br>• t-tests + <br>•  LRT + <br> goodness of fit',
-  'P&S: 9.4-9.6, 10.1 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = 
+  'P&S: 9.4-9.6, 10.1 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = 
 "_blank"><i class="fas fa-book-open"></i></a>',
   '',
   '',
@@ -144,7 +144,7 @@ schedule <- tribble(
 
 "Week 15 <br> 12.6.22", 
   '• Bayes tests + <br>• foundational ideas',
-  'P&S: 9.8-9.9 <br> <a href="https://st47s.com/Math152/Notes/intro.html" target = 
+  'P&S: 9.8-9.9 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = 
 "_blank"><i class="fas fa-book-open"></i></a>',
   '',
   '',
@@ -172,7 +172,7 @@ schedule <- tribble(
 # can use column: body-outset to bleed outside the center column of text
 schedule %>% 
   mutate_all(linebreak) %>% # required for linebreaks to work
-  kbl(escape = FALSE, align = c(rep('l',7))) %>%
+  kbl(escape = FALSE, align = c(rep('l',6))) %>%
   kable_styling(bootstrap_options = c("striped", "hover"),
                 full_width = TRUE) %>%
   column_spec(1:6,extra_css = "vertical-align:top;")

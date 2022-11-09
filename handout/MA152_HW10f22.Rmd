@@ -1,0 +1,194 @@
+---
+title: "Math 152 - Statistical Theory - Homework 10"
+author: "write your name here"
+date: "not due ever"
+output: pdf_document
+---
+
+## Important Note:
+You should work to turn in assignments that are clear, communicative, and concise.  Part of what you need to do is not print pages and pages of output.  Additionally, you should remove these exact sentences and the information about HW scoring below.
+
+
+Click on the *Knit to PDF* icon at the top of R Studio to run the R code and create a PDF document simultaneously. [PDF will only work if either (1) you are using R on the network, or (2) you have LaTeX installed on your computer.  Lightweight LaTeX installation here: https://yihui.name/tinytex/]
+
+> Either use the college's RStudio server (https://rstudio.pomona.edu/)
+or install R and R Studio on to your personal computer. 
+See:  https://m152-stat-theory.netlify.app/syllabus.html for resources.
+
+
+```{r warning=FALSE, comment=FALSE, message=FALSE, echo = FALSE}
+knitr::opts_chunk$set(message=FALSE, warning=FALSE, fig.height=3, fig.width=5, 
+                      fig.align = "center")
+library(tidyverse)
+```
+
+
+### Assignment
+
+#### Goals:
+
+In this assignment, the fun will include:
+
+* size, power, and p-values
+* simple vs simple test
+* most powerful tests
+
+**Book problems**   
+
+* Feel free to do the book problems with a pencil or in LaTeX (RMarkdown supports writing mathematics using LaTeX).   
+* If you use a pencil, you can take a picture of the problem(s), and include the image(s) using (remove the tick marks to make it work):
+
+```
+![](myimage.jpeg)
+```
+
+   - Note that myimage.jpeg needs to live in the same folder as the relevant .Rmd file (maybe you called the folder "math 152 hw" and put it on your desktop?)
+   - Saving as jpg, jpeg, png, or pdf should work, but make sure to specify the exact name of the file.
+   
+* If you have the 3rd edition of the book, the problems will be the same unless they don't exist -- that is, the 4th edition *added* problems but didn't change the order of them.  Ask me if you want to see the 4th edition problems. 
+
+
+### Assignment
+
+#### 1:  Community Q
+Describe one thing you learned (not from lecture, maybe from working in pairs during class) from a member of the class (student, mentor, professor) -- it could be: content, logistical help, background material, R information, etc.  1-3 sentences.
+
+
+
+#### 2: 9.1.13
+
+Let $X$ have the Poisson distribution with mean $\theta$. Suppose that we wish to test the hypotheses:
+
+$H_0: \theta \leq 1.0,$  
+$H_1: \theta >1.0.$
+
+Let $\delta_c$ be the test that rejects $H_0$ if $X \geq c$. Find $c$ to make
+the size of $\delta_c$ as close as possible to 0.1 without being larger than 0.1.
+
+Note:  in R use `ppois()`.
+
+
+#### 3: 9.1.14
+
+Let $X_1, \ldots , X_n$ be i.i.d. with the exponential distribution with parameter $\theta$. Suppose that we wish to test the hypotheses:
+
+$H_0: \theta \geq \theta_0,$  
+$H_1: \theta < \theta_0.$
+
+
+Let $X = \sum_{i=1}^n X_i$. Let $\delta_c$ be the test that rejects $H_0$ if $X \geq c.$
+
+   a. Show that $\pi(\theta | \delta_c)$ is a decreasing function of $\theta$.
+   b. Find $c$ in order to make $\delta_c$ have size $\alpha_0$.
+   c. Let $\theta_0 = 2$, $n = 1$, and $\alpha_0 = 0.1$. Find the precise form of the test $\delta_c$ and sketch its power function.
+
+Note: $\theta * \sum(x_i) \sim$ Gamma(n,1)
+
+
+
+#### 4: 9.1.15
+
+Let $X$ have the uniform distribution on the interval $[0, \theta]$, and suppose that we wish to test the hypotheses
+
+$H_0: \theta \leq 1,$  
+$H_1: \theta  > 1.$
+
+We shall consider test procedures of the form "reject $H_0$ if $X \geq c$." For each possible value $x$ of $X$, find the p-value if $X = x$ is observed (that is, find the p-value as a function of $x$).
+
+
+#### 5: 9.2.2
+
+Consider two pdfs $f_0(x)$ and $f_1(x)$ that are defined as follows:
+
+$$f_0(x) = \begin{cases}
+1 & \mbox{ for } 0 \leq x \leq 1,\\
+0 & \mbox{ otherwise},\\
+\end{cases}$$
+
+and
+$$f_1(x) = \begin{cases}
+2x & \mbox{ for } 0 \leq x \leq 1,\\
+0 & \mbox{ otherwise}.\\
+\end{cases}$$
+
+Suppose that a single observation $X$ is taken from a distribution for which the pdf $f(x)$ is either $f_0(x)$ or $f_1(x)$, and the following simple hypotheses are to be tested:
+
+$H_0: f(x) = f_0(x),$  
+$H_1: f(x) = f_1(x).$ 
+
+  a. Describe a test procedure for which the value of $\alpha(\delta) + 2 \beta(\delta)$ is a minimum.
+  b. Determine the minimum value of $\alpha(\delta) + 2 \beta(\delta)$ attained by that test procedure.
+
+Convince yourself that the theorems in 9.2 hold.
+
+
+
+#### 6: 9.2.4
+
+Consider again the conditions of Exercise 9.2.2, but suppose now that it is desired to find a test procedure for which $\alpha(\delta) \leq 0.1$ and $\beta(\delta)$ is a minimum.
+
+  a. Describe the test procedure. 
+  b. Determine the minimum value of $\beta(\delta)$ attained by the test procedure.
+
+Convince yourself that the theorems in 9.2 hold.
+
+
+#### 7: 9.2.7
+
+Suppose that $X_1, \ldots, X_n$ form a random sample from the normal distribution with known mean $\mu$ and unknown variance $\sigma^2$, and the following simple hypotheses are to be tested:
+
+$H_0: \sigma^2 = 2$,  
+$H_1: \sigma^2 = 3$.
+
+  a. Show that among all test procedures for which $\alpha(\delta) \leq 0.05$, the value of $\beta(\delta)$ is minimized by a test procedure that rejects $H_0$ when
+$\sum^n_{i=1}(X_i - \mu)^2 > c$.  
+  b. For $n = 8$, find the value of the constant $c$ that appears in part a.
+
+
+
+#### 8: 9.2.8
+
+Suppose that a single observation X is taken from the uniform distribution on the interval $[0, \theta]$, where the value of $\theta$ is unknown, and the following simple hypotheses are to be tested:
+
+$H_0: \theta = 1$,  
+$H_1: \theta = 2$.
+
+  a. Show that there exists a test procedure for which $\alpha(\delta) = 0$ and $\beta(\delta) < 1$.
+  b. Among all test procedures for which $\alpha(\delta) = 0$, find the one for which $\beta(\delta)$ is a minimum.
+
+
+
+
+#### 9: R - kissing the right way
+
+Most people are right-handed and even the right eye is dominant for most people. Molecular biologists have suggested that late-stage human embryos tend to turn their heads to the right. German biopsychologist Onur Güntürkün conjectured that this tendency to turn to the right manifests itself in other ways as well, so he studied kissing couples to see if both people tended to lean to their right more often than to their left (and if so, how strong the tendency is). He and his researchers observed couples from age 13 to 70 in public places such as airports, train stations, beaches, and parks in the United States, Germany, and Turkey. They were careful not to include couples who were holding objects such as luggage that might have affected which direction they turned. In total, 124 kissing pairs were observed with 80 couples leaning right (Nature, 2003).  [Taken from Rossman & Chance, ISCAM]
+
+
+Güntürkün wanted to test the belief that the probability of kissing to the right is 3/4; he thinks it is probably less than 3/4.
+
+   a. Using the binomial distribution (not the CLT), find the rejection region for this test given a level of significance of 0.05.  You can use trial and error (with `pbinom()`) or the quantile function for the binomial (`qbinom()`) to come up with your test.
+
+```{r}
+# for X ~ Bin(size, prob)
+size=124
+prob=.75
+q=2
+p=.1
+pbinom(q, size, prob)     # gives P(X < = q)
+dbinom(q, size, prob)     # gives P(X=q)
+qbinom(p, size, prob)     # gives the cutoff for a given probability, p
+```
+
+   b. What is the size of your test?
+
+   c. Calculate and plot the power function over all possible values of $\theta$.  Do you think your test seems particularly powerful?  Explain.  (Note:  you'll need to change the code below to say `eval = TRUE` and also actually write out the power function.)
+
+
+```{r eval=FALSE}
+all.theta <-  seq(0,1,.001)
+all.power <-  #somefunction of all.theta and n (size)#
+plot(all.theta, all.power, xlab="possible theta values", ylab="power function")
+```
+
+   d. Given the data (80 couples kissed right), what is the p-value of the test?
+
