@@ -82,11 +82,13 @@ Suppose that $X_1, \ldots, X_n$ form a random sample from a distribution for whi
 
 $$f_x(x|\theta) = \begin{cases} \theta x^{\theta-1} & 0 < x < 1 \\ 0 & \mbox{otherwise} \end{cases}$$
 
-where the value of $\theta$ is unknown ($\theta > 0$). Determine the asymptotic distribution of the MLE of $\theta$. (Note: The MLE was found in Exercise 9 of Sec. 7.5.)
+where the value of $\theta$ is unknown ($\theta > 0$). Determine the asymptotic distribution of the MLE of $\theta$. 
 
 #### 6: 9.1.1
 
 Let $X$ have the exponential distribution with parameter $\beta$. Suppose that we wish to test the hypotheses $H_0: \beta \geq 1$ versus $H_1: \beta < 1.$ 
+
+$$f(x|\beta) = \beta e^{-\beta x}  \ \ \ \ x > 0$$
 
 Consider the test procedure $\delta$ that rejects $H_0$ if $X \geq 1.$
 
