@@ -77,7 +77,7 @@ schedule <- tribble(
 '<font color = "#114B5F"><b>Week 7 <br> 10.11.22</b></font>', 
 '<font color = "#114B5F"><b>review & catch-up</b></font>',
 '<font color = "#114B5F"><b>exam 1 in class<br> 10.13.22</b></font>',
- '<a href="https://m152-stat-theory.netlify.app/handout/MA152_HW7f22.pdf" target = "_blank"><i class="fa-solid fa-file-pdf"></i> HW7 pdf</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/MA152_HW7f22.Rmd" target = "_blank"><i class="fa-brands fa-r-project"></i> HW7 Rmd</a> <br> <i class="fa-solid fa-paper-plane"></i>not due, ever',
+ '<a href="https://m152-stat-theory.netlify.app/handout/MA152_HW7f22.pdf" target = "_blank"><i class="fa-solid fa-file-pdf"></i> HW7 pdf</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/MA152_HW7f22.Rmd" target = "_blank"><i class="fa-brands fa-r-project"></i> HW7 Rmd</a> <br> <i class="fa-solid fa-paper-plane"></i> not due, ever',
   '<a href="https://canvas.pomona.edu/" target = "_blank"><i class="fa-solid fa-paper-plane"></i> see Canvas</a> for sample exam 1 Q & sol',
   '',
 
@@ -112,12 +112,12 @@ schedule <- tribble(
   'P&S: 9.2 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
   '<a href="https://m152-stat-theory.netlify.app/handout/MA152_HW9f22.pdf" target = "_blank"><i class="fa-solid fa-file-pdf"></i> HW9 pdf</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/MA152_HW9f22.Rmd" target = "_blank"><i class="fa-brands fa-r-project"></i> HW9 Rmd</a> <br> <a href="https://canvas.pomona.edu/" target = "_blank"><i class="fa-solid fa-paper-plane"></i> HW9 turn-in</a>',
   '',
-  '',  
+  '<a href="https://m152-stat-theory.netlify.app/handout/wu17_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 17</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/wu18_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 18</a>',  
 
 '<font color = "#114B5F"><b>Week 12 <br> 11.15.22</b></font>', 
 '<font color = "#114B5F"><b>review & catch-up</b></font>',
 '<font color = "#114B5F"><b>exam 2 in class<br> 11.17.22</b></font>',
- '<a href="https://m152-stat-theory.netlify.app/handout/MA152_HW10f22.pdf" target = "_blank"><i class="fa-solid fa-file-pdf"></i> HW10 pdf</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/MA152_HW10f22.Rmd" target = "_blank"><i class="fa-brands fa-r-project"></i> HW10 Rmd</a> <br> <i class="fa-solid fa-paper-plane"></i>not due, ever',
+ '<a href="https://m152-stat-theory.netlify.app/handout/MA152_HW10f22.pdf" target = "_blank"><i class="fa-solid fa-file-pdf"></i> HW10 pdf</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/MA152_HW10f22.Rmd" target = "_blank"><i class="fa-brands fa-r-project"></i> HW10 Rmd</a> <br> <i class="fa-solid fa-paper-plane"></i> not due, ever',
   '<a href="https://canvas.pomona.edu/" target = "_blank"><i class="fa-solid fa-paper-plane"></i> see Canvas</a> for sample exam 2 Q & sol',  
   '',
 
