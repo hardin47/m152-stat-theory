@@ -8,7 +8,7 @@
 
 <meta name="author" content="write your name here">
 
-<title>Statistical Theory - Math 152 - Statistical Theory - Homework 9</title>
+<title>Statistical Theory - Math 152 - Statistical Theory - Homework 10</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -177,7 +177,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Math 152 - Statistical Theory - Homework 9</h1>
+<h1 class="title">Math 152 - Statistical Theory - Homework 10</h1>
 </div>
 
 
@@ -220,9 +220,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h4 class="anchored" data-anchor-id="goals">Goals:</h4>
 <p>In this assignment, the fun will include:</p>
 <ul>
-<li>calculating Fisher information</li>
-<li>setting up hypotheses</li>
-<li>calculationg power and error rates.</li>
+<li>size, power, and p-values</li>
+<li>simple vs simple test</li>
+<li>most powerful tests</li>
 </ul>
 <p><strong>Book problems</strong></p>
 <ul>
@@ -245,110 +245,121 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Describe one thing you learned (not from lecture, maybe from working in pairs during class) from a member of the class (student, mentor, professor) – it could be: content, logistical help, background material, R information, etc. 1-3 sentences.</p>
 </section>
 <section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section">2: 8.8.4</h4>
-<p>Suppose that a random variable has the normal distribution with mean 0 and unknown standard deviation <span class="math inline">\(\sigma &gt; 0\)</span>. Find the Fisher information <span class="math inline">\(I(\sigma)\)</span> in <span class="math inline">\(X\)</span>.</p>
+<h4 class="anchored" data-anchor-id="section">2: 9.1.13</h4>
+<p>Let <span class="math inline">\(X\)</span> have the Poisson distribution with mean <span class="math inline">\(\theta\)</span>. Suppose that we wish to test the hypotheses:</p>
+<p><span class="math inline">\(H_0: \theta \leq 1.0,\)</span><br>
+<span class="math inline">\(H_1: \theta &gt;1.0.\)</span></p>
+<p>Let <span class="math inline">\(\delta_c\)</span> be the test that rejects <span class="math inline">\(H_0\)</span> if <span class="math inline">\(X \geq c\)</span>. Find <span class="math inline">\(c\)</span> to make the size of <span class="math inline">\(\delta_c\)</span> as close as possible to 0.1 without being larger than 0.1.</p>
+<p>Note: in R use <code>ppois()</code>.</p>
 </section>
 <section id="section-1" class="level4">
-<h4 class="anchored" data-anchor-id="section-1">3: 8.8.5</h4>
-<p>Suppose that a random variable X has the normal distribution with mean 0 and unknown variance <span class="math inline">\(\sigma^2 &gt; 0\)</span>. Find the Fisher information <span class="math inline">\(I(\sigma^2)\)</span> in <span class="math inline">\(X\)</span>. Note that in this exercise the variance <span class="math inline">\(\sigma^2\)</span> is regarded as the parameter, whereas in Exercise 8.8.4 the standard deviation <span class="math inline">\(\sigma\)</span> is regarded as the parameter.</p>
-<p>Also, show that the unbiased estimator of <span class="math inline">\(\sigma^2\)</span> (<span class="math inline">\(s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(X_i - \overline{X})^2\)</span>) is not efficient.</p>
-<p>Note to self: there is no simple way to get from problem 8.8.4 to 8.8.5. That is, we know the MLE of a function is that function of the MLE. Not true for information.</p>
+<h4 class="anchored" data-anchor-id="section-1">3: 9.1.14</h4>
+<p>Let <span class="math inline">\(X_1, \ldots , X_n\)</span> be i.i.d. with the exponential distribution with parameter <span class="math inline">\(\theta\)</span>. Suppose that we wish to test the hypotheses:</p>
+<p><span class="math inline">\(H_0: \theta \geq \theta_0,\)</span><br>
+<span class="math inline">\(H_1: \theta &lt; \theta_0.\)</span></p>
+<p>Let <span class="math inline">\(X = \sum_{i=1}^n X_i\)</span>. Let <span class="math inline">\(\delta_c\)</span> be the test that rejects <span class="math inline">\(H_0\)</span> if <span class="math inline">\(X \geq c.\)</span></p>
+<ol type="a">
+<li>Show that <span class="math inline">\(\pi(\theta | \delta_c)\)</span> is a decreasing function of <span class="math inline">\(\theta\)</span>.</li>
+<li>Find <span class="math inline">\(c\)</span> in order to make <span class="math inline">\(\delta_c\)</span> have size <span class="math inline">\(\alpha_0\)</span>.</li>
+<li>Let <span class="math inline">\(\theta_0 = 2\)</span>, <span class="math inline">\(n = 1\)</span>, and <span class="math inline">\(\alpha_0 = 0.1\)</span>. Find the precise form of the test <span class="math inline">\(\delta_c\)</span> and sketch its power function.</li>
+</ol>
+<p>Note: <span class="math inline">\(\theta * \sum(x_i) \sim\)</span> Gamma(n,1)</p>
 </section>
 <section id="section-2" class="level4">
-<h4 class="anchored" data-anchor-id="section-2">4: 8.8.16</h4>
-<p>Suppose that <span class="math inline">\(X_1, \ldots, X_n\)</span> form a random sample from the Bernoulli distribution with unknown parameter <span class="math inline">\(p\)</span>, and the prior pdf of <span class="math inline">\(p\)</span> is a positive and differentiable function over the interval <span class="math inline">\(0 &lt; p &lt; 1\)</span>. Suppose, furthermore, that <span class="math inline">\(n\)</span> is large, the observed values of <span class="math inline">\(X_1, \ldots, X_n\)</span> are <span class="math inline">\(x_1, \ldots, x_n\)</span>, and <span class="math inline">\(0 &lt; \overline{x} &lt; 1\)</span>. Show that the posterior distribution of <span class="math inline">\(p\)</span> will be approximately a normal distribution with mean <span class="math inline">\(\overline{x}\)</span> and variance <span class="math inline">\(\overline{x}(1- \overline{x})/n\)</span>.</p>
-<p>Note to self: this is a Bayesian problem. See the connection between Fisher Information and asymptotic / approximate Bayesian distributions in the text.</p>
+<h4 class="anchored" data-anchor-id="section-2">4: 9.1.15</h4>
+<p>Let <span class="math inline">\(X\)</span> have the uniform distribution on the interval <span class="math inline">\([0, \theta]\)</span>, and suppose that we wish to test the hypotheses</p>
+<p><span class="math inline">\(H_0: \theta \leq 1,\)</span><br>
+<span class="math inline">\(H_1: \theta &gt; 1.\)</span></p>
+<p>We shall consider test procedures of the form “reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(X \geq c\)</span>.” For each possible value <span class="math inline">\(x\)</span> of <span class="math inline">\(X\)</span>, find the p-value if <span class="math inline">\(X = x\)</span> is observed (that is, find the p-value as a function of <span class="math inline">\(x\)</span>).</p>
 </section>
 <section id="section-3" class="level4">
-<h4 class="anchored" data-anchor-id="section-3">5: 8.9.15</h4>
-<p>Suppose that <span class="math inline">\(X_1, \ldots, X_n\)</span> form a random sample from a distribution for which the pdf is as follows:</p>
-<p><span class="math display">\[f_x(x|\theta) = \begin{cases} \theta x^{\theta-1} &amp; 0 &lt; x &lt; 1 \\ 0 &amp; \mbox{otherwise} \end{cases}\]</span></p>
-<p>where the value of <span class="math inline">\(\theta\)</span> is unknown (<span class="math inline">\(\theta &gt; 0\)</span>). Determine the asymptotic distribution of the MLE of <span class="math inline">\(\theta\)</span>.</p>
+<h4 class="anchored" data-anchor-id="section-3">5: 9.2.2</h4>
+<p>Consider two pdfs <span class="math inline">\(f_0(x)\)</span> and <span class="math inline">\(f_1(x)\)</span> that are defined as follows:</p>
+<p><span class="math display">\[f_0(x) = \begin{cases}
+1 &amp; \mbox{ for } 0 \leq x \leq 1,\\
+0 &amp; \mbox{ otherwise},\\
+\end{cases}\]</span></p>
+<p>and <span class="math display">\[f_1(x) = \begin{cases}
+2x &amp; \mbox{ for } 0 \leq x \leq 1,\\
+0 &amp; \mbox{ otherwise}.\\
+\end{cases}\]</span></p>
+<p>Suppose that a single observation <span class="math inline">\(X\)</span> is taken from a distribution for which the pdf <span class="math inline">\(f(x)\)</span> is either <span class="math inline">\(f_0(x)\)</span> or <span class="math inline">\(f_1(x)\)</span>, and the following simple hypotheses are to be tested:</p>
+<p><span class="math inline">\(H_0: f(x) = f_0(x),\)</span><br>
+<span class="math inline">\(H_1: f(x) = f_1(x).\)</span></p>
+<ol type="a">
+<li>Describe a test procedure for which the value of <span class="math inline">\(\alpha(\delta) + 2 \beta(\delta)\)</span> is a minimum.</li>
+<li>Determine the minimum value of <span class="math inline">\(\alpha(\delta) + 2 \beta(\delta)\)</span> attained by that test procedure.</li>
+</ol>
+<p>Convince yourself that the theorems in 9.2 hold.</p>
 </section>
 <section id="section-4" class="level4">
-<h4 class="anchored" data-anchor-id="section-4">6: 9.1.1</h4>
-<p>Let <span class="math inline">\(X\)</span> have the exponential distribution with parameter <span class="math inline">\(\beta\)</span>. Suppose that we wish to test the hypotheses <span class="math inline">\(H_0: \beta \geq 1\)</span> versus <span class="math inline">\(H_1: \beta &lt; 1.\)</span></p>
-<p><span class="math display">\[f(x|\beta) = \beta e^{-\beta x}  \ \ \ \ x &gt; 0\]</span></p>
-<p>Consider the test procedure <span class="math inline">\(\delta\)</span> that rejects <span class="math inline">\(H_0\)</span> if <span class="math inline">\(X \geq 1.\)</span></p>
+<h4 class="anchored" data-anchor-id="section-4">6: 9.2.4</h4>
+<p>Consider again the conditions of Exercise 9.2.2, but suppose now that it is desired to find a test procedure for which <span class="math inline">\(\alpha(\delta) \leq 0.1\)</span> and <span class="math inline">\(\beta(\delta)\)</span> is a minimum.</p>
 <ol type="a">
-<li>Determine the power function of the test.</li>
-<li>Compute the size of the test.</li>
+<li>Describe the test procedure.</li>
+<li>Determine the minimum value of <span class="math inline">\(\beta(\delta)\)</span> attained by the test procedure.</li>
 </ol>
+<p>Convince yourself that the theorems in 9.2 hold.</p>
 </section>
 <section id="section-5" class="level4">
-<h4 class="anchored" data-anchor-id="section-5">7: 9.1.6</h4>
-<p>Suppose that a single observation <span class="math inline">\(X\)</span> is to be taken from the uniform distribution on the interval <span class="math inline">\([\theta - \frac{1}{2}, \theta + \frac{1}{2}]\)</span>, and suppose that the following hypotheses are to be tested:</p>
-<p><span class="math inline">\(H_0: \theta \leq 3,\)</span><br>
-<span class="math inline">\(H_1: \theta \geq 4.\)</span></p>
-<p>Construct a test procedure <span class="math inline">\(\delta\)</span> for which the power function has the following values: <span class="math inline">\(\pi(\theta | \delta) = 0\)</span> for <span class="math inline">\(\theta \leq 3\)</span> and <span class="math inline">\(\pi(\theta | \delta) = 1\)</span> for <span class="math inline">\(\theta \geq 4\)</span>.</p>
+<h4 class="anchored" data-anchor-id="section-5">7: 9.2.7</h4>
+<p>Suppose that <span class="math inline">\(X_1, \ldots, X_n\)</span> form a random sample from the normal distribution with known mean <span class="math inline">\(\mu\)</span> and unknown variance <span class="math inline">\(\sigma^2\)</span>, and the following simple hypotheses are to be tested:</p>
+<p><span class="math inline">\(H_0: \sigma^2 = 2\)</span>,<br>
+<span class="math inline">\(H_1: \sigma^2 = 3\)</span>.</p>
+<ol type="a">
+<li>Show that among all test procedures for which <span class="math inline">\(\alpha(\delta) \leq 0.05\)</span>, the value of <span class="math inline">\(\beta(\delta)\)</span> is minimized by a test procedure that rejects <span class="math inline">\(H_0\)</span> when <span class="math inline">\(\sum^n_{i=1}(X_i - \mu)^2 &gt; c\)</span>.<br>
+</li>
+<li>For <span class="math inline">\(n = 8\)</span>, find the value of the constant <span class="math inline">\(c\)</span> that appears in part a.</li>
+</ol>
 </section>
 <section id="section-6" class="level4">
-<h4 class="anchored" data-anchor-id="section-6">8: 9.1.9</h4>
-<p>Assume that <span class="math inline">\(X_1,\ldots, X_n\)</span> are i.i.d. with the normal distribution that has mean <span class="math inline">\(\mu\)</span> and variance 1. Suppose that we wish to test the hypotheses:</p>
-<p><span class="math inline">\(H_0: \mu \geq \mu_0,\)</span><br>
-<span class="math inline">\(H_1: \mu &lt; \mu_0.\)</span></p>
-<p>Find a test statistic <span class="math inline">\(T\)</span> such that, for every <span class="math inline">\(c\)</span>, the test <span class="math inline">\(\delta_c\)</span> that rejects <span class="math inline">\(H_0\)</span> when <span class="math inline">\(T \geq c\)</span> has power function <span class="math inline">\(\pi(\mu|\delta_c)\)</span> that is decreasing in <span class="math inline">\(\mu\)</span>.</p>
-</section>
-<section id="r---ntheta-theta2" class="level4">
-<h4 class="anchored" data-anchor-id="r---ntheta-theta2">9: R - <span class="math inline">\(N(\theta, \theta^2)\)</span></h4>
-<p>We are going to study almost, but not exactly, the same model as from the exam. The model for this problem is normal with mean and standard deviation both <span class="math inline">\(\theta\)</span> (i.e., variance <span class="math inline">\(\theta^2\)</span>, not <span class="math inline">\(\theta\)</span> as in the example from the exam). Therefore, we know <span class="math inline">\(\theta \geq 0\)</span>.</p>
-<p>The results from class about properties of MLEs are asymptotic. What happens in small samples?</p>
-<hr>
-<p>The estimators of <span class="math inline">\(\theta\)</span> we wish to compare are:</p>
-<ul>
-<li>the sample median</li>
-<li>the sample mean</li>
-<li>the sample standard deviation times the sign of the sample mean</li>
-<li>the MLE</li>
-</ul>
+<h4 class="anchored" data-anchor-id="section-6">8: 9.2.8</h4>
+<p>Suppose that a single observation X is taken from the uniform distribution on the interval <span class="math inline">\([0, \theta]\)</span>, where the value of <span class="math inline">\(\theta\)</span> is unknown, and the following simple hypotheses are to be tested:</p>
+<p><span class="math inline">\(H_0: \theta = 1\)</span>,<br>
+<span class="math inline">\(H_1: \theta = 2\)</span>.</p>
 <ol type="a">
-<li><p>The MLE of <span class="math inline">\(\theta\)</span> is <span class="math display">\[\hat{\theta} =  - \overline{x}/2 + \sqrt{\bigg(\sum x_i^2\bigg)/n + \overline{x}^2/4}\]</span>. Show (with pencil / LaTeX) that the Fisher Information in <span class="math inline">\(\theta\)</span> is <span class="math inline">\(3/\theta^2\)</span>.</p></li>
-<li><p>Use a simulation to compare the four estimators above with respect to bias, variance, and MSE. Answer the following questions in your comparison:</p>
-<ol type="i">
-<li>Which estimator is (empirically) least biased?</li>
-<li>Which estimator has lowest empirical variability? Do any of the estimators reach the CRLB (assume unbiasedness)?</li>
-<li>Which estimator has lowest empirical MSE?</li>
-<li>Are you comfortable with the idea of using a normal distribution to describe the sampling distribution for any/all of the estimators? Explain.</li>
-<li>Which estimator would you recommend for the given setting? Explain.</li>
-</ol></li>
+<li>Show that there exists a test procedure for which <span class="math inline">\(\alpha(\delta) = 0\)</span> and <span class="math inline">\(\beta(\delta) &lt; 1\)</span>.</li>
+<li>Among all test procedures for which <span class="math inline">\(\alpha(\delta) = 0\)</span>, find the one for which <span class="math inline">\(\beta(\delta)\)</span> is a minimum.</li>
+</ol>
+</section>
+<section id="r---kissing-the-right-way" class="level4">
+<h4 class="anchored" data-anchor-id="r---kissing-the-right-way">9: R - kissing the right way</h4>
+<p>Most people are right-handed and even the right eye is dominant for most people. Molecular biologists have suggested that late-stage human embryos tend to turn their heads to the right. German biopsychologist Onur Güntürkün conjectured that this tendency to turn to the right manifests itself in other ways as well, so he studied kissing couples to see if both people tended to lean to their right more often than to their left (and if so, how strong the tendency is). He and his researchers observed couples from age 13 to 70 in public places such as airports, train stations, beaches, and parks in the United States, Germany, and Turkey. They were careful not to include couples who were holding objects such as luggage that might have affected which direction they turned. In total, 124 kissing pairs were observed with 80 couples leaning right (Nature, 2003). [Taken from Rossman &amp; Chance, ISCAM]</p>
+<p>Güntürkün wanted to test the belief that the probability of kissing to the right is 3/4; he thinks it is probably less than 3/4.</p>
+<ol type="a">
+<li>Using the binomial distribution (not the CLT), find the rejection region for this test given a level of significance of 0.05. You can use trial and error (with <code>pbinom()</code>) or the quantile function for the binomial (<code>qbinom()</code>) to come up with your test.</li>
 </ol>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use sample size n = 15. keep this set-up in the first 3 lines</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>n.obs <span class="ot">&lt;-</span> <span class="dv">15</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>n.samps <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>theta <span class="ot">&lt;-</span> <span class="fu">exp</span>(<span class="dv">1</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>means <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n.samps)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>medians <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n.samps)</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>sds <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n.samps)</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>MLEs <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n.samps)</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n.samps){</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># generate some data from the given model</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># means[i] &lt;- mean(the data you generated)</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># etc.</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># for X ~ Bin(size, prob)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>size<span class="ot">=</span><span class="dv">124</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>prob<span class="ot">=</span>.<span class="dv">75</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>q<span class="ot">=</span><span class="dv">2</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span>.<span class="dv">1</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">pbinom</span>(q, size, prob)     <span class="co"># gives P(X &lt; = q)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.525648e-70</code></pre>
 </div>
-<p>You can write alternative code for calculating relevant characteristics of the distribution and displaying it, but I choose to put it together in a tidy framework like this:</p>
-<p>Note: in the code below I’ve created smoothed histograms (called density plots) so as to plot the empirical distributions on top of one another.</p>
-<pre><code>library(tidyverse)
-
-est.info &lt;- data.frame(value = c(means , ___, ...), 
-                       type = c(rep("mean", n.samps), ____, ...) )
-
-est.info %&gt;%
-  group_by(type) %&gt;%
-  summarize(est.bias = mean(value) - theta, est.mean = mean(value), 
-            est.var = var(value), est.sd = sd(value)) %&gt;%
-  mutate(est.mse = est.var + est.bias^2)
-
-
-est.info %&gt;%
-  ggplot(aes(x=value, color = type)) + geom_density() +
-  geom_vline(xintercept = exp(1))
-</code></pre>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dbinom</span>(q, size, prob)     <span class="co"># gives P(X=q)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.517401e-70</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qbinom</span>(p, size, prob)     <span class="co"># gives the cutoff for a given probability, p</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 87</code></pre>
+</div>
+</div>
+<ol start="2" type="a">
+<li><p>What is the size of your test?</p></li>
+<li><p>Calculate and plot the power function over all possible values of <span class="math inline">\(\theta\)</span>. Do you think your test seems particularly powerful? Explain. (Note: you’ll need to change the code below to say <code>eval = TRUE</code> and also actually write out the power function.)</p></li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>all.theta <span class="ot">&lt;-</span>  <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">1</span>,.<span class="dv">001</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>all.power <span class="ot">&lt;-</span>  <span class="co">#somefunction of all.theta and n (size)#</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(all.theta, all.power, <span class="at">xlab=</span><span class="st">"possible theta values"</span>, <span class="at">ylab=</span><span class="st">"power function"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="4" type="a">
+<li>Given the data (80 couples kissed right), what is the p-value of the test?</li>
+</ol>
 
 
 </section>

@@ -102,14 +102,14 @@ schedule <- tribble(
 
 "Week 10 <br> 11.1.22", 
   '• hypotehsis testing + <br>• simple hypotheses',
-  'P&S: 9.1 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
+  'P&S: 9.1 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = "_blank"><i class="fas fa-book-open"></i> notes on hypothesis testing structure</a>',
   'no HW',
   '',
   '<a href="https://m152-stat-theory.netlify.app/handout/wu15_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 15</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/wu16_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 16</a>',
   
 "Week 11 <br> 11.8.22", 
   '• Neyman-Pearson',
-  'P&S: 9.2 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = "_blank"><i class="fas fa-book-open"></i></a>',
+  'P&S: 9.2 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = "_blank"><i class="fas fa-book-open"></i> notes on Neyman-Pearson</a>',
   '<a href="https://m152-stat-theory.netlify.app/handout/MA152_HW9f22.pdf" target = "_blank"><i class="fa-solid fa-file-pdf"></i> HW9 pdf</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/MA152_HW9f22.Rmd" target = "_blank"><i class="fa-brands fa-r-project"></i> HW9 Rmd</a> <br> <a href="https://canvas.pomona.edu/" target = "_blank"><i class="fa-solid fa-paper-plane"></i> HW9 turn-in</a>',
   '',
   '<a href="https://m152-stat-theory.netlify.app/handout/wu17_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 17</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/wu18_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 18</a>',  
@@ -121,13 +121,12 @@ schedule <- tribble(
   '<a href="https://canvas.pomona.edu/" target = "_blank"><i class="fa-solid fa-paper-plane"></i> see Canvas</a> for sample exam 2 Q & sol',  
   '',
 
-'Week 13 <br> 11.22.22', 
+"Week 13 <br> 11.22.22", 
   '• UMP',
-  'P&S: 9.3 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = 
-"_blank"><i class="fas fa-book-open"></i></a>',
+  'P&S: 9.3 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = "_blank"><i class="fas fa-book-open"></i> notes on UMP</a>',
   '',
   '',
-  '',  
+  '<a href="https://m152-stat-theory.netlify.app/handout/wu19_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 19</a>', 
 
 '<font color = "#114B5F"><b>Thursday <br>11.24.22</b></font>', '<font color = "#114B5F"><b>Thanksgiving</b></font>',"", 
   '',
@@ -136,16 +135,14 @@ schedule <- tribble(
 
 "Week 14 <br> 11.29.22", 
   '• two-sided + <br>• t-tests + <br>•  LRT + <br> goodness of fit',
-  'P&S: 9.4-9.6, 10.1 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = 
-"_blank"><i class="fas fa-book-open"></i></a>',
+  'P&S: 9.4-9.6 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = "_blank"><i class="fas fa-book-open"></i> notes on t-tests and LRT</a>',
   '',
   '',
   '',
 
 "Week 15 <br> 12.6.22", 
   '• Bayes tests + <br>• foundational ideas',
-  'P&S: 9.8-9.9 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = 
-"_blank"><i class="fas fa-book-open"></i></a>',
+  'P&S: 9.8-9.9 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = "_blank"><i class="fas fa-book-open"></i> notes on Bayes tests and foundational ideas</a>',
   '',
   '',
   '',  
