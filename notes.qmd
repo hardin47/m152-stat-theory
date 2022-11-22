@@ -2,10 +2,6 @@
 title: "Class Notes"
 description: |
   Daily class notes for Math 152, Statistical Theory, Pomona College
-author:
-  - name: Jo Hardin 
-    url: https://m152-stat-theory.netlify.app/
-    affiliation: Pomona College
 format: html
 ---
 
