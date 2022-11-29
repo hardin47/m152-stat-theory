@@ -138,7 +138,7 @@ schedule <- tribble(
   'P&S: 9.4-9.6 <br> <a href="https://st47s.com/Math152/Notes/ht.html" target = "_blank"><i class="fas fa-book-open"></i> notes on t-tests and LRT</a>',
   '',
   '',
-  '',
+  '<a href="https://m152-stat-theory.netlify.app/handout/wu20_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 20</a> <br> <a href="https://m152-stat-theory.netlify.app/handout/wu21_ma152_f22.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU 21</a>', 
 
 "Week 15 <br> 12.6.22", 
   '• Bayes tests + <br>• foundational ideas',

@@ -1240,13 +1240,98 @@ What was the prior on <span class="math inline">\(\mu\)</span>?<a href="#/footno
 <section class="slide level2">
 
 <ol start="70" type="1">
-<li>Consider the likelihood ratio statistic:<a href="#/footnotes" class="footnote-ref" id="fnref68" role="doc-noteref" data-footnote-href="#/fn68" onclick=""><sup>68</sup></a> <span class="math display">\[\Lambda(x) = \frac{\sup_{\Omega_1} f(\underline{x} | \theta)}{\sup_{\Omega_0} f(\underline{x} | \theta)}\]</span>
+<li>Consider the likelihood ratio statistic: <span class="math display">\[\Lambda(x) = \frac{\sup_{\Omega_1} f(\underline{x} | \theta)}{\sup_{\Omega_0} f(\underline{x} | \theta)}\]</span> Why do we assume that the MLE maximizes the numerator?<a href="#/footnotes" class="footnote-ref" id="fnref68" role="doc-noteref" data-footnote-href="#/fn68" onclick=""><sup>68</sup></a>
+<ol type="a">
+<li>The MLE is always in the alternative space.</li>
+<li>The MLE is always in the null space.</li>
+<li>If the MLE is in the alternative space, we won’t reject <span class="math inline">\(H_0\)</span>.</li>
+<li>If the MLE is in the null space, we won’t reject <span class="math inline">\(H_0\)</span>.</li>
+<li>If the MLE is in the alternative space, we will reject <span class="math inline">\(H_0\)</span>.</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="71" type="1">
+<li>Consider the likelihood ratio statistic:<a href="#/footnotes" class="footnote-ref" id="fnref69" role="doc-noteref" data-footnote-href="#/fn69" onclick=""><sup>69</sup></a> <span class="math display">\[\Lambda(x) = \frac{\sup_{\Omega_1} f(\underline{x} | \theta)}{\sup_{\Omega_0} f(\underline{x} | \theta)}\]</span>
 <ol type="a">
 <li><span class="math inline">\(\Lambda(x) \geq 1\)</span></li>
 <li><span class="math inline">\(\Lambda(x) \leq 1\)</span></li>
 <li><span class="math inline">\(\Lambda(x) \geq 0\)</span></li>
 <li><span class="math inline">\(\Lambda(x) \leq 0\)</span></li>
 <li>bounds on <span class="math inline">\(\Lambda(x)\)</span> depend on hypotheses</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="72" type="1">
+<li>When using the chi-square goodness of fit test, the smaller the value of the chi-square test statistic, the more likely we are to reject the null hypothesis.<a href="#/footnotes" class="footnote-ref" id="fnref70" role="doc-noteref" data-footnote-href="#/fn70" onclick=""><sup>70</sup></a>
+<ol type="a">
+<li>True</li>
+<li>False</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="73" type="1">
+<li>A chi-square test is<a href="#/footnotes" class="footnote-ref" id="fnref71" role="doc-noteref" data-footnote-href="#/fn71" onclick=""><sup>71</sup></a>
+<ol type="a">
+<li>one-sided, and we only consider the upper end of the sampling distribution</li>
+<li>one-sided, and we consider both ends of the sampling distribution</li>
+<li>two-sided, and we only consider the upper end of the sampling distribution</li>
+<li>two-sided, and we consider both ends of the sampling distribution</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="74" type="1">
+<li>To test whether the data are Poisson, why can’t we use the Poisson likelihood instead of the multinomial?<a href="#/footnotes" class="footnote-ref" id="fnref72" role="doc-noteref" data-footnote-href="#/fn72" onclick=""><sup>72</sup></a>
+<ol type="a">
+<li>Likelihood under <span class="math inline">\(H_0\)</span> is too hard to write down</li>
+<li>Likelihood under <span class="math inline">\(H_1\)</span> is too hard to write down</li>
+<li>Don’t know the distribution of the corresponding test statistic</li>
+<li>Don’t have any data to use</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="75" type="1">
+<li>The <span class="math inline">\(\chi^2\)</span> test statistic is being used to test whether the assumption of normality is reasonable for a given population distribution. The sample consists of 5000 observations and is divided into 6 categories (intervals). What are the degrees of freedom associated with the test statistic?<a href="#/footnotes" class="footnote-ref" id="fnref73" role="doc-noteref" data-footnote-href="#/fn73" onclick=""><sup>73</sup></a>
+<ol type="a">
+<li>4999</li>
+<li>6</li>
+<li>5</li>
+<li>4</li>
+<li>3</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="76" type="1">
+<li>For a chi-square test for independence, the null hypothesis states that the two variables<a href="#/footnotes" class="footnote-ref" id="fnref74" role="doc-noteref" data-footnote-href="#/fn74" onclick=""><sup>74</sup></a>
+<ol type="a">
+<li>are mutually exclusive.</li>
+<li>form a contingency table with r rows and c columns.</li>
+<li>have (r –1) and (c –1) degrees of freedom where r and c are the number of rows and columns, respectively.</li>
+<li>are statistically independent.</li>
+<li>are normally distributed.</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="77" type="1">
+<li>You read a paper where a chi-square test produces a p-value of 0.999 (not 0.001). You think:<a href="#/footnotes" class="footnote-ref" id="fnref75" role="doc-noteref" data-footnote-href="#/fn75" onclick=""><sup>75</sup></a>
+<ol type="a">
+<li><span class="math inline">\(H_0\)</span> is definitely true</li>
+<li><span class="math inline">\(H_0\)</span> is definitely not true</li>
+<li>The authors’ hypothesis is in the wrong direction.</li>
+<li>Maybe they falsified their data?</li>
 </ol></li>
 </ol>
 
@@ -1510,7 +1595,35 @@ What was the prior on <span class="math inline">\(\mu\)</span>?<a href="#/footno
 <li>the non-central t-distribution is tricky.</li>
 </ol>
 </li>
-<li id="fn68"><p><span class="math inline">\(\Lambda(x) \geq 1\)</span></p></li>
+<li id="fn68"><ol start="4" type="a">
+<li>If the MLE is in the null space, we won’t reject <span class="math inline">\(H_0\)</span>.</li>
+</ol>
+</li>
+<li id="fn69"><p><span class="math inline">\(\Lambda(x) \geq 1\)</span></p></li>
+<li id="fn70"><ol start="2" type="a">
+<li>False</li>
+</ol>
+</li>
+<li id="fn71"><ol start="3" type="a">
+<li>two-sided, and we only consider the upper end of the sampling distribution</li>
+</ol>
+</li>
+<li id="fn72"><ol start="2" type="a">
+<li>Likelihood under H1 is too hard to write down (what likelihood would we use for the situation of “not Poisson”?)</li>
+</ol>
+</li>
+<li id="fn73"><ol start="3" type="a">
+<li>5</li>
+</ol>
+</li>
+<li id="fn74"><ol start="4" type="a">
+<li>are statistically independent.</li>
+</ol>
+</li>
+<li id="fn75"><ol start="4" type="a">
+<li>Maybe they falsified their data?</li>
+</ol>
+</li>
 </ol>
 </section>
     </div>

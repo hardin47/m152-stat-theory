@@ -775,7 +775,20 @@ $\hat{\theta}$ is unbiased for $\theta$ if:[^52]
 
 ---
 
-70. Consider the likelihood ratio statistic:[^70]
+70. Consider the likelihood ratio statistic: 
+$$\Lambda(x) = \frac{\sup_{\Omega_1} f(\underline{x} | \theta)}{\sup_{\Omega_0} f(\underline{x} | \theta)}$$ 
+Why do we assume that the MLE maximizes the numerator?[^70]
+    (a) The MLE is always in the alternative space.
+    (b) The MLE is always in the null space.
+    (c) If the MLE is in the alternative space, we won't reject $H_0$.
+    (d) If the MLE is in the null space, we won't reject $H_0$.
+    (e) If the MLE is in the alternative space, we will reject $H_0$.
+
+[^70]: (d) If the MLE is in the null space, we won't reject $H_0$.
+
+---
+
+71. Consider the likelihood ratio statistic:[^71]
 $$\Lambda(x) = \frac{\sup_{\Omega_1} f(\underline{x} | \theta)}{\sup_{\Omega_0} f(\underline{x} | \theta)}$$
     (a) $\Lambda(x) \geq 1$
     (b) $\Lambda(x) \leq 1$
@@ -783,5 +796,67 @@ $$\Lambda(x) = \frac{\sup_{\Omega_1} f(\underline{x} | \theta)}{\sup_{\Omega_0} 
     (d) $\Lambda(x) \leq 0$
     (e) bounds on $\Lambda(x)$ depend on hypotheses
 
-[^70]: $\Lambda(x) \geq 1$
+[^71]: $\Lambda(x) \geq 1$
+
+---
+
+72. When using the chi-square goodness of fit test, the smaller the value of the chi-square test statistic, the more likely we are to reject the null hypothesis.[^72]
+    (a) True
+    (b) False
+    
+[^72]: (b) False
+
+---
+
+73. A chi-square test is[^73]
+    (a) one-sided, and we only consider the upper end of the sampling distribution
+    (b) one-sided, and we consider both ends of the sampling distribution
+    (c) two-sided, and we only consider the upper end of the sampling distribution
+    (d) two-sided, and we consider both ends of the sampling distribution 
+
+[^73]: (c) two-sided, and we only consider the upper end of the sampling distribution
+
+---
+ 
+74.  To test whether the data are Poisson, why can’t we use the Poisson likelihood instead of the multinomial?[^74]
+     (a)	Likelihood under $H_0$ is too hard to write down
+     (b)	Likelihood under $H_1$ is too hard to write down
+     (c)	Don't know the distribution of the corresponding test statistic
+     (d)	Don't have any data to use
+
+[^74]: (b) Likelihood under H1 is too hard to write down (what likelihood would we use for the situation of "not Poisson"?)
+
+---
+
+75. The $\chi^2$ test statistic is being used to test whether the assumption of normality is reasonable for a given population distribution. The sample consists of 5000 observations and is divided into 6 categories (intervals). What are the degrees of freedom associated with the test statistic?[^75]
+    (a)	4999
+    (b)	6
+    (c)	5
+    (d)	4
+    (e)	3
+
+[^75]: (c) 5
+
+---
+
+76.  For a chi-square test for independence, the null hypothesis states that the two variables[^76]
+     (a)	are mutually exclusive.
+     (b)	form a contingency table with r rows and c columns.
+     (c)	have (r –1) and (c –1) degrees of freedom where r and c are the number of rows and columns, respectively.
+     (d)	are statistically independent.
+     (e)	are normally distributed.
+
+[^76]: (d)	are statistically independent.
+
+---
+
+77.  You read a paper where a chi-square test produces a p-value of 0.999 (not 0.001).  You think:[^77]
+     (a) $H_0$ is definitely true
+     (b) $H_0$ is definitely not true
+     (c) The authors' hypothesis is in the wrong direction.
+     (d) Maybe they falsified their data?
+
+[^77]: (d) Maybe they falsified their data?
+
+
 
