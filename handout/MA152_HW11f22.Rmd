@@ -1,0 +1,104 @@
+---
+title: "Math 152 - Statistical Theory - Homework 11"
+author: "write your name here"
+date: "Due: Tuesday, December 6, 11:59pm"
+output: pdf_document
+---
+
+## Important Note:
+You should work to turn in assignments that are clear, communicative, and concise.  Part of what you need to do is not print pages and pages of output.  Additionally, you should remove these exact sentences and the information about HW scoring below.
+
+
+Click on the *Knit to PDF* icon at the top of R Studio to run the R code and create a PDF document simultaneously. [PDF will only work if either (1) you are using R on the network, or (2) you have LaTeX installed on your computer.  Lightweight LaTeX installation here: https://yihui.name/tinytex/]
+
+> Either use the college's RStudio server (https://rstudio.pomona.edu/)
+or install R and R Studio on to your personal computer. 
+See:  https://m152-stat-theory.netlify.app/syllabus.html for resources.
+
+
+```{r warning=FALSE, comment=FALSE, message=FALSE, echo = FALSE}
+knitr::opts_chunk$set(message=FALSE, warning=FALSE, fig.height=3, fig.width=5, 
+                      fig.align = "center")
+library(tidyverse)
+```
+
+
+### Assignment
+
+#### Goals:
+
+In this assignment, the fun will include:
+
+* size, power, and p-values
+* simple vs simple test
+* most powerful tests
+
+**Book problems**   
+
+* Feel free to do the book problems with a pencil or in LaTeX (RMarkdown supports writing mathematics using LaTeX).   
+* If you use a pencil, you can take a picture of the problem(s), and include the image(s) using (remove the tick marks to make it work):
+
+```
+![](myimage.jpeg)
+```
+
+   - Note that myimage.jpeg needs to live in the same folder as the relevant .Rmd file (maybe you called the folder "math 152 hw" and put it on your desktop?)
+   - Saving as jpg, jpeg, png, or pdf should work, but make sure to specify the exact name of the file.
+   
+* If you have the 3rd edition of the book, the problems will be the same unless they don't exist -- that is, the 4th edition *added* problems but didn't change the order of them.  Ask me if you want to see the 4th edition problems. 
+
+
+### Assignment
+
+#### 1:  Community Q
+Describe one thing you learned (not from lecture, maybe from working in pairs during class) from a member of the class (student, mentor, professor) -- it could be: content, logistical help, background material, R information, etc.  1-3 sentences.
+
+
+#### 2. 9.3.3
+
+Suppose that $X_1, \ldots , X_n$ form a random sample from the gamma distribution with parameters $\alpha$ and $\beta$. Assume that $\alpha$ is unknown ($\alpha >0$) and that $\beta$ is known. Show that the joint pdf of $X_1, \ldots , X_n$  has a monotone likelihood ratio in the statistic $\prod_{i=1}^n X_i$.
+
+
+#### 3. 9.3.6
+Suppose that $X_1, \ldots , X_n$ form a random sample from the uniform distribution on the interval $[0, \theta]$. Show that the joint pdf of$X_1, \ldots , X_n$ has a monotone likelihood ratio in the statistic $\max\{X_1, \ldots , X_n \}.$
+
+
+#### 4. 9.5.12
+
+Suppose that a random sample $X_1, \ldots , X_n$ is to be taken from the normal distribution with unknown mean $\mu$ and unknown variance $\sigma^2$, and the following hypotheses are to be tested:  
+$H_0: \mu \leq  3,$  
+$H_1: \mu > 3.$
+
+Suppose also that the sample size $n$ is 17, and it is found from the observed values in the sample that $\overline{X} = 3.2$ and $(1/n)\sum_{i=1}^n(X_i - \overline{X})^2 = 0.09.$ Calculate the value of the statistic $U$ (Eq 9.5.2 in the text) and find the corresponding p-value.
+
+#### 5. 9.5.13
+
+Consider again the conditions of Exercise 12, but suppose now that the sample size $n$ is 170, and it is again found from the observed values in the sample that $\overline{X} = 3.2$ and $(1/n)\sum_{i=1}^n(X_i - \overline{X})^2 = 0.09.$  Calculate the value of the
+statistic $U$ (Eq 9.5.2 in the text) and find the corresponding p-value.
+
+
+#### 6. 9.5.17
+
+Prove that the likelihood ratio test for hypotheses (9.5.7) is the two-sided t test that rejects H0 if $|U| \geq c,$ where $U$ is defined in Eq. (8.5.1). The argument is slightly simpler than, but very similar to, the one given in the text for the one-sided case (available in both the text, Example 9.5.12, and the class notes).
+
+#### 7. 10.1.9
+
+The 50 values in Table 10.5 are intended to be a random sample from the standard normal distribution.
+
+   a. Carry out a $\chi^2$ test of goodness-of-fit by dividing the real line into five intervals, each of which has probability 0.2 under the standard normal distribution.
+
+   b. Carry out a $\chi^2$ test of goodness-of-fit by dividing the real line into 10 intervals, each of which has probability 0.1 under the standard normal distribution.
+
+Feel free to use R as a calculator and to get the quantiles of the normal distribution.  You won't use R to "do" the problem for you. Instead, you will actually count the number of the values in each bin.  You might use the `sort()` function on the data to make counting easier.
+
+```{r}
+data10.1.9 <- c(-1.28, -1.22, -0.45, -0.35, 0.72, -0.32, -0.80, -1.66, 
+                1.39, 0.38, -1.38, -1.26, 0.49, -0.14, -0.85, 2.33, -0.34, 
+                -1.96, -0.64, -1.32, -1.14, 0.64, 3.44, -1.67, 0.85, 0.41, 
+                -0.01, 0.67, -1.13, -0.41, -0.49, 0.36, -1.24, -0.04, -0.11, 
+                1.05, 0.04, 0.76, 0.61, -2.04, 0.35, 2.82, -0.46, -0.63, 
+                -1.61, 0.64, 0.56, -0.11, 0.13, -1.81)
+```
+
+
+#### No R problem.
