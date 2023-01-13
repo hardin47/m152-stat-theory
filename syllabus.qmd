@@ -42,11 +42,10 @@ As someone who is, myself, constantly learning and growing in many ways, I welco
 
 By the end of the semester, students will be able to do the following:
 
-* understand the structure of a linear model, including: simple linear regression, multiple linear regression, ridge regression, Lasso, and splines.
-* know when a linear model is appropriate and what conclusions can be drawn given a particular dataset, including: when are p-values appropriate to use? when is prediction more appropriate? when can or cannot causation be implied?
-* use graphical tools to investigate models associated with the data at hand, including: exploring data graphically, using graphics to understand leverage and influence values, visualizing smooth models.
-* communicate results effectively.
-
+* be able to derive the methods from introductory statistics using tools from mathematics (i.e., calculus and probability).
+* be able to justify the use of a particular method (technical conditions).
+* be able to weigh advantages and disadvantages of different estimation techniques (e.g., bias, variability, resistance to outliers).
+* know to and how to communicate results effectively.
 
 ## Inclusion Goals^[adapted from Monica Linden, Brown University]
 
